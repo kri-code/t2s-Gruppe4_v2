@@ -89,6 +89,11 @@ for epoch in range(8):  # loop over the dataset multiple times
 
         loss.backward()
         optimizer.step()
+        
+        # print statistics
+        running_loss += loss.item()
+        print(epoch + 1, data, running_loss / 2000)
+        running_loss = 0.0
 
 print('Finished Training')
 
