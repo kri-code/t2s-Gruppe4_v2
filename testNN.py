@@ -4,6 +4,7 @@ import torch.nn as nn
 import torch.nn.functional as F
 from torch.autograd import Variable
 import torch.optim as optim
+from random import shuffle
 
 ########################### xml Datei auslesen #########################
 
@@ -33,6 +34,23 @@ for x in trainingsdaten:
         x[2] = 101
     elif x[2] == "EC":
         x[2] = 102
+
+#validationsize in percent rest will be used for validationset
+val_size = 0.6
+print(len(trainingsdaten))
+
+#shuffles data
+shuffle(trainingsdaten)
+
+#create validationset
+validierungsdaten = trainingsdaten[:int(len(trainingsdaten)*val_size)]
+print(len(validierungsdaten))
+
+#create trainingset
+trainingsdaten = trainingsdaten[int(len(trainingsdaten)*val_size):]
+print(len(trainingsdaten))
+
+
 
 #sdata = open('trainingsdaten.txt', "w")
 #sdata.write(str(trainingsdaten))
@@ -76,7 +94,7 @@ for i in trainingsdaten:
     criterion = nn.MSELoss()
     loss = criterion(out,target)
     
-    print(loss)
+    #print(loss)
     
     
     net.zero_grad() #Fehler zurücksetzen
