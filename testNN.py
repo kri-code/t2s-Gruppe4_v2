@@ -92,7 +92,7 @@ for epoch in range(8):  # loop over the dataset multiple times
         
         # print statistics
         running_loss += loss.item()
-        print(epoch + 1, data, running_loss / 2000)
+        print(epoch + 1, data, running_loss / len(trainingsdaten))
         running_loss = 0.0
 
 print('Finished Training')
