@@ -83,22 +83,35 @@ class NeuralNet(nn.Module):
     
 net = NeuralNet(2, 2, 1)
 
-for i in trainingsdaten: 
-    x = [i[0],i[1]] #figure und object als Eingabe
-    input = Variable(torch.Tensor(x))
-    
-    out = net(input)
-    
-    x = [i[2]] #was am ende rauskommen soll, als die QSLinks
-    target = Variable(torch.Tensor(x))
-    criterion = nn.MSELoss()
-    loss = criterion(out,target)
-    
-    #print(loss)
-    
-    
-    net.zero_grad() #Fehler zurücksetzen
-    loss.backward()
-    optimizer = optim.SGD(net.parameters(), lr = 0.1) #funktion anpassen
-    optimizer.step() 
+optimizer = optim.SGD(net.parameters(), lr=0.001, momentum=0.9)
 
+for epoch in range(8):  # loop over the dataset multiple times
+
+    running_loss = 0.0
+    for i in trainingsdaten:
+        x = [i[0], i[1]]  # figure und object als Eingabe
+        data = x
+        input = Variable(torch.Tensor(x))
+
+        # zero the parameter gradients
+        optimizer.zero_grad()
+
+        # forward + backward + optimize
+        out = net(input)
+        x = [i[2]]  # was am ende rauskommen soll, als die QSLinks
+        target = Variable(torch.Tensor(x))
+
+        criterion = nn.MSELoss()
+        loss = criterion(out, target)
+        print(loss)
+
+        loss.backward()
+        #net.zero_grad() #Fehler zurücksetzen, bruacht ihr das noch? war noch vom alten merge oder habt ihr das bewusst geloescht?
+        optimizer.step()
+        
+        # print statistics
+        running_loss += loss.item()
+        print(epoch + 1, data, running_loss / len(trainingsdaten))
+        running_loss = 0.0
+
+print('Finished Training')
