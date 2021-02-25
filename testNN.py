@@ -72,7 +72,7 @@ for epoch in range(8):  # loop over the dataset multiple times
     running_loss = 0.0
     for i in trainingsdaten:
         x = [i[0], i[1]]  # figure und object als Eingabe
-        print(x)
+        data = x
         input = Variable(torch.Tensor(x))
 
         # zero the parameter gradients
