@@ -29,14 +29,14 @@ for x in trainingsdaten:
             x[1] = int(child.get('objectId'))
     
     if x[2] == "PO":
-        x[2] = 100
-    elif x[2] == "NTPP":
         x[2] = 101
-    elif x[2] == "EC":
+    elif x[2] == "NTPP":
         x[2] = 102
+    elif x[2] == "EC":
+        x[2] = 103
 
 #validationsize in percent rest will be used for validationset
-val_size = 0.6
+val_size = 0.5
 print(len(trainingsdaten))
 
 #shuffles data
@@ -85,6 +85,7 @@ net = NeuralNet(2, 2, 1)
 
 optimizer = optim.SGD(net.parameters(), lr=0.001, momentum=0.9)
 
+net.train()
 for epoch in range(8):  # loop over the dataset multiple times
 
     running_loss = 0.0
@@ -115,3 +116,31 @@ for epoch in range(8):  # loop over the dataset multiple times
         running_loss = 0.0
 
 print('Finished Training')
+
+
+#calculate accuracy
+correct = 0
+total = 0
+
+net.eval()
+with torch.no_grad():
+    for data in validierungsdaten:
+        figure = data[0]
+        ground = data[1]
+        label = data[2]
+        input = Variable(torch.Tensor([figure,ground]))
+        #print(input)
+        output = net(input)
+        #print(label)
+        pred = Variable(torch.Tensor([label]))
+       
+        #print(output)
+        total += 1
+      
+        if (output - pred) <= 0.5 and (output - pred) >= -0.5:
+            correct += 1
+
+print('Accuracy of the network  %d %%' % (100 * correct / total))
+
+
+print(net(Variable(torch.Tensor([1,2]))))
