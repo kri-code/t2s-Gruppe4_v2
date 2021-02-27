@@ -5,6 +5,7 @@ import torch.nn.functional as F
 from torch.autograd import Variable
 import torch.optim as optim
 from random import shuffle
+import numpy as np
 
 ########################### xml Datei auslesen #########################
 
@@ -54,7 +55,37 @@ print(len(trainingsdaten))
 
 #sdata = open('trainingsdaten.txt', "w")
 #sdata.write(str(trainingsdaten))
-#sdata.close       
+#sdata.close  
+
+
+############ umwandeln der trainings- und validierungsdaten #######################
+X_train = []
+X_val =[]
+y_train = []
+y_val = []
+for i in trainingsdaten:
+    x = [i[0], i[1]]  # figure und object als Eingabe
+    X_train.append(x)
+    y = [i[2]]  # was am ende rauskommen soll, als die QSLinks
+    y_train.append(y)
+X_train = np.asarray(X_train)
+X_train = torch.tensor(X_train, dtype=torch.float32)
+
+y_train = np.asarray(y_train)
+y_train = torch.tensor(y_train, dtype=torch.float32)
+print(X_train.shape, y_train.shape)
+
+for i in validierungsdaten:
+    x = [i[0], i[1]]  # figure und object als Eingabe
+    X_val.append(x)
+    y = [i[2]]  # was am ende rauskommen soll, als die QSLinks
+    y_val.append(y)
+X_val = np.asarray(X_val)
+X_val = torch.tensor(X_val, dtype=torch.float32)
+
+y_val = np.asarray(y_val)
+y_val = torch.tensor(y_val, dtype=torch.float32)
+print(X_val.shape, y_val.shape)
         
 ############################# Neuronales Netz ###############################
         
