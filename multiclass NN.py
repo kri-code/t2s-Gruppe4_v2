@@ -14,11 +14,23 @@ trainingsdaten = []
 for child in matterportroot:
     if child.tag == "QSLINK" and child.get('figure') != "unknown" and child.get('ground') != "unknown":
         if child.get('relType') == "NTTPc":
-            trainingsdaten.append([child.get('ground'), int(child.get('fromId')), 'NTPP'])
+            trainingsdaten.append([int(child.get('toId')), int(child.get('fromId')), 'NTPP'])
         elif child.get('relType') == "TPPc":
-            trainingsdaten.append([child.get('ground'), int(child.get('fromId')), 'NPP'])
+            trainingsdaten.append([int(child.get('toId')), int(child.get('fromId')), 'NPP'])
         else:
-            trainingsdaten.append([int(child.get('fromId')), child.get('ground'), child.get('relType')])
+            trainingsdaten.append([int(child.get('fromId')), int(child.get('toId')), child.get('relType')])
+
+matterporttree = ET.parse('matterport3dhouse.xml')
+matterportroot = matterporttree.getroot()
+
+for child in matterportroot:
+    if child.tag == "QSLINK" and child.get('figure') != "unknown" and child.get('ground') != "unknown":
+        if child.get('relType') == "NTTPc":
+            trainingsdaten.append([int(child.get('toId')), int(child.get('fromId')), 'NTPP'])
+        elif child.get('relType') == "TPPc":
+            trainingsdaten.append([int(child.get('toId')), int(child.get('fromId')), 'NPP'])
+        else:
+            trainingsdaten.append([int(child.get('fromId')), int(child.get('toId')), child.get('relType')])
 
 for x in trainingsdaten:
     for child in matterportroot:
