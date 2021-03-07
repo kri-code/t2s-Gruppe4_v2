@@ -8,9 +8,11 @@ from torch.utils.data import Dataset, DataLoader
 from random import shuffle
 import numpy as np
 
-matterporttree = ET.parse('matterport3d.xml')
-matterportroot = matterporttree.getroot()
 trainingsdaten = []
+
+'''matterporttree = ET.parse('matterport3d.xml')
+matterportroot = matterporttree.getroot()
+
 for child in matterportroot:
     if child.tag == "QSLINK" and child.get('figure') != "unknown" and child.get('ground') != "unknown":
         if child.get('relType') == "NTTPc":
@@ -18,7 +20,7 @@ for child in matterportroot:
         elif child.get('relType') == "TPPc":
             trainingsdaten.append([int(child.get('toId')), int(child.get('fromId')), 'NPP'])
         else:
-            trainingsdaten.append([int(child.get('fromId')), int(child.get('toId')), child.get('relType')])
+            trainingsdaten.append([int(child.get('fromId')), int(child.get('toId')), child.get('relType')])'''
 
 matterporttree = ET.parse('matterport3dhouse.xml')
 matterportroot = matterporttree.getroot()
