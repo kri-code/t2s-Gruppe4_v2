@@ -7,6 +7,8 @@ import torch.optim as optim
 from torch.utils.data import Dataset, DataLoader
 from random import shuffle
 import numpy as np
+from sklearn.metrics import classification_report
+
 
 trainingsdaten = []
 
@@ -192,3 +194,23 @@ accuracy_val = accuracy(Y_pred_val, y_val)
 
 print("Training accuracy", accuracy_train)
 print("Validation accuracy", accuracy_val)
+
+#transform data for classification report function
+Y_pred_val = Y_pred_val.detach().numpy()    # tensor to array
+prediction = []
+for i in Y_pred_val:    # evaluate prediction
+    if i[0] > i[1] and i[0] > i[2]:
+        prediction.append(0)
+    elif i[1] > i[0] and i[1] > i[2]:
+        prediction.append(1)
+    else:
+        prediction.append(2)
+print(prediction[0:10])
+
+y_true = y_val.tolist()    # tensor to python list
+print(y_true[0:10])
+
+#classification report
+#calculates f1 score for each class
+target_names = ['PO', 'NTPP', 'EC']
+print(classification_report(y_true, prediction, target_names=target_names, zero_division=0))
