@@ -11,17 +11,17 @@ import numpy as np
 
 trainingsdaten = []
 
-matterporttree = ET.parse('matterport3d.xml')
+matterporttree = ET.parse('matterport3dhouse.xml')
 matterportroot = matterporttree.getroot()
 
 for child in matterportroot:
     if child.tag == "QSLINK" and child.get('figure') != "unknown" and child.get('ground') != "unknown":
         if child.get('relType') == "NTTPc":
-            trainingsdaten.append([int(child.get('toId')), int(child.get('fromId')), 'NTPP'])
+            trainingsdaten.append([child.get('object'), child.get('figure'), 'NTPP'])
         elif child.get('relType') == "TPPc":
-            trainingsdaten.append([int(child.get('toId')), int(child.get('fromId')), 'NPP'])
+            trainingsdaten.append([ child.get('object'), child.get('figure'), 'NPP'])
         else:
-            trainingsdaten.append([int(child.get('fromId')), int(child.get('toId')), child.get('relType')])
+            trainingsdaten.append([child.get('figure'), child.get('object'), child.get('relType')])
 
 print(trainingsdaten)
 
@@ -51,3 +51,4 @@ while i < len(possibleoutputs):
 
 print(trainingsdaten)
  
+print(len(possibleoutputs))
