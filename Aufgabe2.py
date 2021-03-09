@@ -37,6 +37,14 @@ for x in trainingsdaten:
 
 print(possibleoutputs)
 
+possibleinputs = []
+
+for x in trainingsdaten:
+    if x[0] in possibleinputs:
+        pass
+    else:
+        possibleinputs.append(x[0])
+
 #anhand der possibleoutputs werden object und QsLink durch eine ID ersetzt die der Position der Möglichkeit in possible outputs ersetzt
 i = 0
 while i < len(possibleoutputs): 
