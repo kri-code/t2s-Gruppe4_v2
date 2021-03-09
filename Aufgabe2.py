@@ -17,11 +17,11 @@ matterportroot = matterporttree.getroot()
 for child in matterportroot:
     if child.tag == "QSLINK" and child.get('figure') != "unknown" and child.get('ground') != "unknown":
         if child.get('relType') == "NTTPc":
-            trainingsdaten.append([child.get('object'), child.get('figure'), 'NTPP'])
+            trainingsdaten.append([child.get('ground'), child.get('figure'), 'NTPP'])
         elif child.get('relType') == "TPPc":
-            trainingsdaten.append([ child.get('object'), child.get('figure'), 'NPP'])
+            trainingsdaten.append([ child.get('ground'), child.get('figure'), 'NPP'])
         else:
-            trainingsdaten.append([child.get('figure'), child.get('object'), child.get('relType')])
+            trainingsdaten.append([child.get('figure'), child.get('ground'), child.get('relType')])
 
 print(trainingsdaten)
 
