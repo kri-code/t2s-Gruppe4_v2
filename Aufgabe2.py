@@ -48,7 +48,19 @@ while i < len(possibleoutputs):
                 trainingsdaten[j] = [x[0],i]
         j = j+1
     i = i+1
+    
+#anhand possibleinputs wird figure durch ID ersetzt
+i = 0
+while i < len(possibleinputs):
+    j = 0
+    for x in trainingsdaten:
+        if x[0] == possibleinputs[i]:
+            x[0] = i
+    i = i+1
 
 print(trainingsdaten)
  
 print(len(possibleoutputs))
+print(possibleoutputs)
+print(len(possibleinputs))
+print(possibleinputs)
