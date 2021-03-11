@@ -72,3 +72,22 @@ print(len(possibleoutputs))
 print(possibleoutputs)
 print(len(possibleinputs))
 print(possibleinputs)
+
+y_train_data = []
+counter = 0
+out_counter = 0
+v = []
+while counter < len(possibleinputs):
+    for i in range(len(possibleoutputs)):
+        if [counter, out_counter] in trainingsdaten:
+            v.append(1)
+            out_counter += 1
+        else:
+            v.append(0)
+            out_counter += 1
+    y_train_data.append(v)
+    v = []
+    counter += 1
+    out_counter = 0
+print(len(y_train_data[0]))
+print(len(y_train_data))
