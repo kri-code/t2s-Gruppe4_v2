@@ -8,7 +8,22 @@ from torch.utils.data import Dataset, DataLoader
 from random import shuffle
 import numpy as np
 from sklearn.metrics import classification_report
+import matplotlib.pyplot as plt
+import time
+import datetime
+import os
+import sys
 
+#save datestamp for unique outputfile each time code gets executed
+ts = time.time()
+datestamp = datetime.datetime.fromtimestamp(ts).strftime('%d-%m-%Y-%H-%M-%S')
+
+#write console output into html file
+sys.stdout = open('Aufgabe1_performance/{}.txt'.format(datestamp), 'w')
+#print('test2')
+
+#prints starting time
+print(datestamp)
 
 trainingsdaten = []
 
@@ -50,20 +65,55 @@ for x in trainingsdaten:
     elif x[2] == "EC":
         x[2] = 2            # 102 -> 2
 
-# validationsize in percent rest will be used for validationset
+# shuffles data
+shuffle(trainingsdaten)
+
+#balancierte trainingsdaten
+po_data = []
+ntpp_data = []
+ec_data = []
+counter_po = 0
+counter_ntpp = 0
+counter_ec = 0
+
+for tarray in trainingsdaten:
+    if tarray[2] == 0 and counter_po < 999:
+        po_data.append(tarray)
+        counter_po += 1
+    elif tarray[2] == 1 and counter_ntpp < 999:
+        ntpp_data.append(tarray)
+        counter_ntpp += 1
+    elif tarray[2] == 2 and counter_ec < 999:
+        ec_data.append(tarray)
+        counter_ec += 1
+
+#artificially enlarge ec data since only 37 available
+ec_data = 27*ec_data #37*27 = 999
+
+#define new balanced trainingdata 
+trainingsdaten = po_data + ntpp_data + ec_data
+
+
+#print(len(trainingsdaten))
+#print(ec_data)
+#print(len(po_data), len(ntpp_data), len(ec_data))
+        
+
+# validationsize in percent rest will be used for trainingset
 val_size = 0.6
-print(len(trainingsdaten))
+print(val_size, "is relative validationsize rest will be used for trainingset")
+print(len(trainingsdaten), "Total datasize")
 
 # shuffles data
 shuffle(trainingsdaten)
 
 # create validationset
 validierungsdaten = trainingsdaten[:int(len(trainingsdaten) * val_size)]
-print(len(validierungsdaten))
+print(len(validierungsdaten), "validationsize")
 
 # create trainingset
 trainingsdaten = trainingsdaten[int(len(trainingsdaten) * val_size):]
-print(len(trainingsdaten))
+print(len(trainingsdaten), "trainingsize")
 
 
 # sdata = open('trainingsdaten.txt', "w")
@@ -88,7 +138,7 @@ X_train = X_train.reshape(-1, X_train.shape[1]).astype('float32')
 
 y_train = np.asarray(y_train)
 #y_train = torch.tensor(y_train).long()
-print(X_train.shape, y_train.shape)
+#print(X_train.shape, y_train.shape)
 
 for i in validierungsdaten:
     x = [i[0], i[1]]  # figure und object als Eingabe
@@ -102,7 +152,7 @@ X_val = torch.tensor(X_val)
 
 y_val = np.asarray(y_val)
 y_val = torch.tensor(y_val).long()
-print(X_val.shape, y_val.shape)
+#print(X_val.shape, y_val.shape)
 
 class Data(Dataset):
     def __init__(self):
@@ -128,14 +178,20 @@ class NeuralNet(nn.Module):
         super(NeuralNet, self).__init__()
         # Schichten
         self.lin1 = nn.Linear(2, 6) #2-(6-6)-3
-        self.lin2 = nn.Linear(6, 6)
+        #self.lin1 = nn.ReLU() #2-(6-6)-3
+        #self.lin2 = nn.Linear(6, 6)
+        self.lin2 = nn.ReLU()
         #output layer: [Klasse PO, Klasse NTPP, Klasse EC]
+        
         self.oupt = nn.Linear(6, 3)
+        #self.oupt = nn.ReLU()
 
         nn.init.xavier_uniform_(self.lin1.weight)
         nn.init.zeros_(self.lin1.bias)
-        nn.init.xavier_uniform_(self.lin2.weight)
-        nn.init.zeros_(self.lin2.bias)
+        
+        #nn.init.xavier_uniform_(self.lin2.weight)
+        #nn.init.zeros_(self.lin2.bias)
+        
         nn.init.xavier_uniform_(self.oupt.weight)
         nn.init.zeros_(self.oupt.bias)
 
@@ -154,14 +210,24 @@ class NeuralNet(nn.Module):
         return num
 
 model = NeuralNet()
-
+print(model)
 criterion = nn.CrossEntropyLoss()
+print(criterion)
 learning_rate = 0.01
-optimizer = optim.SGD(model.parameters(), lr=learning_rate)
+optimizer = optim.Adam(model.parameters(), lr=learning_rate)
+print(optimizer)
 
+#calculate accuracy
+def accuracy(y_hat, y):
+    pred = torch.argmax(y_hat, dim=1)
+    return (pred == y).float().mean()
+
+
+accuracy_train_list = []
+accuracy_val_list = []
 loss_list = []
 # epochs
-for epoch in range(1000):
+for epoch in range(1500):
     for x, y in trainloader:
         # clear gradient
         optimizer.zero_grad()
@@ -176,24 +242,24 @@ for epoch in range(1000):
         optimizer.step()
 
         loss_list.append(loss.data)
+        
+        Y_pred_train = model(torch.tensor(X_train))
+        Y_pred_val = model(X_val)
+        
+        accuracy_train = accuracy(Y_pred_train, torch.tensor(y_train).long())
+        accuracy_val = accuracy(Y_pred_val, y_val)
+        
+        accuracy_train_list.append(accuracy_train)
+        accuracy_val_list.append(accuracy_val)
+        
 
-        #print('epoch {}, loss {}'.format(epoch, loss.item()))
-print(y[0:10])
-print(z[0:10])
+        #print('epoch {}, loss {}, Training accuracy {}, Validation accuracy {}'.format(epoch, loss.item(), accuracy_train, accuracy_val))
+#print(y[0:10])
+#print(z[0:10])
 
+#print number of epochs for outputfile
+print("Epochs:",epoch+1)
 
-def accuracy(y_hat, y):
-    pred = torch.argmax(y_hat, dim=1)
-    return (pred == y).float().mean()
-
-Y_pred_train = model(torch.tensor(X_train))
-Y_pred_val = model(X_val)
-
-accuracy_train = accuracy(Y_pred_train, torch.tensor(y_train).long())
-accuracy_val = accuracy(Y_pred_val, y_val)
-
-print("Training accuracy", accuracy_train)
-print("Validation accuracy", accuracy_val)
 
 #transform data for classification report function
 Y_pred_val = Y_pred_val.detach().numpy()    # tensor to array
@@ -205,12 +271,28 @@ for i in Y_pred_val:    # evaluate prediction
         prediction.append(1)
     else:
         prediction.append(2)
-print(prediction[0:10])
+#print(prediction[0:10])
 
 y_true = y_val.tolist()    # tensor to python list
-print(y_true[0:10])
+#print(y_true[0:10])
 
 #classification report
 #calculates f1 score for each class
 target_names = ['PO', 'NTPP', 'EC']
 print(classification_report(y_true, prediction, target_names=target_names, zero_division=0))
+
+
+#create plot
+plt.title('train- und  validation-accuracy')
+plt.plot(list(range(0,len(accuracy_train_list))),accuracy_train_list,label='Train accuracy')
+plt.plot(list(range(0,len(accuracy_val_list))),accuracy_val_list,label='Validation accuracy')
+plt.ylabel('Relative Rate')
+plt.xlabel('Epochen')
+plt.legend()
+plt.savefig(os.path.join('Aufgabe1_performance','{}-Accuracyvsvalidationacc-{}-{}-{}-{}.png'.format(datestamp, (str(optimizer)).split()[0],val_size,criterion,epoch+1,)))
+plt.show()
+
+#prints elapsed time
+print("elapsed time (min):", (time.time() - ts)/60)
+
+#sys.stdout.close()
