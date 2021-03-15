@@ -281,6 +281,8 @@ y_true = y_val.tolist()    # tensor to python list
 target_names = ['PO', 'NTPP', 'EC']
 print(classification_report(y_true, prediction, target_names=target_names, zero_division=0))
 
+#save trained model
+torch.save(model, "labelNet.pt")
 
 #create plot
 plt.title('train- und  validation-accuracy')
