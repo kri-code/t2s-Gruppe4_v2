@@ -100,8 +100,11 @@ for i in range(38):
     num_possibleinputs.append([i])
 
 final_trainingsdaten = []    #final data
-for i in range(38):
-    final_trainingsdaten.append([num_possibleinputs[i], y_train_data[i]])
+for j in range (10):
+    for i in range(38):
+        final_trainingsdaten.append([num_possibleinputs[i], y_train_data[i]])
+
+
 
 ################## splitting training and validation data ###############################
 
@@ -212,6 +215,9 @@ for epoch in range(epochs):
     print("correctly classified:", acc_score)
 
 print("finished training", "\n")
+
+#save trained network
+torch.save(classifier, "classifierNet.pt")
 
 ################################# validation accuracy ############################################
 print("Validation Data:")
