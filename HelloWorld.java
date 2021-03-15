@@ -1,4 +1,3 @@
-package com.example.helloworld;
 import java.io.*;
 
 public class HelloWorld {
