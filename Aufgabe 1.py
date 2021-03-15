@@ -282,7 +282,8 @@ target_names = ['PO', 'NTPP', 'EC']
 print(classification_report(y_true, prediction, target_names=target_names, zero_division=0))
 
 #save trained model
-torch.save(model, "labelNet.pt")
+#torch.save(model, "labelNet.pt")
+torch.save(model.state_dict(), "labelNet.pt")
 
 #create plot
 plt.title('train- und  validation-accuracy')
