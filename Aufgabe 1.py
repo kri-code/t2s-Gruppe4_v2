@@ -51,12 +51,17 @@ for child in matterportroot:
         else:
             trainingsdaten.append([int(child.get('fromId')), int(child.get('toId')), child.get('relType')])
 
+objectlabels =[]
+objectid =[]
 for x in trainingsdaten:
     for child in matterportroot:
+        if child.tag == 'SPATIAL_ENTITY' and child.get('label') not in objectlabels:
+            objectlabels.append(child.get('label'))
+            objectid.append(int(child.get('objectId')))
         if child.tag == "SPATIAL_ENTITY" and x[0] == child.get('label'):
-            x[0] = int(child.get('objectId'))
+            x[0] = objectid[objectlabels.index(child.get('label'))]
         elif child.tag == "SPATIAL_ENTITY" and x[1] == child.get('label'):
-            x[1] = int(child.get('objectId'))
+            x[1] =  objectid[objectlabels.index(child.get('label'))]
 
     if x[2] == "PO":
         x[2] = 0            # 100 -> 0
