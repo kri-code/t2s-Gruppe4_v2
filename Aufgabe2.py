@@ -276,7 +276,7 @@ for epoch in range(epochs):
 print("finished training", "\n")
 
 #save trained network
-torch.save(classifier, "classifierNet.pt")
+torch.save(classifier.state_dict(), "classifierNet.pt")
 
 ################################# validation accuracy ############################################
 # print("Validation Data:")
