@@ -1,0 +1,31 @@
+13-03-2021-01-00-03
+0.8 is relative validationsize rest will be used for trainingset
+2997 Total datasize
+2397 validationsize
+600 trainingsize
+NeuralNet(
+  (lin1): Linear(in_features=2, out_features=6, bias=True)
+  (lin2): Linear(in_features=6, out_features=6, bias=True)
+  (oupt): Linear(in_features=6, out_features=3, bias=True)
+)
+CrossEntropyLoss()
+Adam (
+Parameter Group 0
+    amsgrad: False
+    betas: (0.9, 0.999)
+    eps: 1e-08
+    lr: 0.01
+    weight_decay: 0
+)
+Epochs: 4000
+              precision    recall  f1-score   support
+
+          PO       0.66      0.38      0.49       804
+        NTPP       0.66      0.76      0.70       794
+          EC       0.62      0.80      0.70       799
+
+    accuracy                           0.64      2397
+   macro avg       0.65      0.65      0.63      2397
+weighted avg       0.65      0.64      0.63      2397
+
+elapsed time (min): 0.7140462756156921

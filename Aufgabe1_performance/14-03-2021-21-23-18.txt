@@ -1,0 +1,5 @@
+14-03-2021-21-23-18
+0.6 is relative validationsize rest will be used for trainingset
+2997 Total datasize
+1798 validationsize
+1199 trainingsize

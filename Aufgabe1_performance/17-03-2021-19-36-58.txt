@@ -1,0 +1,46 @@
+17-03-2021-19-36-58
+0.6 is relative validationsize rest will be used for trainingset
+2997 Total datasize
+1798 validationsize
+1199 trainingsize
+Neurons: 768
+NeuralNet(
+  (lin1): Linear(in_features=2, out_features=768, bias=True)
+  (lin2): Linear(in_features=768, out_features=768, bias=True)
+  (lin3): Linear(in_features=768, out_features=768, bias=True)
+  (dropout): Dropout(p=0.5, inplace=False)
+  (oupt): Linear(in_features=768, out_features=3, bias=True)
+)
+CrossEntropyLoss()
+Adam (
+Parameter Group 0
+    amsgrad: False
+    betas: (0.9, 0.999)
+    eps: 1e-08
+    lr: 0.01
+    weight_decay: 0
+)
+Epochs: 1500
+              precision    recall  f1-score   support
+
+          PO       0.77      0.38      0.51       599
+        NTPP       0.65      0.77      0.71       587
+          EC       0.64      0.85      0.73       612
+
+    accuracy                           0.67      1798
+   macro avg       0.69      0.67      0.65      1798
+weighted avg       0.69      0.67      0.65      1798
+
+elapsed time (min): 8.132840498288472
+Updating 2493e31..25a4ed3
+Fast-forward
+ Aufgabe 1 textimager.py => A1_text.py |  55 ++++++++++++++--
+ A2_text.py                            | 118 ++++++++++++++++++++++++++++++++++
+ Aufgabe2.py                           |   2 +-
+ Main.java                             |  52 ---------------
+ MiniExample.java                      |  77 ----------------------
+ 5 files changed, 170 insertions(+), 134 deletions(-)
+ rename Aufgabe 1 textimager.py => A1_text.py (50%)
+ create mode 100644 A2_text.py
+ delete mode 100644 Main.java
+ delete mode 100644 MiniExample.java

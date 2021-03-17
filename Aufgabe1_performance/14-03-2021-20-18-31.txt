@@ -1,0 +1,35 @@
+14-03-2021-20-18-31
+0.6 is relative validationsize rest will be used for trainingset
+2997 Total datasize
+1798 validationsize
+1199 trainingsize
+Updating d3df218..4c2f499
+Fast-forward
+ Aufgabe2.py | 170 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++--
+ 1 file changed, 167 insertions(+), 3 deletions(-)
+ Datentr„ger in Laufwerk C: ist SSD
+ Volumeseriennummer: BAA3-14B1
+
+ Verzeichnis von C:\Users\leoni\OneDrive\WiSe20\T2S\python-t2s\code2\t2s-Gruppe4_v2
+
+14.03.2021  21:02    <DIR>          .
+14.03.2021  21:02    <DIR>          ..
+26.02.2021  00:39            16.384 .testNN.py.swp
+14.03.2021  20:18             9.486 Aufgabe 1.py
+14.03.2021  20:18    <DIR>          Aufgabe1_performance
+14.03.2021  21:02             7.610 Aufgabe2.py
+25.02.2021  21:39            50.610 matterport3d.xml
+09.03.2021  00:29           621.263 matterport3dhouse.xml
+25.02.2021  21:39               536 NeuralNet.py
+25.02.2021  21:39               260 README.md
+02.03.2021  23:16             5.246 testNN.py
+25.02.2021  23:46             4.108 testNN_BACKUP_567.py
+26.02.2021  00:30             2.690 testNN_BASE_567.py
+26.02.2021  00:30             3.124 testNN_LOCAL_567.py
+26.02.2021  00:30             3.087 testNN_REMOTE_567.py
+26.02.2021  01:19             5.507 trainingsdaten.txt
+25.02.2021  21:39             1.261 xmlauslesen.py
+              14 Datei(en),        731.172 Bytes
+               3 Verzeichnis(se), 348.643.807.232 Bytes frei
+Already up to date.
+Already up to date.
