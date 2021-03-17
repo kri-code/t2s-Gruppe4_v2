@@ -8,6 +8,22 @@ from random import shuffle
 import numpy as np
 from sklearn.metrics import hamming_loss, f1_score, accuracy_score
 from sklearn.neighbors import DistanceMetric
+import matplotlib.pyplot as plt
+import time
+import datetime
+import os
+import sys
+
+#save datestamp for unique outputfile each time code gets executed
+ts = time.time()
+datestamp = datetime.datetime.fromtimestamp(ts).strftime('%d-%m-%Y-%H-%M-%S')
+
+#write console output into txt file
+sys.stdout = open('Aufgabe2_performance/{}.txt'.format(datestamp), 'w')
+#print('test2')
+
+#prints starting time
+print(datestamp)
 
 trainingsdaten = []
 
@@ -23,7 +39,7 @@ for child in matterportroot:
         else:
             trainingsdaten.append([child.get('figure'), child.get('ground'), child.get('relType')])
 
-print(trainingsdaten)
+#print(trainingsdaten)
 
 ############################ preparing training data #########################################
 
@@ -37,7 +53,7 @@ for x in trainingsdaten:
     else:
         possibleoutputs.append([x[1],x[2]])
 
-print(possibleoutputs)
+#print(possibleoutputs)
 
 possibleinputs = []
 
@@ -68,12 +84,12 @@ while i < len(possibleinputs):
             x[0] = i
     i = i+1
 
-print(trainingsdaten)
+#print(trainingsdaten)
  
-print(len(possibleoutputs))
-print(possibleoutputs)
-print(len(possibleinputs))
-print(possibleinputs)
+#print("Possible output legth:",len(possibleoutputs))
+#print(possibleoutputs)
+#print(len(possibleinputs))
+#print(possibleinputs)
 
 y_train_data = []
 counter = 0
@@ -91,8 +107,8 @@ while counter < len(possibleinputs):
     v = []
     counter += 1
     out_counter = 0
-print(len(y_train_data[0]))
-print(len(y_train_data))
+#print(len(y_train_data[0]))
+#print(len(y_train_data))
 
 #list with ids for possibleinputs
 num_possibleinputs = []
@@ -109,24 +125,27 @@ for j in range (10):
 ################## splitting training and validation data ###############################
 
 # validationsize in percent rest will be used for validationset
-val_size = 0.6
+val_size = 0.5
+print(val_size, "is relative validationsize rest will be used for trainingset")
+print(len(trainingsdaten), "Total datasize")
+print(len(final_trainingsdaten), "Final datasize")
 
 # shuffles data
 shuffle(final_trainingsdaten)
 
 # create validationset
 validierungsdaten = final_trainingsdaten[:int(len(final_trainingsdaten) * val_size)]
-print(len(validierungsdaten))
+print(len(validierungsdaten), "validationsize")
 
 # create trainingset
 trainingsdaten = final_trainingsdaten[int(len(final_trainingsdaten) * val_size):]
-print(len(trainingsdaten))
+print(len(trainingsdaten), "trainingsize")
 
 X_train = []
 X_val = []
 y_train = []
 y_val = []
-for i in final_trainingsdaten:
+for i in trainingsdaten:
     x = [i[0]]  # objekt als Eingabe
     X_train.append(x)
     y = i[1]  # was am ende rauskommen soll
@@ -162,16 +181,26 @@ class Net(nn.Module):
 
 nlabel = len(y_train_data[0]) # => 78 ( len(possibleoutputs))
 classifier = Net(nlabel)
+print(classifier)
 
 ################## training #########################################
 
 optimizer = optim.Adam(classifier.parameters())
+print(optimizer)
 criterion = nn.MultiLabelSoftMarginLoss()    # because multi label classification
+print(criterion)
 
-epochs = 5
+epochs = 100
+print("epochs:",epochs)
+
+hammingloss_mean = []
+hammingloss_val_mean = []
+score_mean = []
 for epoch in range(epochs):
     losses = []
     hammingloss = []
+    hammingloss_val = []
+    score_list = []
     for i, sample in enumerate(X_train):
         inputv = torch.from_numpy(sample)    # array to tensor
         inputv = Variable(inputv).view(1, -1)    # for MultiLabelSoftMarginLoss()
@@ -209,10 +238,40 @@ for epoch in range(epochs):
 
         #f1 score
         score = f1_score(labelsv.tolist()[0], output_train_acc_int, average="macro", zero_division=1)
+        score_list.append(score)
 
-    print('epoch {}, loss {}, hamming loss {}, f1 score {}'.format(epoch, np.mean(losses), np.mean(hammingloss), score))
+    print('---epoch {}, loss {}, hamming loss {}, f1 score {}'.format(epoch, np.mean(losses), np.mean(hammingloss), np.mean(score_list)))
     print("Hamming Distance:", dist)
-    print("correctly classified:", acc_score)
+    print("correctly classified(hamming score):", acc_score)
+    hammingloss_mean.append(np.mean(hammingloss))
+    score_mean.append(np.mean(score_list))
+    
+    with torch.no_grad():
+        for i, sample in enumerate(X_val):
+            inputv = torch.from_numpy(sample)  # array to tensor
+            inputv = Variable(inputv).view(1, -1)
+    
+            labelsv = torch.from_numpy(y_val[i]).long()  # array to tensor
+            labelsv = Variable(labelsv).view(1, -1)  # for MultiLabelSoftMarginLoss()
+    
+            output = classifier(inputv)
+    
+            # validation accuracy
+            output_val_acc = torch.sigmoid(output)
+            output_val_acc[output_val_acc >= 0.5] = 1
+            output_val_acc[output_val_acc < 0.5] = 0
+            output_val_acc_int = [int(i) for i in output_val_acc[0].tolist()]
+    
+            # hamming score
+            acc_validation_score = accuracy_score(labelsv.tolist()[0], output_val_acc_int, normalize=False)
+            
+            #hamming loss
+            train_hamming = hamming_loss(labelsv.tolist(), output_val_acc.tolist())
+            hammingloss_val.append(train_hamming)
+        print('hamming loss val',np.mean(hammingloss_val))
+        hammingloss_val_mean.append(np.mean(hammingloss_val))
+
+
 
 print("finished training", "\n")
 
@@ -220,14 +279,40 @@ print("finished training", "\n")
 torch.save(classifier, "classifierNet.pt")
 
 ################################# validation accuracy ############################################
-print("Validation Data:")
+# print("Validation Data:")
+
+# with torch.no_grad():
+#     for i, sample in enumerate(X_val):
+#         inputv = torch.from_numpy(sample)  # array to tensor
+#         inputv = Variable(inputv).view(1, -1)
+
+#         labelsv = torch.from_numpy(y_val[i]).long()  # array to tensor
+#         labelsv = Variable(labelsv).view(1, -1)  # for MultiLabelSoftMarginLoss()
+
+#         output = classifier(inputv)
+
+#         # validation accuracy
+#         output_val_acc = torch.sigmoid(output)
+#         output_val_acc[output_val_acc >= 0.5] = 1
+#         output_val_acc[output_val_acc < 0.5] = 0
+#         output_val_acc_int = [int(i) for i in output_val_acc[0].tolist()]
+
+#         # hamming score
+#         acc_validation_score = accuracy_score(labelsv.tolist()[0], output_val_acc_int, normalize=False)
+#         print("Correct:", acc_validation_score,
+#               "Percentage:", round((100*acc_validation_score)/len(output_val_acc_int), 4),
+#               "ObjectID:", int(sample[0]),
+#               "Object:", possibleinputs[int(sample[0])])
+
+################################# test accuracy per Object ############################################
+print("accuracy per Object:")
 
 with torch.no_grad():
-    for i, sample in enumerate(X_val):
+    for i, sample in enumerate(np.array(num_possibleinputs, dtype="float32")):
         inputv = torch.from_numpy(sample)  # array to tensor
         inputv = Variable(inputv).view(1, -1)
 
-        labelsv = torch.from_numpy(y_val[i]).long()  # array to tensor
+        labelsv = torch.from_numpy(np.array(y_train_data[i], dtype="float32")).long()  # array to tensor
         labelsv = Variable(labelsv).view(1, -1)  # for MultiLabelSoftMarginLoss()
 
         output = classifier(inputv)
@@ -241,4 +326,36 @@ with torch.no_grad():
         # hamming score
         acc_validation_score = accuracy_score(labelsv.tolist()[0], output_val_acc_int, normalize=False)
         print("Correct:", acc_validation_score,
-              "Percentage:", round((100*acc_validation_score)/len(output_val_acc_int), 4))
+              "Percentage:", round((100*acc_validation_score)/len(output_val_acc_int), 4),
+              "ObjectID:", int(sample[0]),
+              "Object:", possibleinputs[int(sample[0])])
+
+
+
+#create loss plot
+plt.title('train- und  validation-loss')
+plt.plot(list(range(0,len(hammingloss_mean))),hammingloss_mean,label='Train loss')
+plt.plot(list(range(0,len(hammingloss_val_mean))),hammingloss_val_mean,label='Validation loss')
+plt.ylabel('Hamming loss')
+plt.xlabel('Epochen')
+plt.legend()
+plt.savefig(os.path.join('Aufgabe2_performance','{}-lossvsvalidationloss-{}-{}-{}-{}.png'.format(datestamp, (str(optimizer)).split()[0],val_size,criterion,epoch+1,)))
+plt.show()
+
+#create f1 plot
+#f, ax = plt.subplots()
+plt.title('F1-Score MLC')
+plt.plot(list(range(0,len(score_mean))),score_mean)
+plt.ylabel('F1-Score')
+plt.xlabel('Epochen')
+plt.legend()
+plt.legend('',frameon=False)
+plt.savefig(os.path.join('Aufgabe2_performance','{}-f1-score-{}-{}-{}-{}.png'.format(datestamp, (str(optimizer)).split()[0],val_size,criterion,epoch+1,)))
+plt.show()
+
+
+
+#prints elapsed time
+print("elapsed time (min):", (time.time() - ts)/60)
+
+#sys.stdout.close()
