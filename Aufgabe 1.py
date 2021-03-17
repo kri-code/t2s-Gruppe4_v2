@@ -177,32 +177,38 @@ trainloader = DataLoader(dataset=data_set, batch_size=len(X_train))
 
 #print(z[0:10])
 ############################# Neuronales Netz ###############################
+neurons = 6*2**7
+print("Neurons:", neurons)
 class NeuralNet(nn.Module):
 
     def __init__(self):
         super(NeuralNet, self).__init__()
         # Schichten
-        self.lin1 = nn.Linear(2, 6) #2-(6-6)-3
+        self.lin1 = nn.Linear(2, neurons) #2-(6-6)-3
         #self.lin1 = nn.ReLU() #2-(6-6)-3
-        #self.lin2 = nn.Linear(6, 6)
-        self.lin2 = nn.ReLU()
+        self.lin2 = nn.Linear(neurons, neurons)
+        #self.lin2 = nn.ReLU()
+        self.lin3 = nn.Linear(neurons, neurons)
         #output layer: [Klasse PO, Klasse NTPP, Klasse EC]
-        
-        self.oupt = nn.Linear(6, 3)
+        self.dropout = nn.Dropout(p=0.5)
+        self.oupt = nn.Linear(neurons, 3)
         #self.oupt = nn.ReLU()
 
         nn.init.xavier_uniform_(self.lin1.weight)
         nn.init.zeros_(self.lin1.bias)
         
-        #nn.init.xavier_uniform_(self.lin2.weight)
-        #nn.init.zeros_(self.lin2.bias)
+        nn.init.xavier_uniform_(self.lin2.weight)
+        nn.init.zeros_(self.lin2.bias)
         
         nn.init.xavier_uniform_(self.oupt.weight)
         nn.init.zeros_(self.oupt.bias)
 
     def forward(self, x):
-        z = torch.tanh(self.lin1(x))
-        z = torch.tanh(self.lin2(z))
+        z = torch.relu(self.lin1(x))
+        z = torch.relu(self.lin2(z))
+        z = self.dropout(z)
+        z = torch.relu(self.lin3(z))
+        z = self.dropout(z)
         z = self.oupt(z)  # no softmax: CrossEntropyLoss()
 
         return z
@@ -292,12 +298,12 @@ torch.save(model.state_dict(), "labelNet.pt")
 
 #create plot
 plt.title('train- und  validation-accuracy')
-plt.plot(list(range(0,len(accuracy_train_list))),accuracy_train_list,label='Train accuracy')
-plt.plot(list(range(0,len(accuracy_val_list))),accuracy_val_list,label='Validation accuracy')
+plt.plot(list(range(0,len(accuracy_train_list)))[::10],accuracy_train_list[::10],label='Train accuracy')
+plt.plot(list(range(0,len(accuracy_val_list)))[::10],accuracy_val_list[::10],label='Validation accuracy')
 plt.ylabel('Relative Rate')
 plt.xlabel('Epochen')
 plt.legend()
-plt.savefig(os.path.join('Aufgabe1_performance','{}-Accuracyvsvalidationacc-{}-{}-{}-{}.png'.format(datestamp, (str(optimizer)).split()[0],val_size,criterion,epoch+1,)))
+plt.savefig(os.path.join('Aufgabe1_performance','{}-Accuracyvsvalidationacc-{}-{}-{}-{}-{}.png'.format(datestamp, (str(optimizer)).split()[0],val_size,criterion,epoch+1,neurons)))
 plt.show()
 
 #prints elapsed time
