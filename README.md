@@ -1,8 +1,8 @@
 # t2s-Gruppe4_v2
 Text2Scene Praktikum 20/21
 
-AUFGABE 1
-Dateien: 
+## AUFGABE 1
+Dateien:\ 
 Aufgabe 1.py // matterport3dhouse.xml
 Ausführung:
 Die xml Datei muss im gleichen Ordner wie Aufgabe 1.py liegen.
