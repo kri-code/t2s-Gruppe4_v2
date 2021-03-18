@@ -42,17 +42,19 @@ for child in matterportroot:
 matterporttree = ET.parse('matterport3dhouse.xml')
 matterportroot = matterporttree.getroot()
 
+#create trainingsdata from xml
 for child in matterportroot:
     if child.tag == "QSLINK" and child.get('figure') != "unknown" and child.get('ground') != "unknown":
-        if child.get('relType') == "NTTPc":
+        if child.get('relType') == "NTTPc": #change NTTPc to NTPP by switching figure and ground
             trainingsdaten.append([int(child.get('toId')), int(child.get('fromId')), 'NTPP'])
-        elif child.get('relType') == "TPPc":
+        elif child.get('relType') == "TPPc": #same change for TPPc
             trainingsdaten.append([int(child.get('toId')), int(child.get('fromId')), 'NPP'])
         else:
             trainingsdaten.append([int(child.get('fromId')), int(child.get('toId')), child.get('relType')])
 
 objectlabels =[]
 objectid =[]
+#only use one ID for Spatial Entitys with same label
 for x in trainingsdaten:
     for child in matterportroot:
         if child.tag == 'SPATIAL_ENTITY' and child.get('label') not in objectlabels:
@@ -62,13 +64,15 @@ for x in trainingsdaten:
             x[0] = objectid[objectlabels.index(child.get('label'))]
         elif child.tag == "SPATIAL_ENTITY" and x[1] == child.get('label'):
             x[1] =  objectid[objectlabels.index(child.get('label'))]
-
+    #set ID for QSLinks
     if x[2] == "PO":
         x[2] = 0            # 100 -> 0
     elif x[2] == "NTPP":
         x[2] = 1            # 101 -> 1
     elif x[2] == "EC":
         x[2] = 2            # 102 -> 2
+        
+#entrys of trainingsdata are now [figureID, groundID. relTypeID]
 
 # shuffles data
 shuffle(trainingsdaten)
@@ -119,11 +123,6 @@ print(len(validierungsdaten), "validationsize")
 # create trainingset
 trainingsdaten = trainingsdaten[int(len(trainingsdaten) * val_size):]
 print(len(trainingsdaten), "trainingsize")
-
-
-# sdata = open('trainingsdaten.txt', "w")
-# sdata.write(str(trainingsdaten))
-# sdata.close
 
 
 ############ umwandeln der trainings- und validierungsdaten #######################
@@ -293,7 +292,6 @@ target_names = ['PO', 'NTPP', 'EC']
 print(classification_report(y_true, prediction, target_names=target_names, zero_division=0))
 
 #save trained model
-#torch.save(model, "labelNet.pt")
 torch.save(model.state_dict(), "labelNet.pt")
 
 #create plot
