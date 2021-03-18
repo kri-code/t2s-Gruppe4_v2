@@ -116,3 +116,14 @@ for i in output_calc_int:
     counter += 1
 print(evals)
 
+dictionary = ET.Element("ROOT")
+for x in evals:
+    eintrag = ET.SubElement(dictionary, "QSLINK", {"relType":x[0],"ground":x[1],"figure":words[0]})
+
+
+ET.tostring(dictionary)
+
+et = ET.ElementTree(dictionary)
+et.write("file1.xml")
+
+
