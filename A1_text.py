@@ -115,8 +115,20 @@ predicted = output.detach().numpy() #tensor to array
 for pred in predicted:
     if pred[0] > pred[1] and pred[0] > pred[2]:
         print("predicted QSLink: PO")
+        reltype = "PO"
     elif pred[1] > pred[0] and pred[1] > pred[2]:
         print("predicted QSLink: NTPP")
+        reltype = "NTPP"
     else:
         print("predicted QSLink: EC")
+        reltype = "EC"
 
+
+dictionary = ET.Element("ROOT")
+eintrag = ET.SubElement(dictionary, "QSLINK", {"relType":reltype,"ground":words[0],"figure":words[1]})
+
+
+ET.tostring(dictionary)
+
+et = ET.ElementTree(dictionary)
+et.write("file.xml")
