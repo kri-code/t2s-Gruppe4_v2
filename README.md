@@ -3,8 +3,10 @@ Text2Scene Praktikum 20/21
 
 ## AUFGABE 1
 Dateien: <br>
+<br>
 Aufgabe 1.py // matterport3dhouse.xml <br>
 Ausführung: <br>
+<br>
 Die xml Datei muss im gleichen Ordner wie Aufgabe 1.py liegen.
 ```shell
 import xml.etree.ElementTree as ET
