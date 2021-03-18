@@ -118,7 +118,7 @@ print(evals)
 
 dictionary = ET.Element("ROOT")
 for x in evals:
-    eintrag = ET.SubElement(dictionary, "QSLINK", {"relType":x[0],"ground":x[1],"figure":words[0]})
+    eintrag = ET.SubElement(dictionary, "QSLINK", {"relType":x[1],"ground":x[0],"figure":words[0]})
 
 
 ET.tostring(dictionary)
