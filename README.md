@@ -46,7 +46,7 @@ import sys
 ```
 ## AUFGABE 4
 Dateien: <br>
-A1_text.py // A2_text.py // matterport3dhouse.xml <br> // labelNet.pt // classifierNet.pt
+A1_text.py // A2_text.py <br> matterport3dhouse.xml <br> labelNet.pt // classifierNet.pt
 Ausführung A1_text.py: <br>
 Die xml Datei und labelNet.pt müssen im gleichen Ordner wie A1_text.py liegen.
 ```shell
