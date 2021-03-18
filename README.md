@@ -3,10 +3,9 @@ Text2Scene Praktikum 20/21
 
 ## AUFGABE 1
 Dateien: <br>
-<br>
 Aufgabe 1.py // matterport3dhouse.xml <br>
-Ausführung: <br>
 <br>
+Ausführung: <br>
 Die xml Datei muss im gleichen Ordner wie Aufgabe 1.py liegen.
 ```shell
 import xml.etree.ElementTree as ET
@@ -28,6 +27,7 @@ import sys
 ## AUFGABE 2
 Dateien: <br>
 Aufgabe2.py // matterport3dhouse.xml <br>
+<br>
 Ausführung: <br>
 Die xml Datei muss im gleichen Ordner wie Aufgabe2.py liegen.
 ```shell
@@ -49,6 +49,7 @@ import sys
 ## AUFGABE 4
 Dateien: <br>
 A1_text.py // A2_text.py <br> matterport3dhouse.xml <br> labelNet.pt // classifierNet.pt <br>
+<br>
 Ausführung A1_text.py: <br>
 Die xml Datei und labelNet.pt müssen im gleichen Ordner wie A1_text.py liegen.
 ```shell
