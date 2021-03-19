@@ -156,7 +156,7 @@ tornado=6.1=py38h2bbff1b_0
 tqdm=4.56.0=pyhd3eb1b0_0
 traitlets=5.0.5=pyhd3eb1b0_0
 ujson=4.0.2=py38hd77b12b_0
-urllib3=1.26.3=pyhd3eb1b0_0
+urllib3=1.26.4=pyhd3eb1b0_0
 vc=14.2=h21ff451_1
 vs2015_runtime=14.27.29016=h5e58377_2
 wasabi=0.8.2=pyhd3eb1b0_0
