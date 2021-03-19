@@ -166,14 +166,18 @@ X_val = X_val.reshape(-1, X_val.shape[1]).astype('float32')
 y_val = np.asarray(y_val)
 
 ######################## Neural Net ###########################################
-
+neurons = 64*2**7
 class Net(nn.Module):
     def __init__(self, nlabel):
         super(Net, self).__init__()
         self.main = nn.Sequential(
-            nn.Linear(1, 64),
+            nn.Linear(1, neurons),
             nn.ReLU(),
-            nn.Linear(64, nlabel),
+            nn.Dropout(p=0.5),
+            nn.Linear(neurons, neurons),
+            nn.ReLU(),
+            nn.Dropout(p=0.5),
+            nn.Linear(neurons, nlabel),
         )
 
     def forward(self, input):
@@ -190,7 +194,7 @@ print(optimizer)
 criterion = nn.MultiLabelSoftMarginLoss()    # because multi label classification
 print(criterion)
 
-epochs = 100
+epochs = 900
 print("epochs:",epochs)
 
 hammingloss_mean = []
@@ -334,23 +338,23 @@ with torch.no_grad():
 
 #create loss plot
 plt.title('train- und  validation-loss')
-plt.plot(list(range(0,len(hammingloss_mean))),hammingloss_mean,label='Train loss')
-plt.plot(list(range(0,len(hammingloss_val_mean))),hammingloss_val_mean,label='Validation loss')
+plt.plot(list(range(0,len(hammingloss_mean)))[::30],hammingloss_mean[::30],label='Train loss')
+plt.plot(list(range(0,len(hammingloss_val_mean)))[::30],hammingloss_val_mean[::30],label='Validation loss')
 plt.ylabel('Hamming loss')
 plt.xlabel('Epochen')
 plt.legend()
-plt.savefig(os.path.join('Aufgabe2_performance','{}-lossvsvalidationloss-{}-{}-{}-{}.png'.format(datestamp, (str(optimizer)).split()[0],val_size,criterion,epoch+1,)))
+plt.savefig(os.path.join('Aufgabe2_performance','{}-lossvsvalidationloss-{}-{}-{}-{}-{}.png'.format(datestamp, (str(optimizer)).split()[0],val_size,criterion,epoch+1,neurons)))
 plt.show()
 
 #create f1 plot
 #f, ax = plt.subplots()
 plt.title('F1-Score MLC')
-plt.plot(list(range(0,len(score_mean))),score_mean)
+plt.plot(list(range(0,len(score_mean)))[::30],score_mean[::30])
 plt.ylabel('F1-Score')
 plt.xlabel('Epochen')
 plt.legend()
 plt.legend('',frameon=False)
-plt.savefig(os.path.join('Aufgabe2_performance','{}-f1-score-{}-{}-{}-{}.png'.format(datestamp, (str(optimizer)).split()[0],val_size,criterion,epoch+1,)))
+plt.savefig(os.path.join('Aufgabe2_performance','{}-f1-score-{}-{}-{}-{}-{}.png'.format(datestamp, (str(optimizer)).split()[0],val_size,criterion,epoch+1,neurons)))
 plt.show()
 
 
