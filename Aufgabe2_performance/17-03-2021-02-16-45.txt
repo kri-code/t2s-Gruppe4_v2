@@ -1,0 +1,105 @@
+17-03-2021-02-16-45
+0.99999999999 is relative validationsize rest will be used for trainingset
+6456 Total datasize
+380 Final datasize
+379 validationsize
+1 trainingsize
+Net(
+  (main): Sequential(
+    (0): Linear(in_features=1, out_features=64, bias=True)
+    (1): ReLU()
+    (2): Linear(in_features=64, out_features=78, bias=True)
+  )
+)
+Adam (
+Parameter Group 0
+    amsgrad: False
+    betas: (0.9, 0.999)
+    eps: 1e-08
+    lr: 0.001
+    weight_decay: 0
+)
+MultiLabelSoftMarginLoss()
+epochs: 10
+---epoch 0, loss 0.4945216178894043, hamming loss 0.18991228070175437, f1 score 0.6648731522015099
+Hamming Distance: [[0.17948718]]
+correctly classified(hamming score): 64
+hamming loss val 0.1568229483796766
+---epoch 1, loss 0.3649548888206482, hamming loss 0.15981781376518217, f1 score 0.7021096124155475
+Hamming Distance: [[0.17948718]]
+correctly classified(hamming score): 64
+hamming loss val 0.15415059874162776
+---epoch 2, loss 0.35302790999412537, hamming loss 0.15904183535762484, f1 score 0.7065955227069921
+Hamming Distance: [[0.16666667]]
+correctly classified(hamming score): 65
+hamming loss val 0.15384615384615385
+---epoch 3, loss 0.3467135727405548, hamming loss 0.1586707152496626, f1 score 0.7087199002491334
+Hamming Distance: [[0.15384615]]
+correctly classified(hamming score): 66
+hamming loss val 0.1535078817400717
+---epoch 4, loss 0.3421773314476013, hamming loss 0.15802968960863695, f1 score 0.7109286780390048
+Hamming Distance: [[0.16666667]]
+correctly classified(hamming score): 65
+hamming loss val 0.15313578242338138
+---epoch 5, loss 0.3384123146533966, hamming loss 0.15620782726045884, f1 score 0.713608689917596
+Hamming Distance: [[0.14102564]]
+correctly classified(hamming score): 67
+hamming loss val 0.15110614978688858
+---epoch 6, loss 0.33509165048599243, hamming loss 0.15411605937921724, f1 score 0.7169773025014293
+Hamming Distance: [[0.14102564]]
+correctly classified(hamming score): 67
+hamming loss val 0.1491441715716122
+---epoch 7, loss 0.3320379853248596, hamming loss 0.15229419703103914, f1 score 0.7197837465692263
+Hamming Distance: [[0.14102564]]
+correctly classified(hamming score): 67
+hamming loss val 0.14812935525336582
+---epoch 8, loss 0.3292121887207031, hamming loss 0.1508434547908232, f1 score 0.7220534468158909
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.14481428861376092
+---epoch 9, loss 0.3265923261642456, hamming loss 0.14929149797570848, f1 score 0.7239077643586292
+Hamming Distance: [[0.11538462]]
+correctly classified(hamming score): 69
+hamming loss val 0.14481428861376092
+finished training 
+
+accuracy per Object:
+Correct: 78 Percentage: 100.0 ObjectID: 0 Object: cabinet
+Correct: 60 Percentage: 76.9231 ObjectID: 1 Object: objects
+Correct: 66 Percentage: 84.6154 ObjectID: 2 Object: towel
+Correct: 64 Percentage: 82.0513 ObjectID: 3 Object: shower
+Correct: 69 Percentage: 88.4615 ObjectID: 4 Object: curtain
+Correct: 66 Percentage: 84.6154 ObjectID: 5 Object: bathtub
+Correct: 54 Percentage: 69.2308 ObjectID: 6 Object: wall
+Correct: 69 Percentage: 88.4615 ObjectID: 7 Object: window
+Correct: 64 Percentage: 82.0513 ObjectID: 8 Object: counter
+Correct: 64 Percentage: 82.0513 ObjectID: 9 Object: lighting
+Correct: 66 Percentage: 84.6154 ObjectID: 10 Object: mirror
+Correct: 65 Percentage: 83.3333 ObjectID: 11 Object: sink
+Correct: 59 Percentage: 75.641 ObjectID: 12 Object: ceiling
+Correct: 62 Percentage: 79.4872 ObjectID: 13 Object: door
+Correct: 56 Percentage: 71.7949 ObjectID: 14 Object: floor
+Correct: 56 Percentage: 71.7949 ObjectID: 15 Object: picture
+Correct: 70 Percentage: 89.7436 ObjectID: 16 Object: toilet
+Correct: 62 Percentage: 79.4872 ObjectID: 17 Object: chair
+Correct: 69 Percentage: 88.4615 ObjectID: 18 Object: stool
+Correct: 59 Percentage: 75.641 ObjectID: 19 Object: cushion
+Correct: 61 Percentage: 78.2051 ObjectID: 20 Object: void
+Correct: 70 Percentage: 89.7436 ObjectID: 21 Object: bed
+Correct: 69 Percentage: 88.4615 ObjectID: 22 Object: chest_of_drawers
+Correct: 64 Percentage: 82.0513 ObjectID: 23 Object: table
+Correct: 75 Percentage: 96.1538 ObjectID: 24 Object: tv_monitor
+Correct: 61 Percentage: 78.2051 ObjectID: 25 Object: plant
+Correct: 70 Percentage: 89.7436 ObjectID: 26 Object: shelving
+Correct: 67 Percentage: 85.8974 ObjectID: 27 Object: appliances
+Correct: 64 Percentage: 82.0513 ObjectID: 28 Object: misc
+Correct: 75 Percentage: 96.1538 ObjectID: 29 Object: fireplace
+Correct: 73 Percentage: 93.5897 ObjectID: 30 Object: sofa
+Correct: 72 Percentage: 92.3077 ObjectID: 31 Object: column
+Correct: 72 Percentage: 92.3077 ObjectID: 32 Object: beam
+Correct: 69 Percentage: 88.4615 ObjectID: 33 Object: railing
+Correct: 70 Percentage: 89.7436 ObjectID: 34 Object: stairs
+Correct: 73 Percentage: 93.5897 ObjectID: 35 Object: seating
+Correct: 76 Percentage: 97.4359 ObjectID: 36 Object: clothes
+Correct: 76 Percentage: 97.4359 ObjectID: 37 Object: furniture
+elapsed time (min): 0.17481848398844402

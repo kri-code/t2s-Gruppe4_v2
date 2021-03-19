@@ -1,0 +1,3666 @@
+17-03-2021-23-23-14
+0.5 is relative validationsize rest will be used for trainingset
+6456 Total datasize
+380 Final datasize
+190 validationsize
+190 trainingsize
+Net(
+  (main): Sequential(
+    (0): Linear(in_features=1, out_features=2048, bias=True)
+    (1): ReLU()
+    (2): Dropout(p=0.5, inplace=False)
+    (3): Linear(in_features=2048, out_features=78, bias=True)
+  )
+)
+Adam (
+Parameter Group 0
+    amsgrad: False
+    betas: (0.9, 0.999)
+    eps: 1e-08
+    lr: 0.001
+    weight_decay: 0
+)
+MultiLabelSoftMarginLoss()
+epochs: 900
+---epoch 0, loss 1.6456302404403687, hamming loss 0.20917678812415655, f1 score 0.6570466030803992
+Hamming Distance: [[0.25641026]]
+correctly classified(hamming score): 58
+hamming loss val 0.213225371120108
+---epoch 1, loss 1.5412176847457886, hamming loss 0.2010796221322537, f1 score 0.670105539626017
+Hamming Distance: [[0.19230769]]
+correctly classified(hamming score): 63
+hamming loss val 0.210863697705803
+---epoch 2, loss 1.5062061548233032, hamming loss 0.2001349527665317, f1 score 0.6739292297110009
+Hamming Distance: [[0.19230769]]
+correctly classified(hamming score): 63
+hamming loss val 0.20533063427800272
+---epoch 3, loss 1.4090838432312012, hamming loss 0.197638326585695, f1 score 0.6765400156037392
+Hamming Distance: [[0.16666667]]
+correctly classified(hamming score): 65
+hamming loss val 0.1947368421052632
+---epoch 4, loss 1.44717538356781, hamming loss 0.1942645074224022, f1 score 0.6813636047556126
+Hamming Distance: [[0.19230769]]
+correctly classified(hamming score): 63
+hamming loss val 0.19251012145748989
+---epoch 5, loss 1.336311936378479, hamming loss 0.19041835357624834, f1 score 0.6868238187420567
+Hamming Distance: [[0.16666667]]
+correctly classified(hamming score): 65
+hamming loss val 0.19730094466936574
+---epoch 6, loss 1.3275357484817505, hamming loss 0.18960863697705801, f1 score 0.6861965933204449
+Hamming Distance: [[0.20512821]]
+correctly classified(hamming score): 62
+hamming loss val 0.17914979757085026
+---epoch 7, loss 1.3360289335250854, hamming loss 0.1908906882591093, f1 score 0.6861867598087837
+Hamming Distance: [[0.19230769]]
+correctly classified(hamming score): 63
+hamming loss val 0.1909581646423752
+---epoch 8, loss 1.244078278541565, hamming loss 0.18663967611336035, f1 score 0.6912666051058517
+Hamming Distance: [[0.16666667]]
+correctly classified(hamming score): 65
+hamming loss val 0.19089068825910935
+---epoch 9, loss 1.191738247871399, hamming loss 0.18232118758434548, f1 score 0.6979400697250057
+Hamming Distance: [[0.16666667]]
+correctly classified(hamming score): 65
+hamming loss val 0.18522267206477733
+---epoch 10, loss 1.2311619520187378, hamming loss 0.18987854251012148, f1 score 0.688013117541683
+Hamming Distance: [[0.14102564]]
+correctly classified(hamming score): 67
+hamming loss val 0.18198380566801617
+---epoch 11, loss 1.1453955173492432, hamming loss 0.18650472334682858, f1 score 0.691670367620492
+Hamming Distance: [[0.16666667]]
+correctly classified(hamming score): 65
+hamming loss val 0.16666666666666669
+---epoch 12, loss 1.0700726509094238, hamming loss 0.1816464237516869, f1 score 0.7001635962811082
+Hamming Distance: [[0.17948718]]
+correctly classified(hamming score): 64
+hamming loss val 0.18340080971659922
+---epoch 13, loss 1.0608614683151245, hamming loss 0.18306342780026988, f1 score 0.6944971011265191
+Hamming Distance: [[0.21794872]]
+correctly classified(hamming score): 61
+hamming loss val 0.17719298245614035
+---epoch 14, loss 0.9783373475074768, hamming loss 0.17591093117408904, f1 score 0.7060477822904527
+Hamming Distance: [[0.21794872]]
+correctly classified(hamming score): 61
+hamming loss val 0.18434547908232116
+---epoch 15, loss 0.9253331422805786, hamming loss 0.17098515519568153, f1 score 0.7142934279379818
+Hamming Distance: [[0.15384615]]
+correctly classified(hamming score): 66
+hamming loss val 0.18529014844804317
+---epoch 16, loss 0.9832785129547119, hamming loss 0.17834008097165993, f1 score 0.7032846186454905
+Hamming Distance: [[0.16666667]]
+correctly classified(hamming score): 65
+hamming loss val 0.16761133603238865
+---epoch 17, loss 0.888521671295166, hamming loss 0.1763157894736842, f1 score 0.705518444519152
+Hamming Distance: [[0.17948718]]
+correctly classified(hamming score): 64
+hamming loss val 0.18063427800269907
+---epoch 18, loss 0.821743369102478, hamming loss 0.17334682860998651, f1 score 0.7099387598077492
+Hamming Distance: [[0.17948718]]
+correctly classified(hamming score): 64
+hamming loss val 0.17415654520917678
+---epoch 19, loss 0.7907337546348572, hamming loss 0.17476383265856948, f1 score 0.7096061087370584
+Hamming Distance: [[0.21794872]]
+correctly classified(hamming score): 61
+hamming loss val 0.16767881241565452
+---epoch 20, loss 0.7476246356964111, hamming loss 0.16653171390013494, f1 score 0.7214859019630736
+Hamming Distance: [[0.30769231]]
+correctly classified(hamming score): 54
+hamming loss val 0.17820512820512824
+---epoch 21, loss 0.712609052658081, hamming loss 0.16835357624831307, f1 score 0.7221292517353093
+Hamming Distance: [[0.23076923]]
+correctly classified(hamming score): 60
+hamming loss val 0.16632928475033737
+---epoch 22, loss 0.6834360361099243, hamming loss 0.16835357624831307, f1 score 0.7203850960966165
+Hamming Distance: [[0.26923077]]
+correctly classified(hamming score): 57
+hamming loss val 0.17098515519568153
+---epoch 23, loss 0.6726499199867249, hamming loss 0.16896086369770583, f1 score 0.7206135076584904
+Hamming Distance: [[0.19230769]]
+correctly classified(hamming score): 63
+hamming loss val 0.16356275303643725
+---epoch 24, loss 0.6063971519470215, hamming loss 0.15539811066126855, f1 score 0.7401388232509478
+Hamming Distance: [[0.24358974]]
+correctly classified(hamming score): 59
+hamming loss val 0.16241565452091766
+---epoch 25, loss 0.6083663105964661, hamming loss 0.16302294197031042, f1 score 0.7262634922131074
+Hamming Distance: [[0.16666667]]
+correctly classified(hamming score): 65
+hamming loss val 0.16538461538461538
+---epoch 26, loss 0.5785698890686035, hamming loss 0.16302294197031036, f1 score 0.726669416457703
+Hamming Distance: [[0.20512821]]
+correctly classified(hamming score): 62
+hamming loss val 0.171727395411606
+---epoch 27, loss 0.5559452176094055, hamming loss 0.15890688259109312, f1 score 0.7333973813498125
+Hamming Distance: [[0.26923077]]
+correctly classified(hamming score): 57
+hamming loss val 0.16950067476383265
+---epoch 28, loss 0.5179308652877808, hamming loss 0.15971659919028341, f1 score 0.7316409143901325
+Hamming Distance: [[0.23076923]]
+correctly classified(hamming score): 60
+hamming loss val 0.1644399460188934
+---epoch 29, loss 0.5092618465423584, hamming loss 0.1551282051282051, f1 score 0.7374473974370804
+Hamming Distance: [[0.26923077]]
+correctly classified(hamming score): 57
+hamming loss val 0.16167341430499324
+---epoch 30, loss 0.4912073314189911, hamming loss 0.15661268556005398, f1 score 0.7353232633348332
+Hamming Distance: [[0.21794872]]
+correctly classified(hamming score): 61
+hamming loss val 0.14905533063427798
+---epoch 31, loss 0.4620423913002014, hamming loss 0.15303643724696353, f1 score 0.7402595116133066
+Hamming Distance: [[0.19230769]]
+correctly classified(hamming score): 63
+hamming loss val 0.15890688259109312
+---epoch 32, loss 0.44075140357017517, hamming loss 0.1516194331983806, f1 score 0.7431894738455688
+Hamming Distance: [[0.30769231]]
+correctly classified(hamming score): 54
+hamming loss val 0.15499325236167338
+---epoch 33, loss 0.4418577551841736, hamming loss 0.15458839406207825, f1 score 0.7352282297280014
+Hamming Distance: [[0.24358974]]
+correctly classified(hamming score): 59
+hamming loss val 0.15897435897435896
+---epoch 34, loss 0.4173029065132141, hamming loss 0.151417004048583, f1 score 0.7431034577022678
+Hamming Distance: [[0.21794872]]
+correctly classified(hamming score): 61
+hamming loss val 0.1570175438596491
+---epoch 35, loss 0.38374409079551697, hamming loss 0.14676113360323884, f1 score 0.7505159581074011
+Hamming Distance: [[0.19230769]]
+correctly classified(hamming score): 63
+hamming loss val 0.15229419703103914
+---epoch 36, loss 0.3836502432823181, hamming loss 0.15006747638326587, f1 score 0.7441311305908779
+Hamming Distance: [[0.19230769]]
+correctly classified(hamming score): 63
+hamming loss val 0.151889338731444
+---epoch 37, loss 0.35156258940696716, hamming loss 0.14487179487179486, f1 score 0.749179585817454
+Hamming Distance: [[0.17948718]]
+correctly classified(hamming score): 64
+hamming loss val 0.1507422402159244
+---epoch 38, loss 0.3527880609035492, hamming loss 0.14224021592442643, f1 score 0.7565531750906542
+Hamming Distance: [[0.20512821]]
+correctly classified(hamming score): 62
+hamming loss val 0.15337381916329282
+---epoch 39, loss 0.352446049451828, hamming loss 0.14325236167341432, f1 score 0.7530971297397334
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.14520917678812412
+---epoch 40, loss 0.32965534925460815, hamming loss 0.13771929824561405, f1 score 0.7600457171662429
+Hamming Distance: [[0.15384615]]
+correctly classified(hamming score): 66
+hamming loss val 0.14588394062078272
+---epoch 41, loss 0.3297635018825531, hamming loss 0.13771929824561402, f1 score 0.7608845122192639
+Hamming Distance: [[0.17948718]]
+correctly classified(hamming score): 64
+hamming loss val 0.144804318488529
+---epoch 42, loss 0.32201892137527466, hamming loss 0.13873144399460188, f1 score 0.758453124147118
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.14278002699055328
+---epoch 43, loss 0.30510708689689636, hamming loss 0.1340080971659919, f1 score 0.7648400200981571
+Hamming Distance: [[0.11538462]]
+correctly classified(hamming score): 69
+hamming loss val 0.14439946018893385
+---epoch 44, loss 0.31115779280662537, hamming loss 0.1357624831309042, f1 score 0.7605801683828884
+Hamming Distance: [[0.14102564]]
+correctly classified(hamming score): 67
+hamming loss val 0.13879892037786773
+---epoch 45, loss 0.29649677872657776, hamming loss 0.13009446693657217, f1 score 0.7677264727486065
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.12860998650472333
+---epoch 46, loss 0.2944425940513611, hamming loss 0.12921727395411606, f1 score 0.7716800594452495
+Hamming Distance: [[0.15384615]]
+correctly classified(hamming score): 66
+hamming loss val 0.1371120107962213
+---epoch 47, loss 0.28886276483535767, hamming loss 0.12638326585695003, f1 score 0.7711253907330385
+Hamming Distance: [[0.16666667]]
+correctly classified(hamming score): 65
+hamming loss val 0.13394062078272603
+---epoch 48, loss 0.2877674698829651, hamming loss 0.12827260458839404, f1 score 0.7715096416873266
+Hamming Distance: [[0.14102564]]
+correctly classified(hamming score): 67
+hamming loss val 0.13704453441295544
+---epoch 49, loss 0.2782996594905853, hamming loss 0.12233468286099866, f1 score 0.7802084112559711
+Hamming Distance: [[0.16666667]]
+correctly classified(hamming score): 65
+hamming loss val 0.13326585695006746
+---epoch 50, loss 0.2748958468437195, hamming loss 0.12071524966261805, f1 score 0.7827520187135275
+Hamming Distance: [[0.15384615]]
+correctly classified(hamming score): 66
+hamming loss val 0.1316464237516869
+---epoch 51, loss 0.27124670147895813, hamming loss 0.12294197031039136, f1 score 0.7799619027638702
+Hamming Distance: [[0.11538462]]
+correctly classified(hamming score): 69
+hamming loss val 0.1304318488529015
+---epoch 52, loss 0.27316537499427795, hamming loss 0.12246963562753035, f1 score 0.7808812419319853
+Hamming Distance: [[0.11538462]]
+correctly classified(hamming score): 69
+hamming loss val 0.12827260458839404
+---epoch 53, loss 0.2656135857105255, hamming loss 0.11794871794871792, f1 score 0.789020364604103
+Hamming Distance: [[0.15384615]]
+correctly classified(hamming score): 66
+hamming loss val 0.1329284750337382
+---epoch 54, loss 0.2640736699104309, hamming loss 0.1217948717948718, f1 score 0.7822962886790905
+Hamming Distance: [[0.16666667]]
+correctly classified(hamming score): 65
+hamming loss val 0.12692307692307692
+---epoch 55, loss 0.2626813054084778, hamming loss 0.11558704453441294, f1 score 0.792094703526828
+Hamming Distance: [[0.1025641]]
+correctly classified(hamming score): 70
+hamming loss val 0.12638326585695006
+---epoch 56, loss 0.26308590173721313, hamming loss 0.11842105263157893, f1 score 0.7849861407649285
+Hamming Distance: [[0.14102564]]
+correctly classified(hamming score): 67
+hamming loss val 0.12887989203778677
+---epoch 57, loss 0.26509350538253784, hamming loss 0.11997300944669365, f1 score 0.7842550132735416
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.12510121457489878
+---epoch 58, loss 0.2621431350708008, hamming loss 0.11875843454790821, f1 score 0.786051668152821
+Hamming Distance: [[0.1025641]]
+correctly classified(hamming score): 70
+hamming loss val 0.12685560053981104
+---epoch 59, loss 0.2594296932220459, hamming loss 0.11497975708502023, f1 score 0.7935657244585379
+Hamming Distance: [[0.11538462]]
+correctly classified(hamming score): 69
+hamming loss val 0.1256410256410256
+---epoch 60, loss 0.2564973831176758, hamming loss 0.11437246963562751, f1 score 0.794543215663822
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.1213225371120108
+---epoch 61, loss 0.2587231695652008, hamming loss 0.11659919028340077, f1 score 0.7901789749866546
+Hamming Distance: [[0.1025641]]
+correctly classified(hamming score): 70
+hamming loss val 0.11983805668016193
+---epoch 62, loss 0.25844690203666687, hamming loss 0.11761133603238864, f1 score 0.7864964069397594
+Hamming Distance: [[0.1025641]]
+correctly classified(hamming score): 70
+hamming loss val 0.12037786774628878
+---epoch 63, loss 0.25719916820526123, hamming loss 0.11707152496626178, f1 score 0.7877587450186354
+Hamming Distance: [[0.08974359]]
+correctly classified(hamming score): 71
+hamming loss val 0.12159244264507418
+---epoch 64, loss 0.2549886107444763, hamming loss 0.11578947368421051, f1 score 0.7880855371535833
+Hamming Distance: [[0.1025641]]
+correctly classified(hamming score): 70
+hamming loss val 0.12273954116059378
+---epoch 65, loss 0.2533159852027893, hamming loss 0.11612685560053979, f1 score 0.7878500268466135
+Hamming Distance: [[0.1025641]]
+correctly classified(hamming score): 70
+hamming loss val 0.12314439946018893
+---epoch 66, loss 0.2536073923110962, hamming loss 0.11450742240215923, f1 score 0.7918301144034714
+Hamming Distance: [[0.11538462]]
+correctly classified(hamming score): 69
+hamming loss val 0.11936572199730092
+---epoch 67, loss 0.25358128547668457, hamming loss 0.11578947368421053, f1 score 0.788495072326288
+Hamming Distance: [[0.08974359]]
+correctly classified(hamming score): 71
+hamming loss val 0.12071524966261805
+---epoch 68, loss 0.2525999844074249, hamming loss 0.11457489878542508, f1 score 0.7931910566382486
+Hamming Distance: [[0.1025641]]
+correctly classified(hamming score): 70
+hamming loss val 0.1186234817813765
+---epoch 69, loss 0.25270941853523254, hamming loss 0.11497975708502023, f1 score 0.7918820375349903
+Hamming Distance: [[0.1025641]]
+correctly classified(hamming score): 70
+hamming loss val 0.11545209176788121
+---epoch 70, loss 0.2496446669101715, hamming loss 0.11383265856950067, f1 score 0.7916322200754089
+Hamming Distance: [[0.11538462]]
+correctly classified(hamming score): 69
+hamming loss val 0.12139001349527663
+---epoch 71, loss 0.24851985275745392, hamming loss 0.1123481781376518, f1 score 0.7951088618855375
+Hamming Distance: [[0.15384615]]
+correctly classified(hamming score): 66
+hamming loss val 0.12017543859649123
+---epoch 72, loss 0.24946582317352295, hamming loss 0.11302294197031038, f1 score 0.7943510134339856
+Hamming Distance: [[0.14102564]]
+correctly classified(hamming score): 67
+hamming loss val 0.11889338731443992
+---epoch 73, loss 0.2478061467409134, hamming loss 0.11133603238866396, f1 score 0.7969911971168524
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.12226720647773277
+---epoch 74, loss 0.24726901948451996, hamming loss 0.11174089068825913, f1 score 0.795973104336608
+Hamming Distance: [[0.15384615]]
+correctly classified(hamming score): 66
+hamming loss val 0.12051282051282051
+---epoch 75, loss 0.24916329979896545, hamming loss 0.11376518218623481, f1 score 0.7915908562211027
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.1189608636977058
+---epoch 76, loss 0.24751697480678558, hamming loss 0.11167341430499324, f1 score 0.795185770027411
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.11963562753036437
+---epoch 77, loss 0.2481224238872528, hamming loss 0.11288798920377868, f1 score 0.7929609704831023
+Hamming Distance: [[0.11538462]]
+correctly classified(hamming score): 69
+hamming loss val 0.11754385964912278
+---epoch 78, loss 0.2431229054927826, hamming loss 0.1099865047233468, f1 score 0.7979684488146777
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.11761133603238864
+---epoch 79, loss 0.24641752243041992, hamming loss 0.11140350877192981, f1 score 0.7942950220324291
+Hamming Distance: [[0.11538462]]
+correctly classified(hamming score): 69
+hamming loss val 0.11869095816464235
+---epoch 80, loss 0.24704360961914062, hamming loss 0.11187584345479082, f1 score 0.7929399840000709
+Hamming Distance: [[0.07692308]]
+correctly classified(hamming score): 72
+hamming loss val 0.11909581646423749
+---epoch 81, loss 0.2431878298521042, hamming loss 0.11018893387314438, f1 score 0.7964292076396882
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.11693657219973008
+---epoch 82, loss 0.2436317503452301, hamming loss 0.10971659919028338, f1 score 0.7963606489736429
+Hamming Distance: [[0.08974359]]
+correctly classified(hamming score): 71
+hamming loss val 0.11821862348178137
+---epoch 83, loss 0.24203896522521973, hamming loss 0.1101889338731444, f1 score 0.7975209437027674
+Hamming Distance: [[0.11538462]]
+correctly classified(hamming score): 69
+hamming loss val 0.11902834008097164
+---epoch 84, loss 0.2417304664850235, hamming loss 0.1076248313090418, f1 score 0.8004881576609855
+Hamming Distance: [[0.08974359]]
+correctly classified(hamming score): 71
+hamming loss val 0.11929824561403507
+---epoch 85, loss 0.24014151096343994, hamming loss 0.10883940620782724, f1 score 0.7991533290836965
+Hamming Distance: [[0.11538462]]
+correctly classified(hamming score): 69
+hamming loss val 0.12260458839406205
+---epoch 86, loss 0.23824258148670197, hamming loss 0.10566801619433196, f1 score 0.8035551266823747
+Hamming Distance: [[0.11538462]]
+correctly classified(hamming score): 69
+hamming loss val 0.11734143049932524
+---epoch 87, loss 0.23954349756240845, hamming loss 0.10836707152496623, f1 score 0.7992470022758508
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.1200404858299595
+---epoch 88, loss 0.24014170467853546, hamming loss 0.10998650472334681, f1 score 0.7974368878034651
+Hamming Distance: [[0.11538462]]
+correctly classified(hamming score): 69
+hamming loss val 0.11821862348178137
+---epoch 89, loss 0.24260856211185455, hamming loss 0.11079622132253711, f1 score 0.79891981074296
+Hamming Distance: [[0.1025641]]
+correctly classified(hamming score): 70
+hamming loss val 0.11578947368421053
+---epoch 90, loss 0.23894725739955902, hamming loss 0.10870445344129555, f1 score 0.7987651374888787
+Hamming Distance: [[0.1025641]]
+correctly classified(hamming score): 70
+hamming loss val 0.11632928475033737
+---epoch 91, loss 0.2421647310256958, hamming loss 0.1123481781376518, f1 score 0.7948035553110793
+Hamming Distance: [[0.14102564]]
+correctly classified(hamming score): 67
+hamming loss val 0.11936572199730092
+---epoch 92, loss 0.2377638965845108, hamming loss 0.10614035087719297, f1 score 0.8022335114186817
+Hamming Distance: [[0.07692308]]
+correctly classified(hamming score): 72
+hamming loss val 0.1165991902834008
+---epoch 93, loss 0.24158048629760742, hamming loss 0.11066126855600537, f1 score 0.7954470124288497
+Hamming Distance: [[0.11538462]]
+correctly classified(hamming score): 69
+hamming loss val 0.12037786774628878
+---epoch 94, loss 0.23970842361450195, hamming loss 0.10836707152496625, f1 score 0.7984745797771612
+Hamming Distance: [[0.11538462]]
+correctly classified(hamming score): 69
+hamming loss val 0.11788124156545206
+---epoch 95, loss 0.24126510322093964, hamming loss 0.10897435897435898, f1 score 0.7991374835281287
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.11821862348178137
+---epoch 96, loss 0.24078769981861115, hamming loss 0.10991902834008095, f1 score 0.7974353280354591
+Hamming Distance: [[0.11538462]]
+correctly classified(hamming score): 69
+hamming loss val 0.11761133603238867
+---epoch 97, loss 0.23728641867637634, hamming loss 0.10566801619433196, f1 score 0.8030569894594722
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.11781376518218623
+---epoch 98, loss 0.23690560460090637, hamming loss 0.11106612685560052, f1 score 0.795310479971446
+Hamming Distance: [[0.1025641]]
+correctly classified(hamming score): 70
+hamming loss val 0.11700404858299593
+---epoch 99, loss 0.23814159631729126, hamming loss 0.10991902834008095, f1 score 0.7995408595209109
+Hamming Distance: [[0.11538462]]
+correctly classified(hamming score): 69
+hamming loss val 0.11788124156545207
+---epoch 100, loss 0.24308684468269348, hamming loss 0.11417004048582993, f1 score 0.7920609137517051
+Hamming Distance: [[0.08974359]]
+correctly classified(hamming score): 71
+hamming loss val 0.11585695006747637
+---epoch 101, loss 0.23694999516010284, hamming loss 0.1087719298245614, f1 score 0.7971921297131453
+Hamming Distance: [[0.15384615]]
+correctly classified(hamming score): 66
+hamming loss val 0.11977058029689606
+---epoch 102, loss 0.2382497936487198, hamming loss 0.10742240215924426, f1 score 0.800462193370936
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.11842105263157893
+---epoch 103, loss 0.23393641412258148, hamming loss 0.10883940620782724, f1 score 0.7977967187796938
+Hamming Distance: [[0.1025641]]
+correctly classified(hamming score): 70
+hamming loss val 0.11767881241565449
+---epoch 104, loss 0.24016307294368744, hamming loss 0.11383265856950066, f1 score 0.7917680568443134
+Hamming Distance: [[0.11538462]]
+correctly classified(hamming score): 69
+hamming loss val 0.11990553306342777
+---epoch 105, loss 0.2397526055574417, hamming loss 0.11012145748987852, f1 score 0.7962018476960973
+Hamming Distance: [[0.14102564]]
+correctly classified(hamming score): 67
+hamming loss val 0.11700404858299593
+---epoch 106, loss 0.23436430096626282, hamming loss 0.10654520917678809, f1 score 0.8016494694802807
+Hamming Distance: [[0.1025641]]
+correctly classified(hamming score): 70
+hamming loss val 0.11423751686909579
+---epoch 107, loss 0.23418867588043213, hamming loss 0.10634278002699055, f1 score 0.8018603964901021
+Hamming Distance: [[0.11538462]]
+correctly classified(hamming score): 69
+hamming loss val 0.11889338731443994
+---epoch 108, loss 0.23108308017253876, hamming loss 0.10398110661268556, f1 score 0.8078164761127039
+Hamming Distance: [[0.1025641]]
+correctly classified(hamming score): 70
+hamming loss val 0.11767881241565452
+---epoch 109, loss 0.23799017071723938, hamming loss 0.10789473684210527, f1 score 0.8009793249652886
+Hamming Distance: [[0.11538462]]
+correctly classified(hamming score): 69
+hamming loss val 0.11815114709851553
+---epoch 110, loss 0.23535877466201782, hamming loss 0.10701754385964914, f1 score 0.8039896351742087
+Hamming Distance: [[0.1025641]]
+correctly classified(hamming score): 70
+hamming loss val 0.11558704453441294
+---epoch 111, loss 0.2301245480775833, hamming loss 0.10458839406207826, f1 score 0.8034352840307015
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.11572199730094467
+---epoch 112, loss 0.2342965006828308, hamming loss 0.10479082321187584, f1 score 0.8071780769054825
+Hamming Distance: [[0.08974359]]
+correctly classified(hamming score): 71
+hamming loss val 0.11693657219973008
+---epoch 113, loss 0.23590226471424103, hamming loss 0.10681511470985151, f1 score 0.8023254044092326
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.11666666666666665
+---epoch 114, loss 0.23097750544548035, hamming loss 0.10458839406207827, f1 score 0.8060654921717955
+Hamming Distance: [[0.11538462]]
+correctly classified(hamming score): 69
+hamming loss val 0.11632928475033738
+---epoch 115, loss 0.2328789085149765, hamming loss 0.10506072874493927, f1 score 0.8034282602056922
+Hamming Distance: [[0.07692308]]
+correctly classified(hamming score): 72
+hamming loss val 0.11666666666666665
+---epoch 116, loss 0.23048649728298187, hamming loss 0.1029014844804318, f1 score 0.8077888046124837
+Hamming Distance: [[0.08974359]]
+correctly classified(hamming score): 71
+hamming loss val 0.11821862348178137
+---epoch 117, loss 0.23138447105884552, hamming loss 0.10553306342780026, f1 score 0.8021483173285809
+Hamming Distance: [[0.14102564]]
+correctly classified(hamming score): 67
+hamming loss val 0.11497975708502021
+---epoch 118, loss 0.2345665544271469, hamming loss 0.10910931174089067, f1 score 0.7997445651460886
+Hamming Distance: [[0.1025641]]
+correctly classified(hamming score): 70
+hamming loss val 0.1155195681511471
+---epoch 119, loss 0.2321362942457199, hamming loss 0.10492577597840755, f1 score 0.8034286877209171
+Hamming Distance: [[0.14102564]]
+correctly classified(hamming score): 67
+hamming loss val 0.11491228070175435
+---epoch 120, loss 0.23317474126815796, hamming loss 0.10681511470985156, f1 score 0.8029424667635603
+Hamming Distance: [[0.14102564]]
+correctly classified(hamming score): 67
+hamming loss val 0.1165991902834008
+---epoch 121, loss 0.23120851814746857, hamming loss 0.10418353576248311, f1 score 0.8051761926328795
+Hamming Distance: [[0.14102564]]
+correctly classified(hamming score): 67
+hamming loss val 0.11396761133603238
+---epoch 122, loss 0.2300291359424591, hamming loss 0.10479082321187584, f1 score 0.8043988738124699
+Hamming Distance: [[0.1025641]]
+correctly classified(hamming score): 70
+hamming loss val 0.11491228070175438
+---epoch 123, loss 0.22858043015003204, hamming loss 0.10330634278002698, f1 score 0.8062752349177036
+Hamming Distance: [[0.07692308]]
+correctly classified(hamming score): 72
+hamming loss val 0.11288798920377868
+---epoch 124, loss 0.23120029270648956, hamming loss 0.10445344129554657, f1 score 0.8052418082885231
+Hamming Distance: [[0.11538462]]
+correctly classified(hamming score): 69
+hamming loss val 0.11390013495276652
+---epoch 125, loss 0.2278045117855072, hamming loss 0.10479082321187581, f1 score 0.8035532714839388
+Hamming Distance: [[0.11538462]]
+correctly classified(hamming score): 69
+hamming loss val 0.11214574898785425
+---epoch 126, loss 0.23594486713409424, hamming loss 0.10566801619433196, f1 score 0.8037982616268012
+Hamming Distance: [[0.1025641]]
+correctly classified(hamming score): 70
+hamming loss val 0.11626180836707152
+---epoch 127, loss 0.228135883808136, hamming loss 0.10465587044534413, f1 score 0.8041513050071696
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.11174089068825908
+---epoch 128, loss 0.2351226806640625, hamming loss 0.10910931174089067, f1 score 0.7977558007873968
+Hamming Distance: [[0.1025641]]
+correctly classified(hamming score): 70
+hamming loss val 0.11882591093117408
+---epoch 129, loss 0.23776862025260925, hamming loss 0.10782726045883939, f1 score 0.8005010345534128
+Hamming Distance: [[0.1025641]]
+correctly classified(hamming score): 70
+hamming loss val 0.11828609986504722
+---epoch 130, loss 0.23024465143680573, hamming loss 0.10708502024291497, f1 score 0.8021211847911834
+Hamming Distance: [[0.11538462]]
+correctly classified(hamming score): 69
+hamming loss val 0.1126855600539811
+---epoch 131, loss 0.22792230546474457, hamming loss 0.10384615384615382, f1 score 0.8073055488844889
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.11801619433198379
+---epoch 132, loss 0.22900810837745667, hamming loss 0.10634278002699055, f1 score 0.803640523697144
+Hamming Distance: [[0.11538462]]
+correctly classified(hamming score): 69
+hamming loss val 0.11430499325236167
+---epoch 133, loss 0.23325426876544952, hamming loss 0.10715249662618082, f1 score 0.8024710211902906
+Hamming Distance: [[0.1025641]]
+correctly classified(hamming score): 70
+hamming loss val 0.11545209176788124
+---epoch 134, loss 0.22610558569431305, hamming loss 0.10607287449392712, f1 score 0.8027197167600859
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.11194331983805667
+---epoch 135, loss 0.2301948517560959, hamming loss 0.10607287449392712, f1 score 0.803388386976443
+Hamming Distance: [[0.1025641]]
+correctly classified(hamming score): 70
+hamming loss val 0.11437246963562751
+---epoch 136, loss 0.22903987765312195, hamming loss 0.10512820512820512, f1 score 0.8042425309381142
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.11821862348178137
+---epoch 137, loss 0.22809328138828278, hamming loss 0.10445344129554657, f1 score 0.8050959870291601
+Hamming Distance: [[0.08974359]]
+correctly classified(hamming score): 71
+hamming loss val 0.11356275303643723
+---epoch 138, loss 0.2308356910943985, hamming loss 0.10445344129554653, f1 score 0.8065041935273044
+Hamming Distance: [[0.1025641]]
+correctly classified(hamming score): 70
+hamming loss val 0.11970310391363022
+---epoch 139, loss 0.23043237626552582, hamming loss 0.10539811066126856, f1 score 0.8028661762783657
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.1142375168690958
+---epoch 140, loss 0.22289270162582397, hamming loss 0.09925775978407557, f1 score 0.8123268232178026
+Hamming Distance: [[0.1025641]]
+correctly classified(hamming score): 70
+hamming loss val 0.11120107962213223
+---epoch 141, loss 0.22723421454429626, hamming loss 0.10357624831309041, f1 score 0.8069745981030895
+Hamming Distance: [[0.15384615]]
+correctly classified(hamming score): 66
+hamming loss val 0.11558704453441294
+---epoch 142, loss 0.2303505539894104, hamming loss 0.10472334682860995, f1 score 0.8069941867654967
+Hamming Distance: [[0.15384615]]
+correctly classified(hamming score): 66
+hamming loss val 0.11666666666666665
+---epoch 143, loss 0.23080147802829742, hamming loss 0.10573549257759783, f1 score 0.803878180905841
+Hamming Distance: [[0.14102564]]
+correctly classified(hamming score): 67
+hamming loss val 0.11342780026990551
+---epoch 144, loss 0.225355327129364, hamming loss 0.10155195681511468, f1 score 0.8079451946536302
+Hamming Distance: [[0.14102564]]
+correctly classified(hamming score): 67
+hamming loss val 0.11349527665317136
+---epoch 145, loss 0.22898973524570465, hamming loss 0.10485829959514169, f1 score 0.8056556146601589
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.11767881241565452
+---epoch 146, loss 0.23359426856040955, hamming loss 0.10910931174089067, f1 score 0.7978702446964557
+Hamming Distance: [[0.08974359]]
+correctly classified(hamming score): 71
+hamming loss val 0.1161268556005398
+---epoch 147, loss 0.2258026897907257, hamming loss 0.10242914979757084, f1 score 0.807397853012047
+Hamming Distance: [[0.1025641]]
+correctly classified(hamming score): 70
+hamming loss val 0.11356275303643723
+---epoch 148, loss 0.22553904354572296, hamming loss 0.10458839406207827, f1 score 0.8050505479044328
+Hamming Distance: [[0.1025641]]
+correctly classified(hamming score): 70
+hamming loss val 0.11437246963562751
+---epoch 149, loss 0.22668175399303436, hamming loss 0.1034412955465587, f1 score 0.805344043744926
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.11356275303643723
+---epoch 150, loss 0.22667011618614197, hamming loss 0.10276653171390013, f1 score 0.8077848321568737
+Hamming Distance: [[0.14102564]]
+correctly classified(hamming score): 67
+hamming loss val 0.11376518218623481
+---epoch 151, loss 0.22706648707389832, hamming loss 0.10533063427800267, f1 score 0.803467073092201
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.10870445344129555
+---epoch 152, loss 0.2255210131406784, hamming loss 0.10222672064777326, f1 score 0.8070554800924149
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.11261808367071525
+---epoch 153, loss 0.22606980800628662, hamming loss 0.10431848852901483, f1 score 0.8053033113843281
+Hamming Distance: [[0.14102564]]
+correctly classified(hamming score): 67
+hamming loss val 0.1128205128205128
+---epoch 154, loss 0.22964726388454437, hamming loss 0.1040485829959514, f1 score 0.8066273665002603
+Hamming Distance: [[0.14102564]]
+correctly classified(hamming score): 67
+hamming loss val 0.11450742240215923
+---epoch 155, loss 0.22599759697914124, hamming loss 0.10290148448043183, f1 score 0.8067509797238858
+Hamming Distance: [[0.11538462]]
+correctly classified(hamming score): 69
+hamming loss val 0.11599190283400809
+---epoch 156, loss 0.22450529038906097, hamming loss 0.10188933873144398, f1 score 0.809946469480522
+Hamming Distance: [[0.11538462]]
+correctly classified(hamming score): 69
+hamming loss val 0.11403508771929824
+---epoch 157, loss 0.22235529124736786, hamming loss 0.10094466936572198, f1 score 0.8090345367290214
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.11275303643724695
+---epoch 158, loss 0.22537538409233093, hamming loss 0.10195681511470983, f1 score 0.8104984148177634
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.11315789473684208
+---epoch 159, loss 0.22395272552967072, hamming loss 0.10047233468286099, f1 score 0.808176141825774
+Hamming Distance: [[0.1025641]]
+correctly classified(hamming score): 70
+hamming loss val 0.10998650472334681
+---epoch 160, loss 0.22586557269096375, hamming loss 0.10276653171390011, f1 score 0.8090913930114269
+Hamming Distance: [[0.1025641]]
+correctly classified(hamming score): 70
+hamming loss val 0.11491228070175435
+---epoch 161, loss 0.22315938770771027, hamming loss 0.100472334682861, f1 score 0.8103770709827826
+Hamming Distance: [[0.1025641]]
+correctly classified(hamming score): 70
+hamming loss val 0.1128205128205128
+---epoch 162, loss 0.22108270227909088, hamming loss 0.10215924426450741, f1 score 0.808380948644402
+Hamming Distance: [[0.11538462]]
+correctly classified(hamming score): 69
+hamming loss val 0.11417004048582996
+---epoch 163, loss 0.2309577316045761, hamming loss 0.10350877192982455, f1 score 0.8089131533902039
+Hamming Distance: [[0.11538462]]
+correctly classified(hamming score): 69
+hamming loss val 0.11565452091767879
+---epoch 164, loss 0.22853586077690125, hamming loss 0.10492577597840755, f1 score 0.8053495509565856
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.11403508771929824
+---epoch 165, loss 0.2251327931880951, hamming loss 0.10053981106612685, f1 score 0.8105369579662812
+Hamming Distance: [[0.08974359]]
+correctly classified(hamming score): 71
+hamming loss val 0.11241565452091767
+---epoch 166, loss 0.2233116179704666, hamming loss 0.10094466936572198, f1 score 0.811276307635807
+Hamming Distance: [[0.1025641]]
+correctly classified(hamming score): 70
+hamming loss val 0.1123481781376518
+---epoch 167, loss 0.22378453612327576, hamming loss 0.10269905533063427, f1 score 0.8103231290923684
+Hamming Distance: [[0.1025641]]
+correctly classified(hamming score): 70
+hamming loss val 0.11761133603238864
+---epoch 168, loss 0.22638192772865295, hamming loss 0.10445344129554653, f1 score 0.8094812486104032
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.11686909581646424
+---epoch 169, loss 0.22793085873126984, hamming loss 0.10472334682861, f1 score 0.8055586336826546
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.11599190283400806
+---epoch 170, loss 0.22830328345298767, hamming loss 0.10499325236167341, f1 score 0.8067119847004718
+Hamming Distance: [[0.14102564]]
+correctly classified(hamming score): 67
+hamming loss val 0.11511470985155194
+---epoch 171, loss 0.22478438913822174, hamming loss 0.10411605937921727, f1 score 0.8057900303413039
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.11275303643724695
+---epoch 172, loss 0.22261665761470795, hamming loss 0.10121457489878541, f1 score 0.8111005173198712
+Hamming Distance: [[0.14102564]]
+correctly classified(hamming score): 67
+hamming loss val 0.11504723346828609
+---epoch 173, loss 0.223985493183136, hamming loss 0.10283400809716596, f1 score 0.8070931968778146
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.11194331983805667
+---epoch 174, loss 0.2266753762960434, hamming loss 0.10641025641025639, f1 score 0.804511821412783
+Hamming Distance: [[0.14102564]]
+correctly classified(hamming score): 67
+hamming loss val 0.11383265856950066
+---epoch 175, loss 0.2334425300359726, hamming loss 0.10681511470985154, f1 score 0.8029963830118825
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.11423751686909579
+---epoch 176, loss 0.22162196040153503, hamming loss 0.10094466936572198, f1 score 0.8095468735678485
+Hamming Distance: [[0.08974359]]
+correctly classified(hamming score): 71
+hamming loss val 0.11005398110661267
+---epoch 177, loss 0.22219876945018768, hamming loss 0.10053981106612685, f1 score 0.8100771103568516
+Hamming Distance: [[0.11538462]]
+correctly classified(hamming score): 69
+hamming loss val 0.11700404858299593
+---epoch 178, loss 0.22706371545791626, hamming loss 0.10546558704453439, f1 score 0.8042888789836492
+Hamming Distance: [[0.14102564]]
+correctly classified(hamming score): 67
+hamming loss val 0.11336032388663965
+---epoch 179, loss 0.22363795340061188, hamming loss 0.10317139001349526, f1 score 0.8064822893786585
+Hamming Distance: [[0.08974359]]
+correctly classified(hamming score): 71
+hamming loss val 0.11214574898785425
+---epoch 180, loss 0.22217850387096405, hamming loss 0.10040485829959513, f1 score 0.8121264724531047
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.11187584345479082
+---epoch 181, loss 0.22757847607135773, hamming loss 0.10580296896086369, f1 score 0.8025574467840146
+Hamming Distance: [[0.11538462]]
+correctly classified(hamming score): 69
+hamming loss val 0.11052631578947367
+---epoch 182, loss 0.2257864773273468, hamming loss 0.10371120107962213, f1 score 0.8061959207086796
+Hamming Distance: [[0.14102564]]
+correctly classified(hamming score): 67
+hamming loss val 0.11410256410256409
+---epoch 183, loss 0.21907569468021393, hamming loss 0.09858299595141698, f1 score 0.8156966055770415
+Hamming Distance: [[0.11538462]]
+correctly classified(hamming score): 69
+hamming loss val 0.11113360323886638
+---epoch 184, loss 0.2183452546596527, hamming loss 0.09959514170040484, f1 score 0.8084984862881679
+Hamming Distance: [[0.11538462]]
+correctly classified(hamming score): 69
+hamming loss val 0.10958164642375168
+---epoch 185, loss 0.22327931225299835, hamming loss 0.10195681511470983, f1 score 0.8114968623649526
+Hamming Distance: [[0.11538462]]
+correctly classified(hamming score): 69
+hamming loss val 0.1161268556005398
+---epoch 186, loss 0.23108336329460144, hamming loss 0.10823211875843454, f1 score 0.8020462352376847
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.11558704453441294
+---epoch 187, loss 0.22342970967292786, hamming loss 0.10323886639676112, f1 score 0.8097188363768888
+Hamming Distance: [[0.11538462]]
+correctly classified(hamming score): 69
+hamming loss val 0.11430499325236167
+---epoch 188, loss 0.22445020079612732, hamming loss 0.10465587044534412, f1 score 0.8061654838145155
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.11241565452091767
+---epoch 189, loss 0.22546710073947906, hamming loss 0.10587044534412954, f1 score 0.8029176404024473
+Hamming Distance: [[0.14102564]]
+correctly classified(hamming score): 67
+hamming loss val 0.11045883940620782
+---epoch 190, loss 0.22348809242248535, hamming loss 0.1034412955465587, f1 score 0.8070022250456095
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.11261808367071525
+---epoch 191, loss 0.22914943099021912, hamming loss 0.10472334682861, f1 score 0.8049064785732568
+Hamming Distance: [[0.11538462]]
+correctly classified(hamming score): 69
+hamming loss val 0.11430499325236167
+---epoch 192, loss 0.21810247004032135, hamming loss 0.09669365721997299, f1 score 0.8159148203631686
+Hamming Distance: [[0.11538462]]
+correctly classified(hamming score): 69
+hamming loss val 0.1089068825910931
+---epoch 193, loss 0.22260682284832, hamming loss 0.10290148448043183, f1 score 0.8080320784380406
+Hamming Distance: [[0.11538462]]
+correctly classified(hamming score): 69
+hamming loss val 0.11457489878542508
+---epoch 194, loss 0.2163965255022049, hamming loss 0.10026990553306343, f1 score 0.8103852803125663
+Hamming Distance: [[0.14102564]]
+correctly classified(hamming score): 67
+hamming loss val 0.1123481781376518
+---epoch 195, loss 0.21969807147979736, hamming loss 0.10141700404858298, f1 score 0.8111323232083183
+Hamming Distance: [[0.08974359]]
+correctly classified(hamming score): 71
+hamming loss val 0.11106612685560052
+---epoch 196, loss 0.21924623847007751, hamming loss 0.1010796221322537, f1 score 0.8095269102100492
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.1109311740890688
+---epoch 197, loss 0.2209644466638565, hamming loss 0.10087719298245613, f1 score 0.8079123137979878
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.11403508771929824
+---epoch 198, loss 0.21634306013584137, hamming loss 0.09986504723346827, f1 score 0.8138515198240904
+Hamming Distance: [[0.11538462]]
+correctly classified(hamming score): 69
+hamming loss val 0.11126855600539812
+---epoch 199, loss 0.2165517359972, hamming loss 0.09817813765182186, f1 score 0.8142222931392891
+Hamming Distance: [[0.14102564]]
+correctly classified(hamming score): 67
+hamming loss val 0.1126855600539811
+---epoch 200, loss 0.2239643633365631, hamming loss 0.10290148448043185, f1 score 0.8089753423740875
+Hamming Distance: [[0.11538462]]
+correctly classified(hamming score): 69
+hamming loss val 0.1107962213225371
+---epoch 201, loss 0.21779875457286835, hamming loss 0.097638326585695, f1 score 0.8143869008525266
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.11524966261808367
+---epoch 202, loss 0.21519261598587036, hamming loss 0.09858299595141698, f1 score 0.8131930232579783
+Hamming Distance: [[0.1025641]]
+correctly classified(hamming score): 70
+hamming loss val 0.1097165991902834
+---epoch 203, loss 0.2166651040315628, hamming loss 0.0989203778677463, f1 score 0.813601492919098
+Hamming Distance: [[0.14102564]]
+correctly classified(hamming score): 67
+hamming loss val 0.11585695006747637
+---epoch 204, loss 0.21982499957084656, hamming loss 0.09898785425101213, f1 score 0.8119354523081187
+Hamming Distance: [[0.14102564]]
+correctly classified(hamming score): 67
+hamming loss val 0.11497975708502021
+---epoch 205, loss 0.2177923172712326, hamming loss 0.09979757085020242, f1 score 0.8130026326564821
+Hamming Distance: [[0.11538462]]
+correctly classified(hamming score): 69
+hamming loss val 0.11356275303643723
+---epoch 206, loss 0.22185833752155304, hamming loss 0.10242914979757084, f1 score 0.8062345713923537
+Hamming Distance: [[0.14102564]]
+correctly classified(hamming score): 67
+hamming loss val 0.10991902834008097
+---epoch 207, loss 0.21865320205688477, hamming loss 0.09885290148448042, f1 score 0.8150545068456841
+Hamming Distance: [[0.11538462]]
+correctly classified(hamming score): 69
+hamming loss val 0.11201079622132253
+---epoch 208, loss 0.22583916783332825, hamming loss 0.10425101214574899, f1 score 0.8088910885426919
+Hamming Distance: [[0.14102564]]
+correctly classified(hamming score): 67
+hamming loss val 0.11187584345479082
+---epoch 209, loss 0.22405849397182465, hamming loss 0.10364372469635624, f1 score 0.8064627876428794
+Hamming Distance: [[0.15384615]]
+correctly classified(hamming score): 66
+hamming loss val 0.1126855600539811
+---epoch 210, loss 0.2243262082338333, hamming loss 0.10202429149797568, f1 score 0.809109444985066
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.11174089068825908
+---epoch 211, loss 0.2145865559577942, hamming loss 0.09858299595141698, f1 score 0.8125562501868606
+Hamming Distance: [[0.14102564]]
+correctly classified(hamming score): 67
+hamming loss val 0.10958164642375168
+---epoch 212, loss 0.2138163447380066, hamming loss 0.09709851551956815, f1 score 0.8151798466270123
+Hamming Distance: [[0.11538462]]
+correctly classified(hamming score): 69
+hamming loss val 0.11248313090418352
+---epoch 213, loss 0.21952223777770996, hamming loss 0.10101214574898783, f1 score 0.8125683939670413
+Hamming Distance: [[0.14102564]]
+correctly classified(hamming score): 67
+hamming loss val 0.10816464237516867
+---epoch 214, loss 0.22639061510562897, hamming loss 0.10398110661268553, f1 score 0.8065812871194566
+Hamming Distance: [[0.14102564]]
+correctly classified(hamming score): 67
+hamming loss val 0.10931174089068825
+---epoch 215, loss 0.22067561745643616, hamming loss 0.10060728744939271, f1 score 0.8107089837503155
+Hamming Distance: [[0.08974359]]
+correctly classified(hamming score): 71
+hamming loss val 0.11052631578947368
+---epoch 216, loss 0.2231435328722, hamming loss 0.09959514170040484, f1 score 0.8123174414331902
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.1109311740890688
+---epoch 217, loss 0.22693686187267303, hamming loss 0.10418353576248311, f1 score 0.807043767207116
+Hamming Distance: [[0.11538462]]
+correctly classified(hamming score): 69
+hamming loss val 0.11430499325236167
+---epoch 218, loss 0.21832841634750366, hamming loss 0.09770580296896085, f1 score 0.8155471366588944
+Hamming Distance: [[0.11538462]]
+correctly classified(hamming score): 69
+hamming loss val 0.11228070175438595
+---epoch 219, loss 0.21792110800743103, hamming loss 0.10141700404858298, f1 score 0.8078776333101687
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.1109311740890688
+---epoch 220, loss 0.21448062360286713, hamming loss 0.09736842105263156, f1 score 0.8153790524421287
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.11160593792172739
+---epoch 221, loss 0.21421855688095093, hamming loss 0.09757085020242914, f1 score 0.8150925887011292
+Hamming Distance: [[0.08974359]]
+correctly classified(hamming score): 71
+hamming loss val 0.1097165991902834
+---epoch 222, loss 0.22495362162590027, hamming loss 0.10533063427800268, f1 score 0.8071729092200093
+Hamming Distance: [[0.1025641]]
+correctly classified(hamming score): 70
+hamming loss val 0.11228070175438594
+---epoch 223, loss 0.22603492438793182, hamming loss 0.10087719298245613, f1 score 0.8141901491090487
+Hamming Distance: [[0.11538462]]
+correctly classified(hamming score): 69
+hamming loss val 0.11518218623481778
+---epoch 224, loss 0.22176621854305267, hamming loss 0.10357624831309044, f1 score 0.8062705689495808
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.10721997300944668
+---epoch 225, loss 0.22047564387321472, hamming loss 0.10020242914979757, f1 score 0.8086844136379245
+Hamming Distance: [[0.1025641]]
+correctly classified(hamming score): 70
+hamming loss val 0.11315789473684211
+---epoch 226, loss 0.21498991549015045, hamming loss 0.09480431848852898, f1 score 0.8191733660129447
+Hamming Distance: [[0.1025641]]
+correctly classified(hamming score): 70
+hamming loss val 0.1128205128205128
+---epoch 227, loss 0.21626032888889313, hamming loss 0.09885290148448041, f1 score 0.8127117658138248
+Hamming Distance: [[0.11538462]]
+correctly classified(hamming score): 69
+hamming loss val 0.11221322537112009
+---epoch 228, loss 0.2173638790845871, hamming loss 0.10074224021592441, f1 score 0.8095693572076722
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.11363022941970308
+---epoch 229, loss 0.2162516564130783, hamming loss 0.09797570850202428, f1 score 0.8133041725473092
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.11241565452091767
+---epoch 230, loss 0.22014766931533813, hamming loss 0.10067476383265857, f1 score 0.8094784062340017
+Hamming Distance: [[0.08974359]]
+correctly classified(hamming score): 71
+hamming loss val 0.11794871794871795
+---epoch 231, loss 0.21984007954597473, hamming loss 0.1016869095816464, f1 score 0.8117204220573414
+Hamming Distance: [[0.1025641]]
+correctly classified(hamming score): 70
+hamming loss val 0.1109311740890688
+---epoch 232, loss 0.21595126390457153, hamming loss 0.09865047233468285, f1 score 0.8125781963268291
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.1142375168690958
+---epoch 233, loss 0.21980759501457214, hamming loss 0.10121457489878542, f1 score 0.8092938987009011
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.1126855600539811
+---epoch 234, loss 0.22297950088977814, hamming loss 0.1029689608636977, f1 score 0.8093220767843359
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.1115384615384615
+---epoch 235, loss 0.22887581586837769, hamming loss 0.10614035087719297, f1 score 0.8055479621906637
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.11680161943319836
+---epoch 236, loss 0.21536584198474884, hamming loss 0.09912280701754383, f1 score 0.8162343959409922
+Hamming Distance: [[0.15384615]]
+correctly classified(hamming score): 66
+hamming loss val 0.1109311740890688
+---epoch 237, loss 0.21567989885807037, hamming loss 0.09723346828609984, f1 score 0.8153958233595957
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.11147098515519566
+---epoch 238, loss 0.2152051031589508, hamming loss 0.09844804318488529, f1 score 0.8154897569588483
+Hamming Distance: [[0.11538462]]
+correctly classified(hamming score): 69
+hamming loss val 0.1103238866396761
+---epoch 239, loss 0.22010722756385803, hamming loss 0.09973009446693658, f1 score 0.8131343725102569
+Hamming Distance: [[0.11538462]]
+correctly classified(hamming score): 69
+hamming loss val 0.11099865047233468
+---epoch 240, loss 0.21878288686275482, hamming loss 0.097638326585695, f1 score 0.8158810384748222
+Hamming Distance: [[0.1025641]]
+correctly classified(hamming score): 70
+hamming loss val 0.11147098515519566
+---epoch 241, loss 0.22025765478610992, hamming loss 0.1, f1 score 0.8118919590570466
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.1115384615384615
+---epoch 242, loss 0.2143278867006302, hamming loss 0.09817813765182186, f1 score 0.8153610383164855
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.11147098515519566
+---epoch 243, loss 0.2124989777803421, hamming loss 0.0968286099865047, f1 score 0.8145033303067631
+Hamming Distance: [[0.14102564]]
+correctly classified(hamming score): 67
+hamming loss val 0.1098515519568151
+---epoch 244, loss 0.2146654576063156, hamming loss 0.0983805668016194, f1 score 0.8119898639713926
+Hamming Distance: [[0.1025641]]
+correctly classified(hamming score): 70
+hamming loss val 0.1074898785425101
+---epoch 245, loss 0.2152358591556549, hamming loss 0.09676113360323886, f1 score 0.8136189763930884
+Hamming Distance: [[0.11538462]]
+correctly classified(hamming score): 69
+hamming loss val 0.1103238866396761
+---epoch 246, loss 0.2145778089761734, hamming loss 0.098582995951417, f1 score 0.8148792507141309
+Hamming Distance: [[0.1025641]]
+correctly classified(hamming score): 70
+hamming loss val 0.10742240215924426
+---epoch 247, loss 0.2204994559288025, hamming loss 0.10080971659919027, f1 score 0.8112141836743089
+Hamming Distance: [[0.11538462]]
+correctly classified(hamming score): 69
+hamming loss val 0.1092442645074224
+---epoch 248, loss 0.2168690711259842, hamming loss 0.09811066126855597, f1 score 0.8128837846021404
+Hamming Distance: [[0.11538462]]
+correctly classified(hamming score): 69
+hamming loss val 0.1098515519568151
+---epoch 249, loss 0.218781977891922, hamming loss 0.10134952766531713, f1 score 0.8073428098879109
+Hamming Distance: [[0.11538462]]
+correctly classified(hamming score): 69
+hamming loss val 0.11275303643724695
+---epoch 250, loss 0.21834996342658997, hamming loss 0.10087719298245613, f1 score 0.8082992183252896
+Hamming Distance: [[0.11538462]]
+correctly classified(hamming score): 69
+hamming loss val 0.11437246963562751
+---epoch 251, loss 0.21667641401290894, hamming loss 0.09851551956815113, f1 score 0.8124089183154453
+Hamming Distance: [[0.1025641]]
+correctly classified(hamming score): 70
+hamming loss val 0.11153846153846153
+---epoch 252, loss 0.21369796991348267, hamming loss 0.09831309041835358, f1 score 0.8130662224622894
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.1097165991902834
+---epoch 253, loss 0.21526862680912018, hamming loss 0.09885290148448041, f1 score 0.8126382294829206
+Hamming Distance: [[0.14102564]]
+correctly classified(hamming score): 67
+hamming loss val 0.10883940620782724
+---epoch 254, loss 0.21069210767745972, hamming loss 0.09581646423751687, f1 score 0.8162548058240235
+Hamming Distance: [[0.14102564]]
+correctly classified(hamming score): 67
+hamming loss val 0.10978407557354924
+---epoch 255, loss 0.21701130270957947, hamming loss 0.09898785425101214, f1 score 0.8129339660282755
+Hamming Distance: [[0.1025641]]
+correctly classified(hamming score): 70
+hamming loss val 0.11099865047233465
+---epoch 256, loss 0.21824911236763, hamming loss 0.09946018893387312, f1 score 0.812005707927579
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.11261808367071525
+---epoch 257, loss 0.21820537745952606, hamming loss 0.09966261808367073, f1 score 0.8092776720041304
+Hamming Distance: [[0.11538462]]
+correctly classified(hamming score): 69
+hamming loss val 0.11761133603238863
+---epoch 258, loss 0.2240130752325058, hamming loss 0.10202429149797568, f1 score 0.8134417514519549
+Hamming Distance: [[0.14102564]]
+correctly classified(hamming score): 67
+hamming loss val 0.1103238866396761
+---epoch 259, loss 0.2180575281381607, hamming loss 0.09986504723346827, f1 score 0.8120274976164751
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.11713900134952766
+---epoch 260, loss 0.22731560468673706, hamming loss 0.10310391363022943, f1 score 0.8084508371052164
+Hamming Distance: [[0.14102564]]
+correctly classified(hamming score): 67
+hamming loss val 0.11174089068825911
+---epoch 261, loss 0.21688078343868256, hamming loss 0.10020242914979755, f1 score 0.8102384584785894
+Hamming Distance: [[0.11538462]]
+correctly classified(hamming score): 69
+hamming loss val 0.1079622132253711
+---epoch 262, loss 0.21383489668369293, hamming loss 0.09750337381916327, f1 score 0.81556279163714
+Hamming Distance: [[0.11538462]]
+correctly classified(hamming score): 69
+hamming loss val 0.11524966261808367
+---epoch 263, loss 0.21441750228405, hamming loss 0.09642375168690957, f1 score 0.8173382019036282
+Hamming Distance: [[0.1025641]]
+correctly classified(hamming score): 70
+hamming loss val 0.1097165991902834
+---epoch 264, loss 0.21182452142238617, hamming loss 0.098110661268556, f1 score 0.8128116882128839
+Hamming Distance: [[0.1025641]]
+correctly classified(hamming score): 70
+hamming loss val 0.11072874493927122
+---epoch 265, loss 0.21134041249752045, hamming loss 0.09649122807017542, f1 score 0.816031403023395
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.10856950067476381
+---epoch 266, loss 0.2151671200990677, hamming loss 0.09865047233468285, f1 score 0.8118171328306663
+Hamming Distance: [[0.11538462]]
+correctly classified(hamming score): 69
+hamming loss val 0.10755735492577595
+---epoch 267, loss 0.2143341451883316, hamming loss 0.0989203778677463, f1 score 0.8105261646556271
+Hamming Distance: [[0.08974359]]
+correctly classified(hamming score): 71
+hamming loss val 0.10863697705802967
+---epoch 268, loss 0.22527387738227844, hamming loss 0.1, f1 score 0.8092883232212327
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.11113360323886638
+---epoch 269, loss 0.22262179851531982, hamming loss 0.09979757085020242, f1 score 0.8112070100526892
+Hamming Distance: [[0.11538462]]
+correctly classified(hamming score): 69
+hamming loss val 0.11052631578947367
+---epoch 270, loss 0.21879243850708008, hamming loss 0.10148448043184885, f1 score 0.8089125038962119
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.1082995951417004
+---epoch 271, loss 0.21518570184707642, hamming loss 0.0977732793522267, f1 score 0.8149491984024696
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.11221322537112009
+---epoch 272, loss 0.21319124102592468, hamming loss 0.09581646423751684, f1 score 0.8165888853133885
+Hamming Distance: [[0.14102564]]
+correctly classified(hamming score): 67
+hamming loss val 0.10634278002699055
+---epoch 273, loss 0.2184946984052658, hamming loss 0.10101214574898784, f1 score 0.8097293069310307
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.11275303643724695
+---epoch 274, loss 0.21455231308937073, hamming loss 0.09871794871794871, f1 score 0.813275497568109
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.10809716599190282
+---epoch 275, loss 0.21447186172008514, hamming loss 0.09770580296896085, f1 score 0.8136411741241889
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.11086369770580295
+---epoch 276, loss 0.20650093257427216, hamming loss 0.09183535762483129, f1 score 0.8230406059453161
+Hamming Distance: [[0.11538462]]
+correctly classified(hamming score): 69
+hamming loss val 0.1081646423751687
+---epoch 277, loss 0.2096409648656845, hamming loss 0.09480431848852901, f1 score 0.8159922074035678
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.11066126855600537
+---epoch 278, loss 0.21450595557689667, hamming loss 0.09473684210526316, f1 score 0.8194120979495687
+Hamming Distance: [[0.11538462]]
+correctly classified(hamming score): 69
+hamming loss val 0.1068825910931174
+---epoch 279, loss 0.2211294025182724, hamming loss 0.10391363022941968, f1 score 0.8061800056245907
+Hamming Distance: [[0.08974359]]
+correctly classified(hamming score): 71
+hamming loss val 0.11248313090418352
+---epoch 280, loss 0.2223711907863617, hamming loss 0.10114709851551955, f1 score 0.8077728782693792
+Hamming Distance: [[0.1025641]]
+correctly classified(hamming score): 70
+hamming loss val 0.11005398110661267
+---epoch 281, loss 0.2129335105419159, hamming loss 0.098110661268556, f1 score 0.8145527198817006
+Hamming Distance: [[0.14102564]]
+correctly classified(hamming score): 67
+hamming loss val 0.10910931174089068
+---epoch 282, loss 0.20945143699645996, hamming loss 0.09500674763832656, f1 score 0.8185361930400441
+Hamming Distance: [[0.16666667]]
+correctly classified(hamming score): 65
+hamming loss val 0.11342780026990554
+---epoch 283, loss 0.21191804111003876, hamming loss 0.09595141700404858, f1 score 0.8180951362555001
+Hamming Distance: [[0.11538462]]
+correctly classified(hamming score): 69
+hamming loss val 0.10904183535762482
+---epoch 284, loss 0.21455319225788116, hamming loss 0.0977732793522267, f1 score 0.8147440186529964
+Hamming Distance: [[0.1025641]]
+correctly classified(hamming score): 70
+hamming loss val 0.1109311740890688
+---epoch 285, loss 0.22205421328544617, hamming loss 0.10276653171390011, f1 score 0.8102390637812095
+Hamming Distance: [[0.11538462]]
+correctly classified(hamming score): 69
+hamming loss val 0.11126855600539808
+---epoch 286, loss 0.21456356346607208, hamming loss 0.0991902834008097, f1 score 0.8142765548710369
+Hamming Distance: [[0.11538462]]
+correctly classified(hamming score): 69
+hamming loss val 0.11794871794871795
+---epoch 287, loss 0.21573257446289062, hamming loss 0.10026990553306343, f1 score 0.8120993239786296
+Hamming Distance: [[0.14102564]]
+correctly classified(hamming score): 67
+hamming loss val 0.1087719298245614
+---epoch 288, loss 0.2210710197687149, hamming loss 0.10182186234817814, f1 score 0.8122071930411359
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.10924426450742238
+---epoch 289, loss 0.21861417591571808, hamming loss 0.09885290148448045, f1 score 0.8135203685024273
+Hamming Distance: [[0.11538462]]
+correctly classified(hamming score): 69
+hamming loss val 0.11221322537112009
+---epoch 290, loss 0.22078809142112732, hamming loss 0.09919028340080972, f1 score 0.8093995012741274
+Hamming Distance: [[0.11538462]]
+correctly classified(hamming score): 69
+hamming loss val 0.11788124156545207
+---epoch 291, loss 0.2225550264120102, hamming loss 0.1010796221322537, f1 score 0.8094098376438464
+Hamming Distance: [[0.14102564]]
+correctly classified(hamming score): 67
+hamming loss val 0.1109311740890688
+---epoch 292, loss 0.21215258538722992, hamming loss 0.09662618083670714, f1 score 0.8146006210163611
+Hamming Distance: [[0.08974359]]
+correctly classified(hamming score): 71
+hamming loss val 0.10789473684210524
+---epoch 293, loss 0.2141825407743454, hamming loss 0.09898785425101214, f1 score 0.8109665275910866
+Hamming Distance: [[0.14102564]]
+correctly classified(hamming score): 67
+hamming loss val 0.10715249662618083
+---epoch 294, loss 0.21118047833442688, hamming loss 0.09723346828609984, f1 score 0.8155207669284612
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.10958164642375168
+---epoch 295, loss 0.2135252058506012, hamming loss 0.09784075573549257, f1 score 0.8136337382624976
+Hamming Distance: [[0.14102564]]
+correctly classified(hamming score): 67
+hamming loss val 0.10836707152496625
+---epoch 296, loss 0.2073698788881302, hamming loss 0.09507422402159241, f1 score 0.8171312099894467
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.1087719298245614
+---epoch 297, loss 0.2157812863588333, hamming loss 0.09676113360323885, f1 score 0.8169419215751165
+Hamming Distance: [[0.11538462]]
+correctly classified(hamming score): 69
+hamming loss val 0.10742240215924426
+---epoch 298, loss 0.21327972412109375, hamming loss 0.09649122807017542, f1 score 0.8146619779452354
+Hamming Distance: [[0.11538462]]
+correctly classified(hamming score): 69
+hamming loss val 0.1126855600539811
+---epoch 299, loss 0.2104404717683792, hamming loss 0.09520917678812414, f1 score 0.81735168921002
+Hamming Distance: [[0.08974359]]
+correctly classified(hamming score): 71
+hamming loss val 0.10958164642375169
+---epoch 300, loss 0.21785695850849152, hamming loss 0.09804318488529015, f1 score 0.8143714358223295
+Hamming Distance: [[0.11538462]]
+correctly classified(hamming score): 69
+hamming loss val 0.11403508771929824
+---epoch 301, loss 0.22328035533428192, hamming loss 0.10209176788124157, f1 score 0.810050777120309
+Hamming Distance: [[0.1025641]]
+correctly classified(hamming score): 70
+hamming loss val 0.10850202429149797
+---epoch 302, loss 0.21506761014461517, hamming loss 0.09804318488529012, f1 score 0.8160367714599428
+Hamming Distance: [[0.1025641]]
+correctly classified(hamming score): 70
+hamming loss val 0.1109311740890688
+---epoch 303, loss 0.21489350497722626, hamming loss 0.09932523616734142, f1 score 0.812498616057426
+Hamming Distance: [[0.11538462]]
+correctly classified(hamming score): 69
+hamming loss val 0.11201079622132251
+---epoch 304, loss 0.20963773131370544, hamming loss 0.09581646423751687, f1 score 0.8184302021983697
+Hamming Distance: [[0.15384615]]
+correctly classified(hamming score): 66
+hamming loss val 0.10789473684210527
+---epoch 305, loss 0.21340930461883545, hamming loss 0.097165991902834, f1 score 0.8147244203253424
+Hamming Distance: [[0.11538462]]
+correctly classified(hamming score): 69
+hamming loss val 0.1098515519568151
+---epoch 306, loss 0.21388541162014008, hamming loss 0.09750337381916327, f1 score 0.8152765254923742
+Hamming Distance: [[0.11538462]]
+correctly classified(hamming score): 69
+hamming loss val 0.11052631578947368
+---epoch 307, loss 0.21554788947105408, hamming loss 0.09959514170040484, f1 score 0.8139471829544508
+Hamming Distance: [[0.11538462]]
+correctly classified(hamming score): 69
+hamming loss val 0.1092442645074224
+---epoch 308, loss 0.22088222205638885, hamming loss 0.10249662618083669, f1 score 0.8089261730901668
+Hamming Distance: [[0.14102564]]
+correctly classified(hamming score): 67
+hamming loss val 0.11646423751686907
+---epoch 309, loss 0.2216377705335617, hamming loss 0.1020242914979757, f1 score 0.8100712677535488
+Hamming Distance: [[0.11538462]]
+correctly classified(hamming score): 69
+hamming loss val 0.10931174089068825
+---epoch 310, loss 0.21204765141010284, hamming loss 0.09844804318488529, f1 score 0.8121679476473209
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.11261808367071523
+---epoch 311, loss 0.21376238763332367, hamming loss 0.09878542510121456, f1 score 0.8141862092055804
+Hamming Distance: [[0.1025641]]
+correctly classified(hamming score): 70
+hamming loss val 0.11066126855600537
+---epoch 312, loss 0.214776411652565, hamming loss 0.09912280701754385, f1 score 0.8129062956334813
+Hamming Distance: [[0.11538462]]
+correctly classified(hamming score): 69
+hamming loss val 0.11113360323886637
+---epoch 313, loss 0.2087891846895218, hamming loss 0.09547908232118757, f1 score 0.8166083617568769
+Hamming Distance: [[0.08974359]]
+correctly classified(hamming score): 71
+hamming loss val 0.11120107962213223
+---epoch 314, loss 0.2087073028087616, hamming loss 0.09574898785425102, f1 score 0.8172592409696657
+Hamming Distance: [[0.11538462]]
+correctly classified(hamming score): 69
+hamming loss val 0.10958164642375168
+---epoch 315, loss 0.22340793907642365, hamming loss 0.10276653171390011, f1 score 0.8057082943471758
+Hamming Distance: [[0.11538462]]
+correctly classified(hamming score): 69
+hamming loss val 0.11322537112010793
+---epoch 316, loss 0.21989452838897705, hamming loss 0.1016869095816464, f1 score 0.8091028403021854
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.11693657219973008
+---epoch 317, loss 0.21741758286952972, hamming loss 0.09865047233468285, f1 score 0.814862266372194
+Hamming Distance: [[0.1025641]]
+correctly classified(hamming score): 70
+hamming loss val 0.10978407557354924
+---epoch 318, loss 0.2134716659784317, hamming loss 0.09628879892037787, f1 score 0.8160618103784498
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.11039136302294195
+---epoch 319, loss 0.2126643806695938, hamming loss 0.0960863697705803, f1 score 0.8147733736070373
+Hamming Distance: [[0.1025641]]
+correctly classified(hamming score): 70
+hamming loss val 0.10782726045883938
+---epoch 320, loss 0.21634958684444427, hamming loss 0.09412955465587043, f1 score 0.819923180654477
+Hamming Distance: [[0.08974359]]
+correctly classified(hamming score): 71
+hamming loss val 0.11120107962213223
+---epoch 321, loss 0.21086136996746063, hamming loss 0.09709851551956815, f1 score 0.817167388435614
+Hamming Distance: [[0.14102564]]
+correctly classified(hamming score): 67
+hamming loss val 0.11497975708502023
+---epoch 322, loss 0.2154272049665451, hamming loss 0.097638326585695, f1 score 0.8158527956271087
+Hamming Distance: [[0.14102564]]
+correctly classified(hamming score): 67
+hamming loss val 0.11120107962213226
+---epoch 323, loss 0.2144232541322708, hamming loss 0.09858299595141698, f1 score 0.8116589001777177
+Hamming Distance: [[0.11538462]]
+correctly classified(hamming score): 69
+hamming loss val 0.1109311740890688
+---epoch 324, loss 0.21352419257164001, hamming loss 0.0982456140350877, f1 score 0.8173525007040056
+Hamming Distance: [[0.14102564]]
+correctly classified(hamming score): 67
+hamming loss val 0.11106612685560054
+---epoch 325, loss 0.21171650290489197, hamming loss 0.09723346828609984, f1 score 0.8137916460424253
+Hamming Distance: [[0.11538462]]
+correctly classified(hamming score): 69
+hamming loss val 0.1109311740890688
+---epoch 326, loss 0.21927329897880554, hamming loss 0.10175438596491228, f1 score 0.8087161912697232
+Hamming Distance: [[0.11538462]]
+correctly classified(hamming score): 69
+hamming loss val 0.10782726045883938
+---epoch 327, loss 0.21083253622055054, hamming loss 0.09568151147098514, f1 score 0.8169125467976014
+Hamming Distance: [[0.08974359]]
+correctly classified(hamming score): 71
+hamming loss val 0.10458839406207826
+---epoch 328, loss 0.2112681269645691, hamming loss 0.09736842105263156, f1 score 0.8136529147928003
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.10998650472334681
+---epoch 329, loss 0.21258187294006348, hamming loss 0.09507422402159244, f1 score 0.8184292162856289
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.10856950067476381
+---epoch 330, loss 0.21387070417404175, hamming loss 0.09568151147098514, f1 score 0.8165328713187232
+Hamming Distance: [[0.11538462]]
+correctly classified(hamming score): 69
+hamming loss val 0.10809716599190282
+---epoch 331, loss 0.2051241248846054, hamming loss 0.09392712550607286, f1 score 0.8218687517122859
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.10769230769230768
+---epoch 332, loss 0.21174047887325287, hamming loss 0.09865047233468287, f1 score 0.8098523019451247
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.11214574898785423
+---epoch 333, loss 0.21189093589782715, hamming loss 0.097165991902834, f1 score 0.8125767159978207
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.10614035087719297
+---epoch 334, loss 0.20543168485164642, hamming loss 0.09358974358974359, f1 score 0.818838853710106
+Hamming Distance: [[0.14102564]]
+correctly classified(hamming score): 67
+hamming loss val 0.11039136302294195
+---epoch 335, loss 0.21007993817329407, hamming loss 0.09709851551956815, f1 score 0.8151472104198996
+Hamming Distance: [[0.15384615]]
+correctly classified(hamming score): 66
+hamming loss val 0.11221322537112009
+---epoch 336, loss 0.21095143258571625, hamming loss 0.097638326585695, f1 score 0.8147941863750932
+Hamming Distance: [[0.1025641]]
+correctly classified(hamming score): 70
+hamming loss val 0.10809716599190285
+---epoch 337, loss 0.21383851766586304, hamming loss 0.09682860998650472, f1 score 0.8172406206158906
+Hamming Distance: [[0.08974359]]
+correctly classified(hamming score): 71
+hamming loss val 0.11356275303643723
+---epoch 338, loss 0.2149350792169571, hamming loss 0.09790823211875842, f1 score 0.8131479489868189
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.10614035087719297
+---epoch 339, loss 0.21614201366901398, hamming loss 0.09885290148448041, f1 score 0.8150587699086489
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.11356275303643723
+---epoch 340, loss 0.21879234910011292, hamming loss 0.10242914979757084, f1 score 0.8096754381021212
+Hamming Distance: [[0.11538462]]
+correctly classified(hamming score): 69
+hamming loss val 0.10769230769230768
+---epoch 341, loss 0.22946041822433472, hamming loss 0.10094466936572198, f1 score 0.8106068520681683
+Hamming Distance: [[0.08974359]]
+correctly classified(hamming score): 71
+hamming loss val 0.1087719298245614
+---epoch 342, loss 0.21227693557739258, hamming loss 0.09527665317139002, f1 score 0.819570320364584
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.10910931174089067
+---epoch 343, loss 0.213440403342247, hamming loss 0.10006747638326585, f1 score 0.812239805751557
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.10924426450742238
+---epoch 344, loss 0.21279370784759521, hamming loss 0.09689608636977057, f1 score 0.816545913761959
+Hamming Distance: [[0.14102564]]
+correctly classified(hamming score): 67
+hamming loss val 0.1089068825910931
+---epoch 345, loss 0.20952177047729492, hamming loss 0.09358974358974359, f1 score 0.8217853597309089
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.10782726045883938
+---epoch 346, loss 0.20773880183696747, hamming loss 0.09534412955465586, f1 score 0.8172521179949863
+Hamming Distance: [[0.1025641]]
+correctly classified(hamming score): 70
+hamming loss val 0.11072874493927122
+---epoch 347, loss 0.2133740931749344, hamming loss 0.09615384615384615, f1 score 0.8157852161221301
+Hamming Distance: [[0.14102564]]
+correctly classified(hamming score): 67
+hamming loss val 0.10553306342780026
+---epoch 348, loss 0.21420150995254517, hamming loss 0.09311740890688255, f1 score 0.820317890327734
+Hamming Distance: [[0.14102564]]
+correctly classified(hamming score): 67
+hamming loss val 0.11012145748987855
+---epoch 349, loss 0.20930156111717224, hamming loss 0.09446693657219969, f1 score 0.8177970339887494
+Hamming Distance: [[0.14102564]]
+correctly classified(hamming score): 67
+hamming loss val 0.10883940620782724
+---epoch 350, loss 0.21168991923332214, hamming loss 0.09345479082321187, f1 score 0.8211264592823116
+Hamming Distance: [[0.14102564]]
+correctly classified(hamming score): 67
+hamming loss val 0.10971659919028338
+---epoch 351, loss 0.21132707595825195, hamming loss 0.09784075573549257, f1 score 0.8152559547202405
+Hamming Distance: [[0.11538462]]
+correctly classified(hamming score): 69
+hamming loss val 0.10782726045883938
+---epoch 352, loss 0.21075692772865295, hamming loss 0.09743589743589742, f1 score 0.8135566400473161
+Hamming Distance: [[0.11538462]]
+correctly classified(hamming score): 69
+hamming loss val 0.11234817813765183
+---epoch 353, loss 0.2142874002456665, hamming loss 0.09817813765182186, f1 score 0.8149786839544063
+Hamming Distance: [[0.11538462]]
+correctly classified(hamming score): 69
+hamming loss val 0.11626180836707149
+---epoch 354, loss 0.22191572189331055, hamming loss 0.10128205128205126, f1 score 0.8138522303441044
+Hamming Distance: [[0.14102564]]
+correctly classified(hamming score): 67
+hamming loss val 0.11194331983805667
+---epoch 355, loss 0.21807438135147095, hamming loss 0.10128205128205127, f1 score 0.8114963874308241
+Hamming Distance: [[0.11538462]]
+correctly classified(hamming score): 69
+hamming loss val 0.10566801619433196
+---epoch 356, loss 0.21112492680549622, hamming loss 0.09615384615384615, f1 score 0.8173248259957334
+Hamming Distance: [[0.14102564]]
+correctly classified(hamming score): 67
+hamming loss val 0.1086369770580297
+---epoch 357, loss 0.2096218466758728, hamming loss 0.09439946018893385, f1 score 0.8223258807138212
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.10620782726045881
+---epoch 358, loss 0.2081776261329651, hamming loss 0.0941970310391363, f1 score 0.8200901968826982
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.10742240215924426
+---epoch 359, loss 0.20760326087474823, hamming loss 0.09419703103913629, f1 score 0.8191347157855152
+Hamming Distance: [[0.1025641]]
+correctly classified(hamming score): 70
+hamming loss val 0.10958164642375168
+---epoch 360, loss 0.21245089173316956, hamming loss 0.09615384615384615, f1 score 0.8182183280804863
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.11012145748987852
+---epoch 361, loss 0.21182787418365479, hamming loss 0.09581646423751687, f1 score 0.8177297019419228
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.10870445344129555
+---epoch 362, loss 0.2066841572523117, hamming loss 0.09291497975708501, f1 score 0.8215284072744208
+Hamming Distance: [[0.11538462]]
+correctly classified(hamming score): 69
+hamming loss val 0.10951417004048583
+---epoch 363, loss 0.21353097259998322, hamming loss 0.09885290148448042, f1 score 0.8129439897255158
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.10735492577597841
+---epoch 364, loss 0.21956738829612732, hamming loss 0.10276653171390011, f1 score 0.8110463395011873
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.11045883940620782
+---epoch 365, loss 0.20744620263576508, hamming loss 0.09534412955465586, f1 score 0.8184094923538642
+Hamming Distance: [[0.14102564]]
+correctly classified(hamming score): 67
+hamming loss val 0.10863697705802967
+---epoch 366, loss 0.21609055995941162, hamming loss 0.09959514170040484, f1 score 0.8142281861981898
+Hamming Distance: [[0.14102564]]
+correctly classified(hamming score): 67
+hamming loss val 0.10809716599190285
+---epoch 367, loss 0.20946165919303894, hamming loss 0.09500674763832656, f1 score 0.8208063776594847
+Hamming Distance: [[0.14102564]]
+correctly classified(hamming score): 67
+hamming loss val 0.1103238866396761
+---epoch 368, loss 0.21006160974502563, hamming loss 0.09365721997300944, f1 score 0.8203902163926671
+Hamming Distance: [[0.11538462]]
+correctly classified(hamming score): 69
+hamming loss val 0.10425101214574899
+---epoch 369, loss 0.20530693233013153, hamming loss 0.09426450742240215, f1 score 0.8194366886437164
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.10721997300944668
+---epoch 370, loss 0.2086344212293625, hamming loss 0.09453441295546558, f1 score 0.8171360454659837
+Hamming Distance: [[0.11538462]]
+correctly classified(hamming score): 69
+hamming loss val 0.10809716599190282
+---epoch 371, loss 0.210807204246521, hamming loss 0.09790823211875843, f1 score 0.8129984368988082
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.10951417004048583
+---epoch 372, loss 0.22062040865421295, hamming loss 0.10128205128205127, f1 score 0.8110000686103663
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.11221322537112009
+---epoch 373, loss 0.21515269577503204, hamming loss 0.098110661268556, f1 score 0.8151105441675193
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.11018893387314439
+---epoch 374, loss 0.20716990530490875, hamming loss 0.094331983805668, f1 score 0.8208687561330035
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.10836707152496625
+---epoch 375, loss 0.20856593549251556, hamming loss 0.0944669365721997, f1 score 0.8205216597990262
+Hamming Distance: [[0.11538462]]
+correctly classified(hamming score): 69
+hamming loss val 0.11079622132253711
+---epoch 376, loss 0.20755606889724731, hamming loss 0.09487179487179485, f1 score 0.8202116887676293
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.10647773279352224
+---epoch 377, loss 0.20597094297409058, hamming loss 0.09365721997300944, f1 score 0.8199652427283741
+Hamming Distance: [[0.11538462]]
+correctly classified(hamming score): 69
+hamming loss val 0.10863697705802967
+---epoch 378, loss 0.20850983262062073, hamming loss 0.09419703103913626, f1 score 0.8206599648095437
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.10681511470985151
+---epoch 379, loss 0.2058955878019333, hamming loss 0.09392712550607286, f1 score 0.8185588242282913
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.11349527665317138
+---epoch 380, loss 0.21337094902992249, hamming loss 0.09750337381916327, f1 score 0.8184018614930584
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.11228070175438594
+---epoch 381, loss 0.2049933224916458, hamming loss 0.09345479082321187, f1 score 0.821068391405426
+Hamming Distance: [[0.15384615]]
+correctly classified(hamming score): 66
+hamming loss val 0.10964912280701754
+---epoch 382, loss 0.2209981381893158, hamming loss 0.09912280701754385, f1 score 0.8142381395162122
+Hamming Distance: [[0.11538462]]
+correctly classified(hamming score): 69
+hamming loss val 0.10944669365721996
+---epoch 383, loss 0.21389168500900269, hamming loss 0.09831309041835355, f1 score 0.8130417050027159
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.10931174089068825
+---epoch 384, loss 0.213761106133461, hamming loss 0.09919028340080972, f1 score 0.8123059487117612
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.10870445344129555
+---epoch 385, loss 0.22282706201076508, hamming loss 0.10101214574898783, f1 score 0.8120226818837568
+Hamming Distance: [[0.08974359]]
+correctly classified(hamming score): 71
+hamming loss val 0.1098515519568151
+---epoch 386, loss 0.20628373324871063, hamming loss 0.09352226720647772, f1 score 0.8218476911805299
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.1089068825910931
+---epoch 387, loss 0.20975841581821442, hamming loss 0.09642375168690957, f1 score 0.8155775936524124
+Hamming Distance: [[0.11538462]]
+correctly classified(hamming score): 69
+hamming loss val 0.10634278002699055
+---epoch 388, loss 0.20672623813152313, hamming loss 0.09352226720647772, f1 score 0.8228122289970062
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.10850202429149797
+---epoch 389, loss 0.2104671150445938, hamming loss 0.09770580296896085, f1 score 0.8144197631898532
+Hamming Distance: [[0.1025641]]
+correctly classified(hamming score): 70
+hamming loss val 0.11018893387314438
+---epoch 390, loss 0.20783662796020508, hamming loss 0.09460188933873144, f1 score 0.818579210145517
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.11282051282051281
+---epoch 391, loss 0.2100340574979782, hamming loss 0.09473684210526316, f1 score 0.8225206948933966
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.10964912280701752
+---epoch 392, loss 0.20535700023174286, hamming loss 0.09392712550607288, f1 score 0.8193823258427481
+Hamming Distance: [[0.14102564]]
+correctly classified(hamming score): 67
+hamming loss val 0.10883940620782724
+---epoch 393, loss 0.2121572047472, hamming loss 0.09473684210526316, f1 score 0.8174575661754683
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.1068825910931174
+---epoch 394, loss 0.21635325253009796, hamming loss 0.09966261808367069, f1 score 0.8117417229966439
+Hamming Distance: [[0.11538462]]
+correctly classified(hamming score): 69
+hamming loss val 0.10742240215924426
+---epoch 395, loss 0.21408496797084808, hamming loss 0.10128205128205128, f1 score 0.8110209301195396
+Hamming Distance: [[0.1025641]]
+correctly classified(hamming score): 70
+hamming loss val 0.11194331983805667
+---epoch 396, loss 0.20735397934913635, hamming loss 0.09399460188933872, f1 score 0.8177179854112583
+Hamming Distance: [[0.14102564]]
+correctly classified(hamming score): 67
+hamming loss val 0.10674763832658567
+---epoch 397, loss 0.21187864243984222, hamming loss 0.0965587044534413, f1 score 0.816601569160306
+Hamming Distance: [[0.11538462]]
+correctly classified(hamming score): 69
+hamming loss val 0.1099865047233468
+---epoch 398, loss 0.2120273858308792, hamming loss 0.09649122807017542, f1 score 0.8160979060315813
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.10931174089068825
+---epoch 399, loss 0.21208183467388153, hamming loss 0.09345479082321187, f1 score 0.820195917507233
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.11066126855600537
+---epoch 400, loss 0.21636898815631866, hamming loss 0.10020242914979755, f1 score 0.8105484542696563
+Hamming Distance: [[0.11538462]]
+correctly classified(hamming score): 69
+hamming loss val 0.10897435897435898
+---epoch 401, loss 0.20924896001815796, hamming loss 0.092442645074224, f1 score 0.8227386417682172
+Hamming Distance: [[0.11538462]]
+correctly classified(hamming score): 69
+hamming loss val 0.10782726045883939
+---epoch 402, loss 0.2073279470205307, hamming loss 0.09527665317139002, f1 score 0.8180104199317988
+Hamming Distance: [[0.1025641]]
+correctly classified(hamming score): 70
+hamming loss val 0.10452091767881241
+---epoch 403, loss 0.20493866503238678, hamming loss 0.09507422402159244, f1 score 0.8164156662066782
+Hamming Distance: [[0.14102564]]
+correctly classified(hamming score): 67
+hamming loss val 0.10782726045883939
+---epoch 404, loss 0.21631811559200287, hamming loss 0.0991902834008097, f1 score 0.8151064007284842
+Hamming Distance: [[0.1025641]]
+correctly classified(hamming score): 70
+hamming loss val 0.1087719298245614
+---epoch 405, loss 0.20949050784111023, hamming loss 0.09696356275303641, f1 score 0.81590191909556
+Hamming Distance: [[0.11538462]]
+correctly classified(hamming score): 69
+hamming loss val 0.10782726045883938
+---epoch 406, loss 0.20706415176391602, hamming loss 0.09399460188933871, f1 score 0.8198084061624934
+Hamming Distance: [[0.11538462]]
+correctly classified(hamming score): 69
+hamming loss val 0.10964912280701752
+---epoch 407, loss 0.20375105738639832, hamming loss 0.09311740890688255, f1 score 0.8217381881579405
+Hamming Distance: [[0.14102564]]
+correctly classified(hamming score): 67
+hamming loss val 0.1067476383265857
+---epoch 408, loss 0.21819719672203064, hamming loss 0.09750337381916327, f1 score 0.8143726290719254
+Hamming Distance: [[0.11538462]]
+correctly classified(hamming score): 69
+hamming loss val 0.1092442645074224
+---epoch 409, loss 0.21177905797958374, hamming loss 0.09676113360323885, f1 score 0.817766667355747
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.11255060728744938
+---epoch 410, loss 0.20788609981536865, hamming loss 0.09439946018893386, f1 score 0.8222527416241391
+Hamming Distance: [[0.1025641]]
+correctly classified(hamming score): 70
+hamming loss val 0.11288798920377864
+---epoch 411, loss 0.20902766287326813, hamming loss 0.09628879892037785, f1 score 0.8173184100080372
+Hamming Distance: [[0.11538462]]
+correctly classified(hamming score): 69
+hamming loss val 0.10668016194331982
+---epoch 412, loss 0.2132895588874817, hamming loss 0.09689608636977057, f1 score 0.8149348091712422
+Hamming Distance: [[0.14102564]]
+correctly classified(hamming score): 67
+hamming loss val 0.10755735492577596
+---epoch 413, loss 0.2051977664232254, hamming loss 0.09554655870445344, f1 score 0.8169121085561621
+Hamming Distance: [[0.15384615]]
+correctly classified(hamming score): 66
+hamming loss val 0.10641025641025639
+---epoch 414, loss 0.20920927822589874, hamming loss 0.09642375168690957, f1 score 0.8185667289570475
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.11302294197031039
+---epoch 415, loss 0.20906910300254822, hamming loss 0.095748987854251, f1 score 0.8167939445684498
+Hamming Distance: [[0.08974359]]
+correctly classified(hamming score): 71
+hamming loss val 0.11241565452091767
+---epoch 416, loss 0.21329382061958313, hamming loss 0.09703103913630229, f1 score 0.818033455346625
+Hamming Distance: [[0.14102564]]
+correctly classified(hamming score): 67
+hamming loss val 0.10850202429149797
+---epoch 417, loss 0.21605493128299713, hamming loss 0.09804318488529015, f1 score 0.8185892937289699
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.11221322537112009
+---epoch 418, loss 0.20675599575042725, hamming loss 0.09365721997300945, f1 score 0.8208443434832947
+Hamming Distance: [[0.14102564]]
+correctly classified(hamming score): 67
+hamming loss val 0.10431848852901483
+---epoch 419, loss 0.206475630402565, hamming loss 0.09224021592442645, f1 score 0.8223004383070819
+Hamming Distance: [[0.15384615]]
+correctly classified(hamming score): 66
+hamming loss val 0.10789473684210524
+---epoch 420, loss 0.21113453805446625, hamming loss 0.09473684210526316, f1 score 0.8165817647656642
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.1068825910931174
+---epoch 421, loss 0.2085842490196228, hamming loss 0.09534412955465586, f1 score 0.8175084892184833
+Hamming Distance: [[0.15384615]]
+correctly classified(hamming score): 66
+hamming loss val 0.10539811066126854
+---epoch 422, loss 0.2036696821451187, hamming loss 0.0944669365721997, f1 score 0.8192257877657161
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.10755735492577595
+---epoch 423, loss 0.21105431020259857, hamming loss 0.09743589743589741, f1 score 0.8145889125835944
+Hamming Distance: [[0.11538462]]
+correctly classified(hamming score): 69
+hamming loss val 0.11295546558704453
+---epoch 424, loss 0.22872716188430786, hamming loss 0.10209176788124152, f1 score 0.8107091786415231
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.10775978407557353
+---epoch 425, loss 0.22237271070480347, hamming loss 0.0987179487179487, f1 score 0.8182384065595928
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.11295546558704453
+---epoch 426, loss 0.21202722191810608, hamming loss 0.09689608636977057, f1 score 0.8170160717433802
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.10917678812415656
+---epoch 427, loss 0.2062055915594101, hamming loss 0.09547908232118756, f1 score 0.8166757121239367
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.10769230769230768
+---epoch 428, loss 0.2064168006181717, hamming loss 0.09669365721997299, f1 score 0.8158498245184606
+Hamming Distance: [[0.1025641]]
+correctly classified(hamming score): 70
+hamming loss val 0.10769230769230768
+---epoch 429, loss 0.20495037734508514, hamming loss 0.09318488529014844, f1 score 0.8209391032584223
+Hamming Distance: [[0.14102564]]
+correctly classified(hamming score): 67
+hamming loss val 0.10755735492577595
+---epoch 430, loss 0.20016548037528992, hamming loss 0.08900134952766531, f1 score 0.8271091593112101
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.10695006747638325
+---epoch 431, loss 0.20306529104709625, hamming loss 0.09331983805668018, f1 score 0.8207222514535443
+Hamming Distance: [[0.11538462]]
+correctly classified(hamming score): 69
+hamming loss val 0.10539811066126854
+---epoch 432, loss 0.20699362456798553, hamming loss 0.09601889338731442, f1 score 0.8170735764221083
+Hamming Distance: [[0.14102564]]
+correctly classified(hamming score): 67
+hamming loss val 0.10829959514170039
+---epoch 433, loss 0.20736713707447052, hamming loss 0.09379217273954114, f1 score 0.8218291042953351
+Hamming Distance: [[0.11538462]]
+correctly classified(hamming score): 69
+hamming loss val 0.10843454790823209
+---epoch 434, loss 0.20563118159770966, hamming loss 0.09534412955465586, f1 score 0.8201244259431267
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.10917678812415653
+---epoch 435, loss 0.20655503869056702, hamming loss 0.09689608636977057, f1 score 0.8151694063429429
+Hamming Distance: [[0.11538462]]
+correctly classified(hamming score): 69
+hamming loss val 0.10735492577597841
+---epoch 436, loss 0.21755386888980865, hamming loss 0.10195681511470983, f1 score 0.8081930686464615
+Hamming Distance: [[0.11538462]]
+correctly classified(hamming score): 69
+hamming loss val 0.11578947368421053
+---epoch 437, loss 0.22130729258060455, hamming loss 0.10317139001349528, f1 score 0.809636894797169
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.11160593792172739
+---epoch 438, loss 0.21167588233947754, hamming loss 0.09689608636977057, f1 score 0.8156963770353157
+Hamming Distance: [[0.14102564]]
+correctly classified(hamming score): 67
+hamming loss val 0.10647773279352227
+---epoch 439, loss 0.20619353652000427, hamming loss 0.09345479082321187, f1 score 0.8216124578824903
+Hamming Distance: [[0.14102564]]
+correctly classified(hamming score): 67
+hamming loss val 0.10937921727395411
+---epoch 440, loss 0.20828017592430115, hamming loss 0.09520917678812414, f1 score 0.8207256108981925
+Hamming Distance: [[0.1025641]]
+correctly classified(hamming score): 70
+hamming loss val 0.10721997300944668
+---epoch 441, loss 0.20568406581878662, hamming loss 0.09426450742240215, f1 score 0.8181772041506448
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.10600539811066124
+---epoch 442, loss 0.2025274932384491, hamming loss 0.09352226720647772, f1 score 0.8214534883049464
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.10775978407557353
+---epoch 443, loss 0.19948886334896088, hamming loss 0.09082321187584345, f1 score 0.8245812453089887
+Hamming Distance: [[0.11538462]]
+correctly classified(hamming score): 69
+hamming loss val 0.10647773279352227
+---epoch 444, loss 0.20269808173179626, hamming loss 0.09156545209176788, f1 score 0.8234985697590811
+Hamming Distance: [[0.14102564]]
+correctly classified(hamming score): 67
+hamming loss val 0.10809716599190282
+---epoch 445, loss 0.20858632028102875, hamming loss 0.09709851551956815, f1 score 0.8147578503150322
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.11072874493927122
+---epoch 446, loss 0.21872349083423615, hamming loss 0.09696356275303641, f1 score 0.8182200953673092
+Hamming Distance: [[0.11538462]]
+correctly classified(hamming score): 69
+hamming loss val 0.11099865047233468
+---epoch 447, loss 0.20895430445671082, hamming loss 0.09622132253711199, f1 score 0.8147934532742658
+Hamming Distance: [[0.15384615]]
+correctly classified(hamming score): 66
+hamming loss val 0.10910931174089068
+---epoch 448, loss 0.20997615158557892, hamming loss 0.09797570850202428, f1 score 0.8140903701824246
+Hamming Distance: [[0.08974359]]
+correctly classified(hamming score): 71
+hamming loss val 0.1074898785425101
+---epoch 449, loss 0.2084590345621109, hamming loss 0.09480431848852901, f1 score 0.8194461664624425
+Hamming Distance: [[0.11538462]]
+correctly classified(hamming score): 69
+hamming loss val 0.10870445344129555
+---epoch 450, loss 0.20742648839950562, hamming loss 0.09284750337381913, f1 score 0.8194209467491631
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.10809716599190285
+---epoch 451, loss 0.20540936291217804, hamming loss 0.09048582995951414, f1 score 0.8237188079121279
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.10789473684210527
+---epoch 452, loss 0.20162829756736755, hamming loss 0.09035087719298245, f1 score 0.8221430766739048
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.10823211875843454
+---epoch 453, loss 0.21175290644168854, hamming loss 0.09588394062078272, f1 score 0.8171102562341455
+Hamming Distance: [[0.1025641]]
+correctly classified(hamming score): 70
+hamming loss val 0.11207827260458839
+---epoch 454, loss 0.21372400224208832, hamming loss 0.10060728744939271, f1 score 0.8105139662537244
+Hamming Distance: [[0.11538462]]
+correctly classified(hamming score): 69
+hamming loss val 0.11592442645074222
+---epoch 455, loss 0.21895045042037964, hamming loss 0.09973009446693658, f1 score 0.8137147387589448
+Hamming Distance: [[0.07692308]]
+correctly classified(hamming score): 72
+hamming loss val 0.10823211875843454
+---epoch 456, loss 0.20561479032039642, hamming loss 0.09385964912280699, f1 score 0.8196496797302498
+Hamming Distance: [[0.14102564]]
+correctly classified(hamming score): 67
+hamming loss val 0.10721997300944668
+---epoch 457, loss 0.2036154866218567, hamming loss 0.09156545209176785, f1 score 0.8236333501599585
+Hamming Distance: [[0.11538462]]
+correctly classified(hamming score): 69
+hamming loss val 0.1073549257759784
+---epoch 458, loss 0.20593269169330597, hamming loss 0.09197031039136301, f1 score 0.822435345522932
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.10964912280701752
+---epoch 459, loss 0.21443244814872742, hamming loss 0.09547908232118757, f1 score 0.8182388953531152
+Hamming Distance: [[0.11538462]]
+correctly classified(hamming score): 69
+hamming loss val 0.10674763832658567
+---epoch 460, loss 0.20676416158676147, hamming loss 0.09500674763832659, f1 score 0.8189631201803442
+Hamming Distance: [[0.11538462]]
+correctly classified(hamming score): 69
+hamming loss val 0.1092442645074224
+---epoch 461, loss 0.20849183201789856, hamming loss 0.09527665317138999, f1 score 0.8188531529675156
+Hamming Distance: [[0.14102564]]
+correctly classified(hamming score): 67
+hamming loss val 0.1098515519568151
+---epoch 462, loss 0.20213189721107483, hamming loss 0.09190283400809715, f1 score 0.8210432539689654
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.10641025641025639
+---epoch 463, loss 0.2038419395685196, hamming loss 0.09176788124156544, f1 score 0.8221260745741009
+Hamming Distance: [[0.11538462]]
+correctly classified(hamming score): 69
+hamming loss val 0.10681511470985154
+---epoch 464, loss 0.20576709508895874, hamming loss 0.0931174089068826, f1 score 0.8203967757759032
+Hamming Distance: [[0.14102564]]
+correctly classified(hamming score): 67
+hamming loss val 0.10802968960863696
+---epoch 465, loss 0.20677906274795532, hamming loss 0.09473684210526313, f1 score 0.817797535901323
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.10843454790823209
+---epoch 466, loss 0.20940463244915009, hamming loss 0.09878542510121456, f1 score 0.8133891923702142
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.11167341430499324
+---epoch 467, loss 0.20544195175170898, hamming loss 0.0923076923076923, f1 score 0.8213357281262179
+Hamming Distance: [[0.1025641]]
+correctly classified(hamming score): 70
+hamming loss val 0.10924426450742238
+---epoch 468, loss 0.20449192821979523, hamming loss 0.09345479082321187, f1 score 0.8187207230906363
+Hamming Distance: [[0.11538462]]
+correctly classified(hamming score): 69
+hamming loss val 0.1046558704453441
+---epoch 469, loss 0.20774529874324799, hamming loss 0.09534412955465586, f1 score 0.8188974690908071
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.10695006747638325
+---epoch 470, loss 0.22036366164684296, hamming loss 0.10101214574898784, f1 score 0.8113689252751272
+Hamming Distance: [[0.14102564]]
+correctly classified(hamming score): 67
+hamming loss val 0.11288798920377865
+---epoch 471, loss 0.2101767659187317, hamming loss 0.09588394062078272, f1 score 0.8193485591576053
+Hamming Distance: [[0.1025641]]
+correctly classified(hamming score): 70
+hamming loss val 0.1068825910931174
+---epoch 472, loss 0.20660486817359924, hamming loss 0.09331983805668013, f1 score 0.8208056891656937
+Hamming Distance: [[0.14102564]]
+correctly classified(hamming score): 67
+hamming loss val 0.10634278002699055
+---epoch 473, loss 0.21064156293869019, hamming loss 0.0970310391363023, f1 score 0.8162534186918063
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.10924426450742238
+---epoch 474, loss 0.20904690027236938, hamming loss 0.09547908232118757, f1 score 0.8171265878200176
+Hamming Distance: [[0.14102564]]
+correctly classified(hamming score): 67
+hamming loss val 0.10323886639676112
+---epoch 475, loss 0.21377603709697723, hamming loss 0.0977732793522267, f1 score 0.8128743674819309
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.10856950067476381
+---epoch 476, loss 0.20825789868831635, hamming loss 0.09446693657219973, f1 score 0.81778437959425
+Hamming Distance: [[0.11538462]]
+correctly classified(hamming score): 69
+hamming loss val 0.1081646423751687
+---epoch 477, loss 0.21123139560222626, hamming loss 0.09709851551956815, f1 score 0.8162235125027041
+Hamming Distance: [[0.14102564]]
+correctly classified(hamming score): 67
+hamming loss val 0.10769230769230768
+---epoch 478, loss 0.20615634322166443, hamming loss 0.09520917678812414, f1 score 0.815553712493378
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.10769230769230768
+---epoch 479, loss 0.21001118421554565, hamming loss 0.09446693657219969, f1 score 0.8237748834165447
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.10721997300944668
+---epoch 480, loss 0.21164345741271973, hamming loss 0.09561403508771929, f1 score 0.8167449057634186
+Hamming Distance: [[0.11538462]]
+correctly classified(hamming score): 69
+hamming loss val 0.10587044534412954
+---epoch 481, loss 0.20558318495750427, hamming loss 0.0937246963562753, f1 score 0.8189516434370884
+Hamming Distance: [[0.11538462]]
+correctly classified(hamming score): 69
+hamming loss val 0.10836707152496623
+---epoch 482, loss 0.21700017154216766, hamming loss 0.09871794871794871, f1 score 0.8155731079909355
+Hamming Distance: [[0.1025641]]
+correctly classified(hamming score): 70
+hamming loss val 0.10910931174089067
+---epoch 483, loss 0.20543313026428223, hamming loss 0.09628879892037787, f1 score 0.8163787208108234
+Hamming Distance: [[0.1025641]]
+correctly classified(hamming score): 70
+hamming loss val 0.10492577597840753
+---epoch 484, loss 0.20762953162193298, hamming loss 0.0955465587044534, f1 score 0.8182743065060945
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.10560053981106611
+---epoch 485, loss 0.20092476904392242, hamming loss 0.09116059379217273, f1 score 0.8242588661161434
+Hamming Distance: [[0.11538462]]
+correctly classified(hamming score): 69
+hamming loss val 0.10634278002699055
+---epoch 486, loss 0.21408221125602722, hamming loss 0.09831309041835358, f1 score 0.812960968656994
+Hamming Distance: [[0.11538462]]
+correctly classified(hamming score): 69
+hamming loss val 0.10789473684210527
+---epoch 487, loss 0.20406121015548706, hamming loss 0.0937246963562753, f1 score 0.819572026076501
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.10715249662618083
+---epoch 488, loss 0.21097159385681152, hamming loss 0.09493927125506071, f1 score 0.8202555039053738
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.10863697705802967
+---epoch 489, loss 0.20579665899276733, hamming loss 0.09412955465587043, f1 score 0.8185363855545897
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.1035762483130904
+---epoch 490, loss 0.2036421149969101, hamming loss 0.09197031039136301, f1 score 0.8214244865867787
+Hamming Distance: [[0.15384615]]
+correctly classified(hamming score): 66
+hamming loss val 0.11052631578947368
+---epoch 491, loss 0.20964676141738892, hamming loss 0.09541160593792171, f1 score 0.8166139204809684
+Hamming Distance: [[0.11538462]]
+correctly classified(hamming score): 69
+hamming loss val 0.10802968960863696
+---epoch 492, loss 0.2081649750471115, hamming loss 0.09412955465587042, f1 score 0.8198882632868291
+Hamming Distance: [[0.11538462]]
+correctly classified(hamming score): 69
+hamming loss val 0.10802968960863696
+---epoch 493, loss 0.20446550846099854, hamming loss 0.09170040485829958, f1 score 0.8222450366553739
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.10506072874493927
+---epoch 494, loss 0.20082899928092957, hamming loss 0.08994601889338728, f1 score 0.8253986709696344
+Hamming Distance: [[0.11538462]]
+correctly classified(hamming score): 69
+hamming loss val 0.10647773279352224
+---epoch 495, loss 0.19866621494293213, hamming loss 0.08974358974358974, f1 score 0.8241434287068393
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.10566801619433196
+---epoch 496, loss 0.20172452926635742, hamming loss 0.09257759784075573, f1 score 0.819809865143678
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.1073549257759784
+---epoch 497, loss 0.2017219215631485, hamming loss 0.09210526315789472, f1 score 0.8211230615067344
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.10850202429149797
+---epoch 498, loss 0.20771384239196777, hamming loss 0.09574898785425102, f1 score 0.8185187914785405
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.10647773279352227
+---epoch 499, loss 0.21948274970054626, hamming loss 0.09628879892037787, f1 score 0.8170716176095386
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.10917678812415656
+---epoch 500, loss 0.2188808172941208, hamming loss 0.09959514170040484, f1 score 0.8123714895013238
+Hamming Distance: [[0.11538462]]
+correctly classified(hamming score): 69
+hamming loss val 0.11099865047233468
+---epoch 501, loss 0.2074352502822876, hamming loss 0.09446693657219973, f1 score 0.8198815408611183
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.1089068825910931
+---epoch 502, loss 0.20582425594329834, hamming loss 0.09385964912280702, f1 score 0.8162658319902784
+Hamming Distance: [[0.14102564]]
+correctly classified(hamming score): 67
+hamming loss val 0.1089068825910931
+---epoch 503, loss 0.20606452226638794, hamming loss 0.09345479082321187, f1 score 0.8196185166974391
+Hamming Distance: [[0.11538462]]
+correctly classified(hamming score): 69
+hamming loss val 0.1097165991902834
+---epoch 504, loss 0.20886224508285522, hamming loss 0.09541160593792171, f1 score 0.8185502036373858
+Hamming Distance: [[0.11538462]]
+correctly classified(hamming score): 69
+hamming loss val 0.1107962213225371
+---epoch 505, loss 0.2148887813091278, hamming loss 0.09952766531713897, f1 score 0.8122907483285462
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.1101889338731444
+---epoch 506, loss 0.20638568699359894, hamming loss 0.09520917678812414, f1 score 0.8192822939360204
+Hamming Distance: [[0.14102564]]
+correctly classified(hamming score): 67
+hamming loss val 0.10526315789473684
+---epoch 507, loss 0.2052721083164215, hamming loss 0.09514170040485828, f1 score 0.8197029760095759
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.10958164642375168
+---epoch 508, loss 0.20417051017284393, hamming loss 0.09291497975708501, f1 score 0.8209253619651973
+Hamming Distance: [[0.11538462]]
+correctly classified(hamming score): 69
+hamming loss val 0.10627530364372466
+---epoch 509, loss 0.20443476736545563, hamming loss 0.09291497975708501, f1 score 0.8214571954398059
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.10843454790823212
+---epoch 510, loss 0.2036864459514618, hamming loss 0.09352226720647774, f1 score 0.8201724204222746
+Hamming Distance: [[0.16666667]]
+correctly classified(hamming score): 65
+hamming loss val 0.10789473684210527
+---epoch 511, loss 0.20163170993328094, hamming loss 0.09075573549257757, f1 score 0.8254871223634535
+Hamming Distance: [[0.11538462]]
+correctly classified(hamming score): 69
+hamming loss val 0.10850202429149797
+---epoch 512, loss 0.19818849861621857, hamming loss 0.09143049932523616, f1 score 0.8221638525313314
+Hamming Distance: [[0.11538462]]
+correctly classified(hamming score): 69
+hamming loss val 0.10506072874493924
+---epoch 513, loss 0.20014238357543945, hamming loss 0.09170040485829958, f1 score 0.8228841347030466
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.11012145748987852
+---epoch 514, loss 0.20832805335521698, hamming loss 0.09534412955465586, f1 score 0.8215694438108582
+Hamming Distance: [[0.11538462]]
+correctly classified(hamming score): 69
+hamming loss val 0.10998650472334683
+---epoch 515, loss 0.22044280171394348, hamming loss 0.09979757085020242, f1 score 0.8128704392800821
+Hamming Distance: [[0.15384615]]
+correctly classified(hamming score): 66
+hamming loss val 0.11052631578947368
+---epoch 516, loss 0.2168317288160324, hamming loss 0.09905533063427799, f1 score 0.8110917748490616
+Hamming Distance: [[0.11538462]]
+correctly classified(hamming score): 69
+hamming loss val 0.10964912280701752
+---epoch 517, loss 0.21387043595314026, hamming loss 0.09649122807017542, f1 score 0.8162716761536403
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.1093792172739541
+---epoch 518, loss 0.2037714272737503, hamming loss 0.092442645074224, f1 score 0.822633771460755
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.10843454790823212
+---epoch 519, loss 0.20506511628627777, hamming loss 0.09541160593792172, f1 score 0.8165746153849244
+Hamming Distance: [[0.14102564]]
+correctly classified(hamming score): 67
+hamming loss val 0.10485829959514169
+---epoch 520, loss 0.2112843096256256, hamming loss 0.09426450742240215, f1 score 0.8174957828050263
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.10499325236167341
+---epoch 521, loss 0.20119884610176086, hamming loss 0.09109311740890688, f1 score 0.8259698425076845
+Hamming Distance: [[0.11538462]]
+correctly classified(hamming score): 69
+hamming loss val 0.10634278002699055
+---epoch 522, loss 0.20636628568172455, hamming loss 0.09358974358974359, f1 score 0.8201623169798958
+Hamming Distance: [[0.14102564]]
+correctly classified(hamming score): 67
+hamming loss val 0.11052631578947367
+---epoch 523, loss 0.20454934239387512, hamming loss 0.091497975708502, f1 score 0.8217780682448387
+Hamming Distance: [[0.11538462]]
+correctly classified(hamming score): 69
+hamming loss val 0.10418353576248311
+---epoch 524, loss 0.20661456882953644, hamming loss 0.09649122807017543, f1 score 0.8185963008589972
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.1070175438596491
+---epoch 525, loss 0.20484550297260284, hamming loss 0.094331983805668, f1 score 0.8179402787153466
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.10910931174089067
+---epoch 526, loss 0.2121250331401825, hamming loss 0.09831309041835358, f1 score 0.8115951866032348
+Hamming Distance: [[0.15384615]]
+correctly classified(hamming score): 66
+hamming loss val 0.10445344129554657
+---epoch 527, loss 0.20543715357780457, hamming loss 0.09358974358974356, f1 score 0.8190609753003167
+Hamming Distance: [[0.11538462]]
+correctly classified(hamming score): 69
+hamming loss val 0.10836707152496627
+---epoch 528, loss 0.2008998692035675, hamming loss 0.0908906882591093, f1 score 0.8239465365225487
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.10782726045883939
+---epoch 529, loss 0.2039949744939804, hamming loss 0.09358974358974356, f1 score 0.8187711321570871
+Hamming Distance: [[0.11538462]]
+correctly classified(hamming score): 69
+hamming loss val 0.10850202429149797
+---epoch 530, loss 0.21183834969997406, hamming loss 0.09696356275303641, f1 score 0.8173700909204671
+Hamming Distance: [[0.11538462]]
+correctly classified(hamming score): 69
+hamming loss val 0.1089068825910931
+---epoch 531, loss 0.20676539838314056, hamming loss 0.09352226720647772, f1 score 0.819731014425503
+Hamming Distance: [[0.14102564]]
+correctly classified(hamming score): 67
+hamming loss val 0.10708502024291497
+---epoch 532, loss 0.20916463434696198, hamming loss 0.09696356275303641, f1 score 0.8182245331466121
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.10944669365721996
+---epoch 533, loss 0.20720210671424866, hamming loss 0.094331983805668, f1 score 0.8192465059386947
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.10506072874493924
+---epoch 534, loss 0.205059215426445, hamming loss 0.09399460188933872, f1 score 0.8184186100848182
+Hamming Distance: [[0.14102564]]
+correctly classified(hamming score): 67
+hamming loss val 0.10587044534412954
+---epoch 535, loss 0.21256372332572937, hamming loss 0.09709851551956813, f1 score 0.8153728366172689
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.10883940620782724
+---epoch 536, loss 0.20358896255493164, hamming loss 0.09439946018893385, f1 score 0.8185569932401662
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.1087719298245614
+---epoch 537, loss 0.2072073221206665, hamming loss 0.09527665317139002, f1 score 0.8145018779371272
+Hamming Distance: [[0.11538462]]
+correctly classified(hamming score): 69
+hamming loss val 0.10816464237516867
+---epoch 538, loss 0.20248228311538696, hamming loss 0.0904183535762483, f1 score 0.825375945168111
+Hamming Distance: [[0.1025641]]
+correctly classified(hamming score): 70
+hamming loss val 0.10452091767881241
+---epoch 539, loss 0.20827507972717285, hamming loss 0.09392712550607284, f1 score 0.81879966607641
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.10728744939271255
+---epoch 540, loss 0.20551559329032898, hamming loss 0.09412955465587043, f1 score 0.8187548920556744
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.1049932523616734
+---epoch 541, loss 0.2162836641073227, hamming loss 0.09858299595141698, f1 score 0.8150145870842066
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.1112685560053981
+---epoch 542, loss 0.20571842789649963, hamming loss 0.09561403508771929, f1 score 0.8155328288072548
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.1093792172739541
+---epoch 543, loss 0.20571672916412354, hamming loss 0.09460188933873147, f1 score 0.8195762895393829
+Hamming Distance: [[0.11538462]]
+correctly classified(hamming score): 69
+hamming loss val 0.10452091767881239
+---epoch 544, loss 0.2070850133895874, hamming loss 0.09460188933873143, f1 score 0.8171764921567309
+Hamming Distance: [[0.14102564]]
+correctly classified(hamming score): 67
+hamming loss val 0.10870445344129555
+---epoch 545, loss 0.20310240983963013, hamming loss 0.09304993252361674, f1 score 0.819295115061012
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.10553306342780025
+---epoch 546, loss 0.20269343256950378, hamming loss 0.09129554655870444, f1 score 0.8235993554613458
+Hamming Distance: [[0.14102564]]
+correctly classified(hamming score): 67
+hamming loss val 0.10479082321187584
+---epoch 547, loss 0.20259296894073486, hamming loss 0.09170040485829958, f1 score 0.8215616096852356
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.10465587044534412
+---epoch 548, loss 0.20294472575187683, hamming loss 0.09385964912280702, f1 score 0.8187971849757305
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.10161943319838056
+---epoch 549, loss 0.21674200892448425, hamming loss 0.09541160593792171, f1 score 0.8146836809103305
+Hamming Distance: [[0.19230769]]
+correctly classified(hamming score): 63
+hamming loss val 0.10775978407557353
+---epoch 550, loss 0.20079496502876282, hamming loss 0.09048582995951415, f1 score 0.8227934312743446
+Hamming Distance: [[0.15384615]]
+correctly classified(hamming score): 66
+hamming loss val 0.10762483130904184
+---epoch 551, loss 0.2040272206068039, hamming loss 0.09406207827260457, f1 score 0.8214445219527579
+Hamming Distance: [[0.11538462]]
+correctly classified(hamming score): 69
+hamming loss val 0.10661268556005397
+---epoch 552, loss 0.2162874937057495, hamming loss 0.09932523616734142, f1 score 0.8131340436484026
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.10695006747638325
+---epoch 553, loss 0.20673787593841553, hamming loss 0.09784075573549254, f1 score 0.8150360072857674
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.10775978407557353
+---epoch 554, loss 0.20713147521018982, hamming loss 0.09541160593792171, f1 score 0.8154200234106275
+Hamming Distance: [[0.14102564]]
+correctly classified(hamming score): 67
+hamming loss val 0.10755735492577596
+---epoch 555, loss 0.20238007605075836, hamming loss 0.09197031039136301, f1 score 0.8220752335933199
+Hamming Distance: [[0.16666667]]
+correctly classified(hamming score): 65
+hamming loss val 0.10600539811066127
+---epoch 556, loss 0.20158624649047852, hamming loss 0.09041835357624829, f1 score 0.8251575351920944
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.1068825910931174
+---epoch 557, loss 0.20477022230625153, hamming loss 0.09365721997300944, f1 score 0.81939472509824
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.10802968960863696
+---epoch 558, loss 0.2043740153312683, hamming loss 0.09298245614035086, f1 score 0.8215898709627854
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.10762483130904182
+---epoch 559, loss 0.20711544156074524, hamming loss 0.09480431848852901, f1 score 0.8184567866883813
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.10769230769230768
+---epoch 560, loss 0.20474395155906677, hamming loss 0.09278002699055328, f1 score 0.8200485773934977
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.10661268556005397
+---epoch 561, loss 0.20824415981769562, hamming loss 0.09534412955465586, f1 score 0.8183467423607547
+Hamming Distance: [[0.14102564]]
+correctly classified(hamming score): 67
+hamming loss val 0.10614035087719297
+---epoch 562, loss 0.20622535049915314, hamming loss 0.09662618083670714, f1 score 0.8139050946227072
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.11396761133603238
+---epoch 563, loss 0.2159605175256729, hamming loss 0.09831309041835355, f1 score 0.815318744718456
+Hamming Distance: [[0.14102564]]
+correctly classified(hamming score): 67
+hamming loss val 0.10843454790823212
+---epoch 564, loss 0.20857864618301392, hamming loss 0.09554655870445344, f1 score 0.8179566458477955
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.10829959514170039
+---epoch 565, loss 0.20145556330680847, hamming loss 0.09358974358974356, f1 score 0.8192513134635154
+Hamming Distance: [[0.11538462]]
+correctly classified(hamming score): 69
+hamming loss val 0.10809716599190285
+---epoch 566, loss 0.2092006653547287, hamming loss 0.09399460188933872, f1 score 0.820198334031201
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.10715249662618083
+---epoch 567, loss 0.2085644006729126, hamming loss 0.09595141700404858, f1 score 0.8161442842205603
+Hamming Distance: [[0.11538462]]
+correctly classified(hamming score): 69
+hamming loss val 0.10573549257759783
+---epoch 568, loss 0.20997337996959686, hamming loss 0.09682860998650472, f1 score 0.8146415909985448
+Hamming Distance: [[0.1025641]]
+correctly classified(hamming score): 70
+hamming loss val 0.10708502024291497
+---epoch 569, loss 0.20503433048725128, hamming loss 0.09500674763832656, f1 score 0.8150271495426396
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.10506072874493927
+---epoch 570, loss 0.20376765727996826, hamming loss 0.0941970310391363, f1 score 0.818410841343355
+Hamming Distance: [[0.08974359]]
+correctly classified(hamming score): 71
+hamming loss val 0.10708502024291497
+---epoch 571, loss 0.20039713382720947, hamming loss 0.09203778677462887, f1 score 0.8202628647237149
+Hamming Distance: [[0.1025641]]
+correctly classified(hamming score): 70
+hamming loss val 0.10398110661268556
+---epoch 572, loss 0.19743752479553223, hamming loss 0.09116059379217273, f1 score 0.8218139323719712
+Hamming Distance: [[0.14102564]]
+correctly classified(hamming score): 67
+hamming loss val 0.10357624831309041
+---epoch 573, loss 0.20086993277072906, hamming loss 0.09210526315789472, f1 score 0.8227821318603248
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.11153846153846154
+---epoch 574, loss 0.20180003345012665, hamming loss 0.09278002699055328, f1 score 0.818395676135177
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.10634278002699052
+---epoch 575, loss 0.20140424370765686, hamming loss 0.09203778677462887, f1 score 0.8195840648316051
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.10620782726045881
+---epoch 576, loss 0.20074547827243805, hamming loss 0.09075573549257758, f1 score 0.8227556521290006
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.10641025641025639
+---epoch 577, loss 0.20466826856136322, hamming loss 0.09460188933873143, f1 score 0.8168599051892963
+Hamming Distance: [[0.11538462]]
+correctly classified(hamming score): 69
+hamming loss val 0.10431848852901483
+---epoch 578, loss 0.1985623836517334, hamming loss 0.09156545209176786, f1 score 0.8232849464339648
+Hamming Distance: [[0.15384615]]
+correctly classified(hamming score): 66
+hamming loss val 0.10755735492577596
+---epoch 579, loss 0.2003927081823349, hamming loss 0.09001349527665316, f1 score 0.8254044085135477
+Hamming Distance: [[0.17948718]]
+correctly classified(hamming score): 64
+hamming loss val 0.11113360323886638
+---epoch 580, loss 0.21200400590896606, hamming loss 0.09703103913630226, f1 score 0.817665232726439
+Hamming Distance: [[0.14102564]]
+correctly classified(hamming score): 67
+hamming loss val 0.1068825910931174
+---epoch 581, loss 0.20660533010959625, hamming loss 0.09628879892037785, f1 score 0.8169992657251227
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.10681511470985154
+---epoch 582, loss 0.2067616581916809, hamming loss 0.09628879892037784, f1 score 0.8170763026726903
+Hamming Distance: [[0.15384615]]
+correctly classified(hamming score): 66
+hamming loss val 0.10681511470985154
+---epoch 583, loss 0.2046579122543335, hamming loss 0.09392712550607284, f1 score 0.8191018494775467
+Hamming Distance: [[0.14102564]]
+correctly classified(hamming score): 67
+hamming loss val 0.10519568151147096
+---epoch 584, loss 0.2041480392217636, hamming loss 0.09527665317138999, f1 score 0.8163197947889737
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.10728744939271255
+---epoch 585, loss 0.207322895526886, hamming loss 0.09352226720647772, f1 score 0.8215722586490792
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.10593792172739538
+---epoch 586, loss 0.20108626782894135, hamming loss 0.09278002699055328, f1 score 0.8195875764925407
+Hamming Distance: [[0.14102564]]
+correctly classified(hamming score): 67
+hamming loss val 0.10641025641025639
+---epoch 587, loss 0.20183700323104858, hamming loss 0.09176788124156543, f1 score 0.821920670104928
+Hamming Distance: [[0.15384615]]
+correctly classified(hamming score): 66
+hamming loss val 0.1056005398110661
+---epoch 588, loss 0.20309379696846008, hamming loss 0.09527665317138999, f1 score 0.8173909430552269
+Hamming Distance: [[0.08974359]]
+correctly classified(hamming score): 71
+hamming loss val 0.10479082321187584
+---epoch 589, loss 0.1999148726463318, hamming loss 0.09068825910931172, f1 score 0.8227715150547749
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.10492577597840753
+---epoch 590, loss 0.20303773880004883, hamming loss 0.09197031039136301, f1 score 0.825469803344057
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.10701754385964912
+---epoch 591, loss 0.20285183191299438, hamming loss 0.09406207827260459, f1 score 0.819526115000575
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.10465587044534412
+---epoch 592, loss 0.20853102207183838, hamming loss 0.09541160593792172, f1 score 0.8196422498885092
+Hamming Distance: [[0.08974359]]
+correctly classified(hamming score): 71
+hamming loss val 0.10978407557354924
+---epoch 593, loss 0.20776928961277008, hamming loss 0.09547908232118757, f1 score 0.8186596720353051
+Hamming Distance: [[0.1025641]]
+correctly classified(hamming score): 70
+hamming loss val 0.10789473684210527
+---epoch 594, loss 0.20100386440753937, hamming loss 0.09116059379217273, f1 score 0.8201777096960379
+Hamming Distance: [[0.11538462]]
+correctly classified(hamming score): 69
+hamming loss val 0.10506072874493927
+---epoch 595, loss 0.199125275015831, hamming loss 0.09048582995951415, f1 score 0.8246658211125573
+Hamming Distance: [[0.16666667]]
+correctly classified(hamming score): 65
+hamming loss val 0.10708502024291497
+---epoch 596, loss 0.20106013119220734, hamming loss 0.09217273954116058, f1 score 0.8195221245558499
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.10931174089068825
+---epoch 597, loss 0.19927214086055756, hamming loss 0.08954116059379216, f1 score 0.8268266334536604
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.10620782726045881
+---epoch 598, loss 0.20114576816558838, hamming loss 0.09183535762483129, f1 score 0.8218458851192981
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.10843454790823209
+---epoch 599, loss 0.2035660743713379, hamming loss 0.0948717948717949, f1 score 0.820882769615135
+Hamming Distance: [[0.14102564]]
+correctly classified(hamming score): 67
+hamming loss val 0.10850202429149797
+---epoch 600, loss 0.20451433956623077, hamming loss 0.09338731443994601, f1 score 0.8214113140130712
+Hamming Distance: [[0.14102564]]
+correctly classified(hamming score): 67
+hamming loss val 0.10614035087719297
+---epoch 601, loss 0.20682397484779358, hamming loss 0.09574898785425102, f1 score 0.8144774847139237
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.10539811066126854
+---epoch 602, loss 0.1993681639432907, hamming loss 0.09062078272604585, f1 score 0.8238714476903995
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.10533063427800268
+---epoch 603, loss 0.1983218938112259, hamming loss 0.08940620782726046, f1 score 0.8253332055812378
+Hamming Distance: [[0.1025641]]
+correctly classified(hamming score): 70
+hamming loss val 0.10492577597840755
+---epoch 604, loss 0.2014012187719345, hamming loss 0.0931174089068826, f1 score 0.8190209862156612
+Hamming Distance: [[0.14102564]]
+correctly classified(hamming score): 67
+hamming loss val 0.10614035087719297
+---epoch 605, loss 0.20687252283096313, hamming loss 0.09473684210526316, f1 score 0.8161764277589767
+Hamming Distance: [[0.1025641]]
+correctly classified(hamming score): 70
+hamming loss val 0.10452091767881241
+---epoch 606, loss 0.2051890790462494, hamming loss 0.09358974358974356, f1 score 0.820176169059592
+Hamming Distance: [[0.17948718]]
+correctly classified(hamming score): 64
+hamming loss val 0.10647773279352227
+---epoch 607, loss 0.21591822803020477, hamming loss 0.09973009446693658, f1 score 0.8115679543058839
+Hamming Distance: [[0.07692308]]
+correctly classified(hamming score): 72
+hamming loss val 0.1074898785425101
+---epoch 608, loss 0.20472925901412964, hamming loss 0.09170040485829958, f1 score 0.8235097867097465
+Hamming Distance: [[0.11538462]]
+correctly classified(hamming score): 69
+hamming loss val 0.10769230769230768
+---epoch 609, loss 0.20585110783576965, hamming loss 0.09311740890688258, f1 score 0.8207296613606276
+Hamming Distance: [[0.14102564]]
+correctly classified(hamming score): 67
+hamming loss val 0.10573549257759782
+---epoch 610, loss 0.19775113463401794, hamming loss 0.08981106612685559, f1 score 0.8264417224499059
+Hamming Distance: [[0.14102564]]
+correctly classified(hamming score): 67
+hamming loss val 0.10782726045883939
+---epoch 611, loss 0.20300477743148804, hamming loss 0.09318488529014844, f1 score 0.8207218576786419
+Hamming Distance: [[0.1025641]]
+correctly classified(hamming score): 70
+hamming loss val 0.10715249662618083
+---epoch 612, loss 0.20481806993484497, hamming loss 0.09345479082321187, f1 score 0.8185452918838795
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.10829959514170039
+---epoch 613, loss 0.2002204954624176, hamming loss 0.09190283400809715, f1 score 0.8204559684490017
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.11113360323886637
+---epoch 614, loss 0.21063055098056793, hamming loss 0.0960863697705803, f1 score 0.8170716420197293
+Hamming Distance: [[0.14102564]]
+correctly classified(hamming score): 67
+hamming loss val 0.10850202429149797
+---epoch 615, loss 0.20612432062625885, hamming loss 0.09541160593792171, f1 score 0.8173324819473392
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.10607287449392712
+---epoch 616, loss 0.19873428344726562, hamming loss 0.09176788124156544, f1 score 0.8228460137690053
+Hamming Distance: [[0.17948718]]
+correctly classified(hamming score): 64
+hamming loss val 0.1046558704453441
+---epoch 617, loss 0.212196484208107, hamming loss 0.09453441295546558, f1 score 0.8178549838745895
+Hamming Distance: [[0.11538462]]
+correctly classified(hamming score): 69
+hamming loss val 0.11194331983805667
+---epoch 618, loss 0.21410630643367767, hamming loss 0.0989203778677463, f1 score 0.8144109713764844
+Hamming Distance: [[0.14102564]]
+correctly classified(hamming score): 67
+hamming loss val 0.1073549257759784
+---epoch 619, loss 0.2004746049642563, hamming loss 0.09264507422402159, f1 score 0.8213389774580054
+Hamming Distance: [[0.14102564]]
+correctly classified(hamming score): 67
+hamming loss val 0.11180836707152497
+---epoch 620, loss 0.20452077686786652, hamming loss 0.09406207827260457, f1 score 0.820668809647609
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.10580296896086369
+---epoch 621, loss 0.200043722987175, hamming loss 0.09062078272604587, f1 score 0.8263253041782616
+Hamming Distance: [[0.15384615]]
+correctly classified(hamming score): 66
+hamming loss val 0.11005398110661267
+---epoch 622, loss 0.1993194818496704, hamming loss 0.0902834008097166, f1 score 0.8252308140885486
+Hamming Distance: [[0.14102564]]
+correctly classified(hamming score): 67
+hamming loss val 0.10398110661268556
+---epoch 623, loss 0.21006163954734802, hamming loss 0.09473684210526316, f1 score 0.8198829796914836
+Hamming Distance: [[0.14102564]]
+correctly classified(hamming score): 67
+hamming loss val 0.10843454790823209
+---epoch 624, loss 0.20546914637088776, hamming loss 0.09520917678812413, f1 score 0.8182035761320091
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.10661268556005397
+---epoch 625, loss 0.21303263306617737, hamming loss 0.09871794871794871, f1 score 0.8114701372516864
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.10654520917678811
+---epoch 626, loss 0.20707356929779053, hamming loss 0.0960863697705803, f1 score 0.8143441755735987
+Hamming Distance: [[0.15384615]]
+correctly classified(hamming score): 66
+hamming loss val 0.10715249662618083
+---epoch 627, loss 0.21023370325565338, hamming loss 0.09183535762483129, f1 score 0.8232260183051463
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.10890688259109313
+---epoch 628, loss 0.20153431594371796, hamming loss 0.09298245614035086, f1 score 0.8205297256155523
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.10303643724696354
+---epoch 629, loss 0.19823335111141205, hamming loss 0.09089068825910931, f1 score 0.8242640319948268
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.10526315789473684
+---epoch 630, loss 0.20203568041324615, hamming loss 0.09170040485829958, f1 score 0.822845146915361
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.10634278002699055
+---epoch 631, loss 0.2172892987728119, hamming loss 0.0937246963562753, f1 score 0.8188515816998845
+Hamming Distance: [[0.11538462]]
+correctly classified(hamming score): 69
+hamming loss val 0.11228070175438595
+---epoch 632, loss 0.20671334862709045, hamming loss 0.09466936572199727, f1 score 0.82142094722436
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.1049932523616734
+---epoch 633, loss 0.2014850378036499, hamming loss 0.09264507422402159, f1 score 0.8218034488434183
+Hamming Distance: [[0.08974359]]
+correctly classified(hamming score): 71
+hamming loss val 0.10641025641025639
+---epoch 634, loss 0.19680416584014893, hamming loss 0.09048582995951418, f1 score 0.8239803450494972
+Hamming Distance: [[0.11538462]]
+correctly classified(hamming score): 69
+hamming loss val 0.10762483130904182
+---epoch 635, loss 0.20257022976875305, hamming loss 0.09156545209176788, f1 score 0.8231117919558435
+Hamming Distance: [[0.11538462]]
+correctly classified(hamming score): 69
+hamming loss val 0.1089068825910931
+---epoch 636, loss 0.20266319811344147, hamming loss 0.09595141700404859, f1 score 0.8169722622027319
+Hamming Distance: [[0.14102564]]
+correctly classified(hamming score): 67
+hamming loss val 0.1070175438596491
+---epoch 637, loss 0.21582858264446259, hamming loss 0.09588394062078272, f1 score 0.817679298671408
+Hamming Distance: [[0.11538462]]
+correctly classified(hamming score): 69
+hamming loss val 0.1067476383265857
+---epoch 638, loss 0.21087166666984558, hamming loss 0.09797570850202428, f1 score 0.8149855893518736
+Hamming Distance: [[0.14102564]]
+correctly classified(hamming score): 67
+hamming loss val 0.10708502024291497
+---epoch 639, loss 0.2039133906364441, hamming loss 0.09311740890688255, f1 score 0.8219138999927865
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.11099865047233469
+---epoch 640, loss 0.21277810633182526, hamming loss 0.1001349527665317, f1 score 0.8147100694659091
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.10607287449392712
+---epoch 641, loss 0.20704028010368347, hamming loss 0.09507422402159244, f1 score 0.8181165399422026
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.10708502024291497
+---epoch 642, loss 0.20347417891025543, hamming loss 0.09399460188933872, f1 score 0.8203816748640614
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.10802968960863696
+---epoch 643, loss 0.20259146392345428, hamming loss 0.094331983805668, f1 score 0.819720954190036
+Hamming Distance: [[0.14102564]]
+correctly classified(hamming score): 67
+hamming loss val 0.10526315789473682
+---epoch 644, loss 0.19981054961681366, hamming loss 0.09163292847503374, f1 score 0.8203716648746152
+Hamming Distance: [[0.11538462]]
+correctly classified(hamming score): 69
+hamming loss val 0.10607287449392712
+---epoch 645, loss 0.19770894944667816, hamming loss 0.09176788124156543, f1 score 0.8221564314202238
+Hamming Distance: [[0.11538462]]
+correctly classified(hamming score): 69
+hamming loss val 0.10580296896086369
+---epoch 646, loss 0.20390452444553375, hamming loss 0.09541160593792174, f1 score 0.8190719206417764
+Hamming Distance: [[0.14102564]]
+correctly classified(hamming score): 67
+hamming loss val 0.10614035087719297
+---epoch 647, loss 0.20121194422245026, hamming loss 0.09284750337381915, f1 score 0.8209450115505328
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.10769230769230768
+---epoch 648, loss 0.1961522400379181, hamming loss 0.08819163292847502, f1 score 0.8274608215741808
+Hamming Distance: [[0.15384615]]
+correctly classified(hamming score): 66
+hamming loss val 0.10560053981106611
+---epoch 649, loss 0.20100025832653046, hamming loss 0.09251012145748988, f1 score 0.8220392644903579
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.1068825910931174
+---epoch 650, loss 0.20155130326747894, hamming loss 0.09365721997300941, f1 score 0.8206969194402096
+Hamming Distance: [[0.07692308]]
+correctly classified(hamming score): 72
+hamming loss val 0.10519568151147098
+---epoch 651, loss 0.2049853652715683, hamming loss 0.09406207827260457, f1 score 0.8189745191333968
+Hamming Distance: [[0.14102564]]
+correctly classified(hamming score): 67
+hamming loss val 0.10587044534412954
+---epoch 652, loss 0.20281150937080383, hamming loss 0.09507422402159244, f1 score 0.8169862928775762
+Hamming Distance: [[0.14102564]]
+correctly classified(hamming score): 67
+hamming loss val 0.10350877192982455
+---epoch 653, loss 0.2012796550989151, hamming loss 0.09318488529014844, f1 score 0.8201300361317071
+Hamming Distance: [[0.14102564]]
+correctly classified(hamming score): 67
+hamming loss val 0.10674763832658567
+---epoch 654, loss 0.20230884850025177, hamming loss 0.0918353576248313, f1 score 0.8213850374292296
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.10701754385964912
+---epoch 655, loss 0.22679370641708374, hamming loss 0.10472334682861, f1 score 0.8072734294781166
+Hamming Distance: [[0.08974359]]
+correctly classified(hamming score): 71
+hamming loss val 0.1123481781376518
+---epoch 656, loss 0.20999202132225037, hamming loss 0.09878542510121456, f1 score 0.8155762629796453
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.10695006747638325
+---epoch 657, loss 0.20363380014896393, hamming loss 0.09379217273954114, f1 score 0.8185113180570353
+Hamming Distance: [[0.1025641]]
+correctly classified(hamming score): 70
+hamming loss val 0.1093792172739541
+---epoch 658, loss 0.19470728933811188, hamming loss 0.08846153846153844, f1 score 0.8282032572692201
+Hamming Distance: [[0.14102564]]
+correctly classified(hamming score): 67
+hamming loss val 0.10431848852901483
+---epoch 659, loss 0.19858545064926147, hamming loss 0.09095816464237516, f1 score 0.8241910754222156
+Hamming Distance: [[0.15384615]]
+correctly classified(hamming score): 66
+hamming loss val 0.10492577597840755
+---epoch 660, loss 0.19933515787124634, hamming loss 0.09048582995951414, f1 score 0.8231723165080232
+Hamming Distance: [[0.14102564]]
+correctly classified(hamming score): 67
+hamming loss val 0.10762483130904182
+---epoch 661, loss 0.20731237530708313, hamming loss 0.09655870445344127, f1 score 0.8168512542687324
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.10816464237516867
+---epoch 662, loss 0.19782309234142303, hamming loss 0.0918353576248313, f1 score 0.8212701768705095
+Hamming Distance: [[0.11538462]]
+correctly classified(hamming score): 69
+hamming loss val 0.10573549257759783
+---epoch 663, loss 0.20121370255947113, hamming loss 0.09318488529014844, f1 score 0.8180831296033596
+Hamming Distance: [[0.14102564]]
+correctly classified(hamming score): 67
+hamming loss val 0.10627530364372469
+---epoch 664, loss 0.2041451334953308, hamming loss 0.09500674763832656, f1 score 0.8200328205591096
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.10560053981106611
+---epoch 665, loss 0.20656993985176086, hamming loss 0.09480431848852901, f1 score 0.818415928350255
+Hamming Distance: [[0.14102564]]
+correctly classified(hamming score): 67
+hamming loss val 0.10775978407557353
+---epoch 666, loss 0.21321740746498108, hamming loss 0.09736842105263156, f1 score 0.8150088001700052
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.10829959514170039
+---epoch 667, loss 0.2068665772676468, hamming loss 0.09649122807017543, f1 score 0.8173223785854089
+Hamming Distance: [[0.11538462]]
+correctly classified(hamming score): 69
+hamming loss val 0.10425101214574899
+---epoch 668, loss 0.20030750334262848, hamming loss 0.09284750337381915, f1 score 0.8183119330851945
+Hamming Distance: [[0.15384615]]
+correctly classified(hamming score): 66
+hamming loss val 0.10802968960863696
+---epoch 669, loss 0.20028738677501678, hamming loss 0.09278002699055328, f1 score 0.8212172984648797
+Hamming Distance: [[0.15384615]]
+correctly classified(hamming score): 66
+hamming loss val 0.10721997300944668
+---epoch 670, loss 0.1993667632341385, hamming loss 0.0912280701754386, f1 score 0.8235825179015362
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.10533063427800268
+---epoch 671, loss 0.2172594517469406, hamming loss 0.09541160593792172, f1 score 0.8209010986275799
+Hamming Distance: [[0.11538462]]
+correctly classified(hamming score): 69
+hamming loss val 0.11133603238866396
+---epoch 672, loss 0.20829853415489197, hamming loss 0.0977732793522267, f1 score 0.8174900606716459
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.10263157894736841
+---epoch 673, loss 0.20555607974529266, hamming loss 0.09480431848852901, f1 score 0.8180370785242175
+Hamming Distance: [[0.14102564]]
+correctly classified(hamming score): 67
+hamming loss val 0.10593792172739538
+---epoch 674, loss 0.20648963749408722, hamming loss 0.09352226720647772, f1 score 0.8193878908649896
+Hamming Distance: [[0.11538462]]
+correctly classified(hamming score): 69
+hamming loss val 0.10897435897435895
+---epoch 675, loss 0.20126977562904358, hamming loss 0.09264507422402159, f1 score 0.8218734759488984
+Hamming Distance: [[0.11538462]]
+correctly classified(hamming score): 69
+hamming loss val 0.1089068825910931
+---epoch 676, loss 0.19653885066509247, hamming loss 0.08967611336032386, f1 score 0.824564827159778
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.10350877192982455
+---epoch 677, loss 0.20027606189250946, hamming loss 0.09210526315789473, f1 score 0.821621628046709
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.10452091767881241
+---epoch 678, loss 0.20958742499351501, hamming loss 0.09831309041835355, f1 score 0.8132438356811559
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.1034412955465587
+---epoch 679, loss 0.20334960520267487, hamming loss 0.09358974358974356, f1 score 0.8213894967963168
+Hamming Distance: [[0.14102564]]
+correctly classified(hamming score): 67
+hamming loss val 0.10560053981106611
+---epoch 680, loss 0.19975519180297852, hamming loss 0.09136302294197028, f1 score 0.8232848226361609
+Hamming Distance: [[0.14102564]]
+correctly classified(hamming score): 67
+hamming loss val 0.10560053981106611
+---epoch 681, loss 0.19795139133930206, hamming loss 0.08947368421052632, f1 score 0.8274134777598524
+Hamming Distance: [[0.11538462]]
+correctly classified(hamming score): 69
+hamming loss val 0.10701754385964912
+---epoch 682, loss 0.20202134549617767, hamming loss 0.09001349527665317, f1 score 0.8300244544718585
+Hamming Distance: [[0.08974359]]
+correctly classified(hamming score): 71
+hamming loss val 0.10695006747638325
+---epoch 683, loss 0.19787460565567017, hamming loss 0.08920377867746287, f1 score 0.8267478460587696
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.10249662618083669
+---epoch 684, loss 0.20318032801151276, hamming loss 0.09136302294197031, f1 score 0.8230612781049282
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.11356275303643723
+---epoch 685, loss 0.21671053767204285, hamming loss 0.09649122807017542, f1 score 0.8160898551262084
+Hamming Distance: [[0.11538462]]
+correctly classified(hamming score): 69
+hamming loss val 0.10742240215924426
+---epoch 686, loss 0.2037871778011322, hamming loss 0.09284750337381915, f1 score 0.8208014841117081
+Hamming Distance: [[0.14102564]]
+correctly classified(hamming score): 67
+hamming loss val 0.10479082321187584
+---epoch 687, loss 0.19609788060188293, hamming loss 0.0896761133603239, f1 score 0.8242028372040486
+Hamming Distance: [[0.15384615]]
+correctly classified(hamming score): 66
+hamming loss val 0.10620782726045881
+---epoch 688, loss 0.20663002133369446, hamming loss 0.09304993252361671, f1 score 0.8204498804609733
+Hamming Distance: [[0.07692308]]
+correctly classified(hamming score): 72
+hamming loss val 0.10398110661268556
+---epoch 689, loss 0.20017173886299133, hamming loss 0.09163292847503374, f1 score 0.8230867098879397
+Hamming Distance: [[0.11538462]]
+correctly classified(hamming score): 69
+hamming loss val 0.10195681511470983
+---epoch 690, loss 0.19813284277915955, hamming loss 0.09008097165991902, f1 score 0.8264386190683773
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.1031039136302294
+---epoch 691, loss 0.19563895463943481, hamming loss 0.0894736842105263, f1 score 0.825139426543974
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.10546558704453439
+---epoch 692, loss 0.20188277959823608, hamming loss 0.09278002699055328, f1 score 0.8207598684028088
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.10533063427800268
+---epoch 693, loss 0.20077334344387054, hamming loss 0.09358974358974356, f1 score 0.8193020701487165
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.10485829959514169
+---epoch 694, loss 0.201407790184021, hamming loss 0.09203778677462887, f1 score 0.8211977440184179
+Hamming Distance: [[0.08974359]]
+correctly classified(hamming score): 71
+hamming loss val 0.10695006747638325
+---epoch 695, loss 0.20069411396980286, hamming loss 0.09345479082321187, f1 score 0.820351160758486
+Hamming Distance: [[0.14102564]]
+correctly classified(hamming score): 67
+hamming loss val 0.11147098515519568
+---epoch 696, loss 0.19965940713882446, hamming loss 0.09001349527665317, f1 score 0.8232268619381232
+Hamming Distance: [[0.1025641]]
+correctly classified(hamming score): 70
+hamming loss val 0.10519568151147096
+---epoch 697, loss 0.20129165053367615, hamming loss 0.094331983805668, f1 score 0.8186251891703783
+Hamming Distance: [[0.11538462]]
+correctly classified(hamming score): 69
+hamming loss val 0.10614035087719297
+---epoch 698, loss 0.21310195326805115, hamming loss 0.09689608636977057, f1 score 0.8164449437521958
+Hamming Distance: [[0.14102564]]
+correctly classified(hamming score): 67
+hamming loss val 0.11066126855600537
+---epoch 699, loss 0.19917112588882446, hamming loss 0.08967611336032386, f1 score 0.8285101336142286
+Hamming Distance: [[0.11538462]]
+correctly classified(hamming score): 69
+hamming loss val 0.10681511470985154
+---epoch 700, loss 0.2039325088262558, hamming loss 0.094331983805668, f1 score 0.8184085221904719
+Hamming Distance: [[0.14102564]]
+correctly classified(hamming score): 67
+hamming loss val 0.10600539811066126
+---epoch 701, loss 0.21118539571762085, hamming loss 0.09588394062078272, f1 score 0.8197838345898827
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.10850202429149797
+---epoch 702, loss 0.23123799264431, hamming loss 0.09622132253711199, f1 score 0.8206039824160084
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.11187584345479082
+---epoch 703, loss 0.2111901491880417, hamming loss 0.09466936572199729, f1 score 0.8212372884873061
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.10802968960863696
+---epoch 704, loss 0.20124083757400513, hamming loss 0.09251012145748985, f1 score 0.8215792759102067
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.10526315789473684
+---epoch 705, loss 0.20121921598911285, hamming loss 0.09338731443994601, f1 score 0.8223368747642071
+Hamming Distance: [[0.14102564]]
+correctly classified(hamming score): 67
+hamming loss val 0.10580296896086368
+---epoch 706, loss 0.206023707985878, hamming loss 0.09399460188933871, f1 score 0.8237044203042808
+Hamming Distance: [[0.11538462]]
+correctly classified(hamming score): 69
+hamming loss val 0.10769230769230768
+---epoch 707, loss 0.20399025082588196, hamming loss 0.09419703103913629, f1 score 0.8186093577587535
+Hamming Distance: [[0.14102564]]
+correctly classified(hamming score): 67
+hamming loss val 0.10418353576248314
+---epoch 708, loss 0.20058448612689972, hamming loss 0.09197031039136301, f1 score 0.8222383206163996
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.10560053981106611
+---epoch 709, loss 0.20180535316467285, hamming loss 0.09338731443994601, f1 score 0.8196039290916441
+Hamming Distance: [[0.17948718]]
+correctly classified(hamming score): 64
+hamming loss val 0.10762483130904184
+---epoch 710, loss 0.19975373148918152, hamming loss 0.0944669365721997, f1 score 0.8213021711244961
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.10506072874493927
+---epoch 711, loss 0.19913466274738312, hamming loss 0.09122807017543859, f1 score 0.8236424014736297
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.10553306342780026
+---epoch 712, loss 0.19619672000408173, hamming loss 0.08906882591093115, f1 score 0.8301244002745536
+Hamming Distance: [[0.15384615]]
+correctly classified(hamming score): 66
+hamming loss val 0.10816464237516865
+---epoch 713, loss 0.20533864200115204, hamming loss 0.09392712550607286, f1 score 0.8201236070179753
+Hamming Distance: [[0.11538462]]
+correctly classified(hamming score): 69
+hamming loss val 0.10580296896086369
+---epoch 714, loss 0.20737324655056, hamming loss 0.09325236167341429, f1 score 0.8220322303271482
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.10580296896086368
+---epoch 715, loss 0.19710083305835724, hamming loss 0.0893387314439946, f1 score 0.8253680284912811
+Hamming Distance: [[0.14102564]]
+correctly classified(hamming score): 67
+hamming loss val 0.10668016194331982
+---epoch 716, loss 0.20973816514015198, hamming loss 0.09723346828609984, f1 score 0.8123503460500211
+Hamming Distance: [[0.14102564]]
+correctly classified(hamming score): 67
+hamming loss val 0.10539811066126854
+---epoch 717, loss 0.20492705702781677, hamming loss 0.09318488529014844, f1 score 0.8207559221347871
+Hamming Distance: [[0.14102564]]
+correctly classified(hamming score): 67
+hamming loss val 0.10809716599190282
+---epoch 718, loss 0.20136722922325134, hamming loss 0.09008097165991902, f1 score 0.8263993052775866
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.10593792172739538
+---epoch 719, loss 0.20189128816127777, hamming loss 0.09156545209176786, f1 score 0.8228495066360086
+Hamming Distance: [[0.14102564]]
+correctly classified(hamming score): 67
+hamming loss val 0.1070175438596491
+---epoch 720, loss 0.2132890671491623, hamming loss 0.09865047233468287, f1 score 0.8140503133691592
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.10789473684210524
+---epoch 721, loss 0.19888068735599518, hamming loss 0.09176788124156544, f1 score 0.8244412148042536
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.10917678812415656
+---epoch 722, loss 0.2035870999097824, hamming loss 0.09291497975708501, f1 score 0.8228808643920227
+Hamming Distance: [[0.14102564]]
+correctly classified(hamming score): 67
+hamming loss val 0.10627530364372466
+---epoch 723, loss 0.2074488252401352, hamming loss 0.09817813765182185, f1 score 0.8128554916332678
+Hamming Distance: [[0.14102564]]
+correctly classified(hamming score): 67
+hamming loss val 0.10775978407557353
+---epoch 724, loss 0.20078220963478088, hamming loss 0.09116059379217273, f1 score 0.8245319451468276
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.10337381916329283
+---epoch 725, loss 0.2018386870622635, hamming loss 0.09379217273954114, f1 score 0.822576388452204
+Hamming Distance: [[0.11538462]]
+correctly classified(hamming score): 69
+hamming loss val 0.10398110661268556
+---epoch 726, loss 0.1947258859872818, hamming loss 0.09136302294197031, f1 score 0.8249017431379089
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.10512820512820512
+---epoch 727, loss 0.19821295142173767, hamming loss 0.09122807017543857, f1 score 0.8218193618098724
+Hamming Distance: [[0.14102564]]
+correctly classified(hamming score): 67
+hamming loss val 0.10695006747638325
+---epoch 728, loss 0.22640220820903778, hamming loss 0.10033738191632928, f1 score 0.8139803736954301
+Hamming Distance: [[0.11538462]]
+correctly classified(hamming score): 69
+hamming loss val 0.10566801619433196
+---epoch 729, loss 0.20070873200893402, hamming loss 0.09237516869095815, f1 score 0.8220447268876119
+Hamming Distance: [[0.14102564]]
+correctly classified(hamming score): 67
+hamming loss val 0.11099865047233465
+---epoch 730, loss 0.21698859333992004, hamming loss 0.09723346828609984, f1 score 0.8158529308333115
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.10910931174089067
+---epoch 731, loss 0.1998104751110077, hamming loss 0.09035087719298245, f1 score 0.8244309976378763
+Hamming Distance: [[0.11538462]]
+correctly classified(hamming score): 69
+hamming loss val 0.10452091767881241
+---epoch 732, loss 0.1936677247285843, hamming loss 0.08927125506072874, f1 score 0.8245033412426617
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.10458839406207826
+---epoch 733, loss 0.20403306186199188, hamming loss 0.09392712550607284, f1 score 0.820214945506369
+Hamming Distance: [[0.08974359]]
+correctly classified(hamming score): 71
+hamming loss val 0.10944669365721996
+---epoch 734, loss 0.1990906298160553, hamming loss 0.0918353576248313, f1 score 0.8208062851588116
+Hamming Distance: [[0.14102564]]
+correctly classified(hamming score): 67
+hamming loss val 0.1035762483130904
+---epoch 735, loss 0.1997719556093216, hamming loss 0.09426450742240215, f1 score 0.819553187789125
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.1062753036437247
+---epoch 736, loss 0.20049382746219635, hamming loss 0.09062078272604587, f1 score 0.8255645644140257
+Hamming Distance: [[0.11538462]]
+correctly classified(hamming score): 69
+hamming loss val 0.10526315789473682
+---epoch 737, loss 0.1955605149269104, hamming loss 0.0873144399460189, f1 score 0.830029005446685
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.10654520917678813
+---epoch 738, loss 0.19970767199993134, hamming loss 0.09385964912280702, f1 score 0.8200906010258958
+Hamming Distance: [[0.14102564]]
+correctly classified(hamming score): 67
+hamming loss val 0.1087719298245614
+---epoch 739, loss 0.20041833817958832, hamming loss 0.09352226720647772, f1 score 0.8194618431370382
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.10755735492577596
+---epoch 740, loss 0.20322148501873016, hamming loss 0.09278002699055328, f1 score 0.8213437273934032
+Hamming Distance: [[0.11538462]]
+correctly classified(hamming score): 69
+hamming loss val 0.10661268556005397
+---epoch 741, loss 0.200016587972641, hamming loss 0.0931174089068826, f1 score 0.8223708194269597
+Hamming Distance: [[0.14102564]]
+correctly classified(hamming score): 67
+hamming loss val 0.1046558704453441
+---epoch 742, loss 0.1921941190958023, hamming loss 0.08643724696356274, f1 score 0.8293290828962085
+Hamming Distance: [[0.14102564]]
+correctly classified(hamming score): 67
+hamming loss val 0.10431848852901483
+---epoch 743, loss 0.1966547966003418, hamming loss 0.08886639676113361, f1 score 0.8290887292708659
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.10303643724696354
+---epoch 744, loss 0.19915729761123657, hamming loss 0.09271255060728743, f1 score 0.8204344972473919
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.10222672064777326
+---epoch 745, loss 0.21366490423679352, hamming loss 0.09487179487179485, f1 score 0.8199434691086672
+Hamming Distance: [[0.14102564]]
+correctly classified(hamming score): 67
+hamming loss val 0.10897435897435898
+---epoch 746, loss 0.2054263800382614, hamming loss 0.09763832658569499, f1 score 0.8138826461764863
+Hamming Distance: [[0.11538462]]
+correctly classified(hamming score): 69
+hamming loss val 0.10047233468286099
+---epoch 747, loss 0.21074046194553375, hamming loss 0.09547908232118756, f1 score 0.8189373476377485
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.10816464237516867
+---epoch 748, loss 0.20146635174751282, hamming loss 0.09217273954116058, f1 score 0.8207138772552547
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.10485829959514169
+---epoch 749, loss 0.21342267096042633, hamming loss 0.09817813765182186, f1 score 0.8147475206876008
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.10472334682860997
+---epoch 750, loss 0.21710674464702606, hamming loss 0.09993252361673416, f1 score 0.8159224399378915
+Hamming Distance: [[0.11538462]]
+correctly classified(hamming score): 69
+hamming loss val 0.1056005398110661
+---epoch 751, loss 0.2023615539073944, hamming loss 0.09406207827260457, f1 score 0.8198926716981491
+Hamming Distance: [[0.1025641]]
+correctly classified(hamming score): 70
+hamming loss val 0.10377867746288798
+---epoch 752, loss 0.19295184314250946, hamming loss 0.08832658569500672, f1 score 0.8275605917334806
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.10519568151147096
+---epoch 753, loss 0.19828945398330688, hamming loss 0.09224021592442645, f1 score 0.8209376176422585
+Hamming Distance: [[0.1025641]]
+correctly classified(hamming score): 70
+hamming loss val 0.10580296896086369
+---epoch 754, loss 0.1956893652677536, hamming loss 0.08974358974358974, f1 score 0.8262019474286684
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.10620782726045884
+---epoch 755, loss 0.19576770067214966, hamming loss 0.08873144399460187, f1 score 0.8262671900267342
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.10323886639676112
+---epoch 756, loss 0.2029293030500412, hamming loss 0.09466936572199727, f1 score 0.817203051821906
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.10661268556005397
+---epoch 757, loss 0.20523689687252045, hamming loss 0.09446693657219969, f1 score 0.81954141682179
+Hamming Distance: [[0.14102564]]
+correctly classified(hamming score): 67
+hamming loss val 0.10553306342780026
+---epoch 758, loss 0.20496973395347595, hamming loss 0.09527665317139002, f1 score 0.817488232171173
+Hamming Distance: [[0.15384615]]
+correctly classified(hamming score): 66
+hamming loss val 0.10823211875843454
+---epoch 759, loss 0.19801822304725647, hamming loss 0.09170040485829958, f1 score 0.82191134779368
+Hamming Distance: [[0.11538462]]
+correctly classified(hamming score): 69
+hamming loss val 0.1040485829959514
+---epoch 760, loss 0.19881150126457214, hamming loss 0.09156545209176786, f1 score 0.8228026892435085
+Hamming Distance: [[0.14102564]]
+correctly classified(hamming score): 67
+hamming loss val 0.10526315789473682
+---epoch 761, loss 0.20052655041217804, hamming loss 0.09257759784075573, f1 score 0.8227866543206729
+Hamming Distance: [[0.1025641]]
+correctly classified(hamming score): 70
+hamming loss val 0.10364372469635624
+---epoch 762, loss 0.20082177221775055, hamming loss 0.0888663967611336, f1 score 0.8286919936492986
+Hamming Distance: [[0.11538462]]
+correctly classified(hamming score): 69
+hamming loss val 0.10634278002699055
+---epoch 763, loss 0.19945445656776428, hamming loss 0.091025641025641, f1 score 0.824059889459321
+Hamming Distance: [[0.1025641]]
+correctly classified(hamming score): 70
+hamming loss val 0.10917678812415653
+---epoch 764, loss 0.20381692051887512, hamming loss 0.09561403508771929, f1 score 0.8170233058623705
+Hamming Distance: [[0.11538462]]
+correctly classified(hamming score): 69
+hamming loss val 0.10539811066126854
+---epoch 765, loss 0.20549659430980682, hamming loss 0.095748987854251, f1 score 0.8218863080924591
+Hamming Distance: [[0.11538462]]
+correctly classified(hamming score): 69
+hamming loss val 0.1126855600539811
+---epoch 766, loss 0.20151761174201965, hamming loss 0.09251012145748985, f1 score 0.8227472519359035
+Hamming Distance: [[0.11538462]]
+correctly classified(hamming score): 69
+hamming loss val 0.10607287449392712
+---epoch 767, loss 0.19651585817337036, hamming loss 0.08947368421052632, f1 score 0.8247273144579453
+Hamming Distance: [[0.14102564]]
+correctly classified(hamming score): 67
+hamming loss val 0.10560053981106611
+---epoch 768, loss 0.20108112692832947, hamming loss 0.09318488529014844, f1 score 0.8211155455194463
+Hamming Distance: [[0.1025641]]
+correctly classified(hamming score): 70
+hamming loss val 0.10303643724696354
+---epoch 769, loss 0.19532912969589233, hamming loss 0.0885290148448043, f1 score 0.8262286045084266
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.10303643724696354
+---epoch 770, loss 0.2075384259223938, hamming loss 0.09345479082321187, f1 score 0.821116957201967
+Hamming Distance: [[0.14102564]]
+correctly classified(hamming score): 67
+hamming loss val 0.10856950067476381
+---epoch 771, loss 0.20440496504306793, hamming loss 0.09304993252361674, f1 score 0.8207129648968482
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.10634278002699055
+---epoch 772, loss 0.20573420822620392, hamming loss 0.09237516869095815, f1 score 0.8222487040530185
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.10357624831309041
+---epoch 773, loss 0.1957283467054367, hamming loss 0.09102564102564104, f1 score 0.8216486853698414
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.10553306342780025
+---epoch 774, loss 0.1979396790266037, hamming loss 0.0918353576248313, f1 score 0.8217627526085778
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.10762483130904184
+---epoch 775, loss 0.19417183101177216, hamming loss 0.0894736842105263, f1 score 0.8257307606407243
+Hamming Distance: [[0.11538462]]
+correctly classified(hamming score): 69
+hamming loss val 0.10438596491228068
+---epoch 776, loss 0.19835056364536285, hamming loss 0.09082321187584343, f1 score 0.8232099559852581
+Hamming Distance: [[0.14102564]]
+correctly classified(hamming score): 67
+hamming loss val 0.10418353576248314
+---epoch 777, loss 0.19827812910079956, hamming loss 0.09021592442645072, f1 score 0.8237770853317302
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.10782726045883938
+---epoch 778, loss 0.20038427412509918, hamming loss 0.09217273954116058, f1 score 0.8226879770112681
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.10742240215924426
+---epoch 779, loss 0.2087162882089615, hamming loss 0.09379217273954114, f1 score 0.8216276470928667
+Hamming Distance: [[0.11538462]]
+correctly classified(hamming score): 69
+hamming loss val 0.10991902834008095
+---epoch 780, loss 0.20454540848731995, hamming loss 0.09419703103913629, f1 score 0.8225170991474924
+Hamming Distance: [[0.11538462]]
+correctly classified(hamming score): 69
+hamming loss val 0.10728744939271252
+---epoch 781, loss 0.20728683471679688, hamming loss 0.09176788124156543, f1 score 0.8207415861389968
+Hamming Distance: [[0.11538462]]
+correctly classified(hamming score): 69
+hamming loss val 0.10499325236167341
+---epoch 782, loss 0.21502545475959778, hamming loss 0.099527665317139, f1 score 0.8120461827517506
+Hamming Distance: [[0.14102564]]
+correctly classified(hamming score): 67
+hamming loss val 0.10472334682860997
+---epoch 783, loss 0.20676498115062714, hamming loss 0.09419703103913629, f1 score 0.822268427062336
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.10620782726045881
+---epoch 784, loss 0.20190145075321198, hamming loss 0.09102564102564101, f1 score 0.8249648081753713
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.1046558704453441
+---epoch 785, loss 0.19689306616783142, hamming loss 0.09143049932523616, f1 score 0.8216327006810445
+Hamming Distance: [[0.14102564]]
+correctly classified(hamming score): 67
+hamming loss val 0.10452091767881241
+---epoch 786, loss 0.202712282538414, hamming loss 0.0923076923076923, f1 score 0.8203781701789479
+Hamming Distance: [[0.08974359]]
+correctly classified(hamming score): 71
+hamming loss val 0.1040485829959514
+---epoch 787, loss 0.19869562983512878, hamming loss 0.09190283400809718, f1 score 0.8229217601211883
+Hamming Distance: [[0.08974359]]
+correctly classified(hamming score): 71
+hamming loss val 0.10519568151147098
+---epoch 788, loss 0.1977301687002182, hamming loss 0.09055330634278003, f1 score 0.8240643648630116
+Hamming Distance: [[0.11538462]]
+correctly classified(hamming score): 69
+hamming loss val 0.10337381916329286
+---epoch 789, loss 0.19798624515533447, hamming loss 0.08960863697705802, f1 score 0.827117003332036
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.10479082321187584
+---epoch 790, loss 0.20654864609241486, hamming loss 0.09210526315789472, f1 score 0.8244179158234598
+Hamming Distance: [[0.14102564]]
+correctly classified(hamming score): 67
+hamming loss val 0.10850202429149797
+---epoch 791, loss 0.20598194003105164, hamming loss 0.09527665317138999, f1 score 0.817795193604884
+Hamming Distance: [[0.11538462]]
+correctly classified(hamming score): 69
+hamming loss val 0.10944669365721997
+---epoch 792, loss 0.20122279226779938, hamming loss 0.09224021592442647, f1 score 0.8240161745793635
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.10472334682861
+---epoch 793, loss 0.19589737057685852, hamming loss 0.09082321187584343, f1 score 0.821921643849375
+Hamming Distance: [[0.1025641]]
+correctly classified(hamming score): 70
+hamming loss val 0.1049932523616734
+---epoch 794, loss 0.19939233362674713, hamming loss 0.09197031039136302, f1 score 0.8185778436972361
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.10641025641025639
+---epoch 795, loss 0.19935965538024902, hamming loss 0.09237516869095816, f1 score 0.8198953765200948
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.1020242914979757
+---epoch 796, loss 0.2139825075864792, hamming loss 0.10026990553306343, f1 score 0.8130398295411979
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.1128205128205128
+---epoch 797, loss 0.21446755528450012, hamming loss 0.09689608636977057, f1 score 0.8184086812530734
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.10425101214574896
+---epoch 798, loss 0.19969390332698822, hamming loss 0.09291497975708501, f1 score 0.8211748480101685
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.10512820512820512
+---epoch 799, loss 0.1972610503435135, hamming loss 0.08987854251012144, f1 score 0.8228176817619737
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.10384615384615382
+---epoch 800, loss 0.20296502113342285, hamming loss 0.09406207827260459, f1 score 0.8190573456524485
+Hamming Distance: [[0.1025641]]
+correctly classified(hamming score): 70
+hamming loss val 0.10418353576248311
+---epoch 801, loss 0.19847308099269867, hamming loss 0.09426450742240214, f1 score 0.8183632270755195
+Hamming Distance: [[0.14102564]]
+correctly classified(hamming score): 67
+hamming loss val 0.10539811066126854
+---epoch 802, loss 0.1919260323047638, hamming loss 0.08677462887989201, f1 score 0.8303825115395685
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.1034412955465587
+---epoch 803, loss 0.19615960121154785, hamming loss 0.08839406207827259, f1 score 0.8274434352914978
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.1029689608636977
+---epoch 804, loss 0.20104138553142548, hamming loss 0.09129554655870442, f1 score 0.8236142813840355
+Hamming Distance: [[0.15384615]]
+correctly classified(hamming score): 66
+hamming loss val 0.10843454790823212
+---epoch 805, loss 0.19950847327709198, hamming loss 0.09304993252361671, f1 score 0.8220544264167403
+Hamming Distance: [[0.11538462]]
+correctly classified(hamming score): 69
+hamming loss val 0.10904183535762482
+---epoch 806, loss 0.2020190954208374, hamming loss 0.09581646423751684, f1 score 0.8194048073773962
+Hamming Distance: [[0.11538462]]
+correctly classified(hamming score): 69
+hamming loss val 0.10148448043184882
+---epoch 807, loss 0.21152259409427643, hamming loss 0.09568151147098515, f1 score 0.818543196217023
+Hamming Distance: [[0.14102564]]
+correctly classified(hamming score): 67
+hamming loss val 0.10978407557354924
+---epoch 808, loss 0.20178477466106415, hamming loss 0.09399460188933871, f1 score 0.8199744494902611
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.10614035087719297
+---epoch 809, loss 0.19737239181995392, hamming loss 0.09170040485829958, f1 score 0.8222576592723008
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.10391363022941968
+---epoch 810, loss 0.20421306788921356, hamming loss 0.09399460188933872, f1 score 0.8185768536255748
+Hamming Distance: [[0.14102564]]
+correctly classified(hamming score): 67
+hamming loss val 0.10506072874493927
+---epoch 811, loss 0.195966437458992, hamming loss 0.09102564102564101, f1 score 0.8235834963148991
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.1049932523616734
+---epoch 812, loss 0.20428980886936188, hamming loss 0.09554655870445344, f1 score 0.8180886387780126
+Hamming Distance: [[0.16666667]]
+correctly classified(hamming score): 65
+hamming loss val 0.10587044534412952
+---epoch 813, loss 0.1970878541469574, hamming loss 0.09122807017543859, f1 score 0.8268235428048175
+Hamming Distance: [[0.14102564]]
+correctly classified(hamming score): 67
+hamming loss val 0.10290148448043185
+---epoch 814, loss 0.19877715408802032, hamming loss 0.09143049932523616, f1 score 0.8243662913945126
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.10668016194331982
+---epoch 815, loss 0.19786441326141357, hamming loss 0.0908906882591093, f1 score 0.8243920971519215
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.11052631578947368
+---epoch 816, loss 0.19709412753582, hamming loss 0.09116059379217273, f1 score 0.8240394435566687
+Hamming Distance: [[0.14102564]]
+correctly classified(hamming score): 67
+hamming loss val 0.10775978407557353
+---epoch 817, loss 0.19962173700332642, hamming loss 0.09014844804318488, f1 score 0.8253095024438618
+Hamming Distance: [[0.11538462]]
+correctly classified(hamming score): 69
+hamming loss val 0.10492577597840753
+---epoch 818, loss 0.20307967066764832, hamming loss 0.09264507422402157, f1 score 0.8191864994721095
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.10256410256410256
+---epoch 819, loss 0.2008092850446701, hamming loss 0.09244264507422403, f1 score 0.8216766789248859
+Hamming Distance: [[0.14102564]]
+correctly classified(hamming score): 67
+hamming loss val 0.10755735492577596
+---epoch 820, loss 0.20381036400794983, hamming loss 0.09203778677462887, f1 score 0.8242093808827211
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.1118758434547908
+---epoch 821, loss 0.22020253539085388, hamming loss 0.09892037786774627, f1 score 0.8156257626104054
+Hamming Distance: [[0.14102564]]
+correctly classified(hamming score): 67
+hamming loss val 0.1073549257759784
+---epoch 822, loss 0.20485855638980865, hamming loss 0.09527665317139002, f1 score 0.8176397689416139
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.10607287449392712
+---epoch 823, loss 0.21833230555057526, hamming loss 0.10087719298245613, f1 score 0.8113638962406529
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.1046558704453441
+---epoch 824, loss 0.19877873361110687, hamming loss 0.09210526315789472, f1 score 0.8235015764811365
+Hamming Distance: [[0.14102564]]
+correctly classified(hamming score): 67
+hamming loss val 0.10560053981106611
+---epoch 825, loss 0.19765536487102509, hamming loss 0.09143049932523616, f1 score 0.8229227819211141
+Hamming Distance: [[0.1025641]]
+correctly classified(hamming score): 70
+hamming loss val 0.10641025641025639
+---epoch 826, loss 0.2162996381521225, hamming loss 0.097165991902834, f1 score 0.8167577355283814
+Hamming Distance: [[0.14102564]]
+correctly classified(hamming score): 67
+hamming loss val 0.10458839406207826
+---epoch 827, loss 0.20440292358398438, hamming loss 0.09143049932523616, f1 score 0.8245916375944042
+Hamming Distance: [[0.11538462]]
+correctly classified(hamming score): 69
+hamming loss val 0.10425101214574899
+---epoch 828, loss 0.1967020183801651, hamming loss 0.08960863697705801, f1 score 0.8254966121745162
+Hamming Distance: [[0.14102564]]
+correctly classified(hamming score): 67
+hamming loss val 0.10350877192982455
+---epoch 829, loss 0.1975414901971817, hamming loss 0.09190283400809714, f1 score 0.8207095009570561
+Hamming Distance: [[0.16666667]]
+correctly classified(hamming score): 65
+hamming loss val 0.10418353576248311
+---epoch 830, loss 0.19755220413208008, hamming loss 0.09014844804318486, f1 score 0.8283925625810935
+Hamming Distance: [[0.14102564]]
+correctly classified(hamming score): 67
+hamming loss val 0.10654520917678811
+---epoch 831, loss 0.1999228298664093, hamming loss 0.09264507422402159, f1 score 0.8221125868390832
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.1068825910931174
+---epoch 832, loss 0.19948935508728027, hamming loss 0.09338731443994601, f1 score 0.8223559205873755
+Hamming Distance: [[0.11538462]]
+correctly classified(hamming score): 69
+hamming loss val 0.10539811066126854
+---epoch 833, loss 0.2023400217294693, hamming loss 0.09237516869095813, f1 score 0.8192978003376903
+Hamming Distance: [[0.14102564]]
+correctly classified(hamming score): 67
+hamming loss val 0.10668016194331982
+---epoch 834, loss 0.19712014496326447, hamming loss 0.08920377867746287, f1 score 0.8283024939222481
+Hamming Distance: [[0.11538462]]
+correctly classified(hamming score): 69
+hamming loss val 0.10114709851551955
+---epoch 835, loss 0.19792689383029938, hamming loss 0.08927125506072874, f1 score 0.8275596772713089
+Hamming Distance: [[0.1025641]]
+correctly classified(hamming score): 70
+hamming loss val 0.10782726045883939
+---epoch 836, loss 0.20614828169345856, hamming loss 0.09399460188933872, f1 score 0.8189967033992921
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.10303643724696354
+---epoch 837, loss 0.20123916864395142, hamming loss 0.09136302294197031, f1 score 0.823955166742023
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.10533063427800268
+---epoch 838, loss 0.19840392470359802, hamming loss 0.09379217273954116, f1 score 0.8205107414794895
+Hamming Distance: [[0.11538462]]
+correctly classified(hamming score): 69
+hamming loss val 0.10391363022941967
+---epoch 839, loss 0.19557686150074005, hamming loss 0.08967611336032387, f1 score 0.8262765858441544
+Hamming Distance: [[0.15384615]]
+correctly classified(hamming score): 66
+hamming loss val 0.10472334682860995
+---epoch 840, loss 0.1976531594991684, hamming loss 0.09156545209176785, f1 score 0.8233847091239446
+Hamming Distance: [[0.15384615]]
+correctly classified(hamming score): 66
+hamming loss val 0.10701754385964912
+---epoch 841, loss 0.1988620162010193, hamming loss 0.0902834008097166, f1 score 0.824529889108907
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.10971659919028337
+---epoch 842, loss 0.2012326717376709, hamming loss 0.09278002699055328, f1 score 0.8210783909785679
+Hamming Distance: [[0.14102564]]
+correctly classified(hamming score): 67
+hamming loss val 0.10850202429149797
+---epoch 843, loss 0.19686709344387054, hamming loss 0.09116059379217274, f1 score 0.8244443829878179
+Hamming Distance: [[0.11538462]]
+correctly classified(hamming score): 69
+hamming loss val 0.10661268556005397
+---epoch 844, loss 0.20495395362377167, hamming loss 0.09473684210526312, f1 score 0.8209344261351419
+Hamming Distance: [[0.1025641]]
+correctly classified(hamming score): 70
+hamming loss val 0.1054655870445344
+---epoch 845, loss 0.19146792590618134, hamming loss 0.08717948717948715, f1 score 0.8299195968690152
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.10242914979757084
+---epoch 846, loss 0.19787955284118652, hamming loss 0.09062078272604587, f1 score 0.8258641976300459
+Hamming Distance: [[0.14102564]]
+correctly classified(hamming score): 67
+hamming loss val 0.10587044534412954
+---epoch 847, loss 0.19868381321430206, hamming loss 0.08987854251012144, f1 score 0.8246737483327102
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.10742240215924426
+---epoch 848, loss 0.20409618318080902, hamming loss 0.09439946018893385, f1 score 0.8213500232442754
+Hamming Distance: [[0.14102564]]
+correctly classified(hamming score): 67
+hamming loss val 0.10546558704453442
+---epoch 849, loss 0.20929886400699615, hamming loss 0.09831309041835355, f1 score 0.815971803402715
+Hamming Distance: [[0.14102564]]
+correctly classified(hamming score): 67
+hamming loss val 0.10202429149797568
+---epoch 850, loss 0.20617367327213287, hamming loss 0.09622132253711199, f1 score 0.8152931613599976
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.10654520917678811
+---epoch 851, loss 0.20003172755241394, hamming loss 0.09251012145748985, f1 score 0.8200638174709033
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.10620782726045881
+---epoch 852, loss 0.19425056874752045, hamming loss 0.09001349527665313, f1 score 0.8239956808514044
+Hamming Distance: [[0.1025641]]
+correctly classified(hamming score): 70
+hamming loss val 0.10796221322537111
+---epoch 853, loss 0.19962535798549652, hamming loss 0.09048582995951414, f1 score 0.8234988947794701
+Hamming Distance: [[0.14102564]]
+correctly classified(hamming score): 67
+hamming loss val 0.10539811066126854
+---epoch 854, loss 0.20225755870342255, hamming loss 0.09392712550607286, f1 score 0.8188833990806245
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.1073549257759784
+---epoch 855, loss 0.1981542855501175, hamming loss 0.09116059379217273, f1 score 0.8235803599873368
+Hamming Distance: [[0.11538462]]
+correctly classified(hamming score): 69
+hamming loss val 0.10681511470985151
+---epoch 856, loss 0.19754154980182648, hamming loss 0.09041835357624829, f1 score 0.8256023900531437
+Hamming Distance: [[0.14102564]]
+correctly classified(hamming score): 67
+hamming loss val 0.10593792172739538
+---epoch 857, loss 0.19565534591674805, hamming loss 0.08839406207827259, f1 score 0.8275971785984749
+Hamming Distance: [[0.14102564]]
+correctly classified(hamming score): 67
+hamming loss val 0.10364372469635628
+---epoch 858, loss 0.1968172788619995, hamming loss 0.09129554655870442, f1 score 0.8235289860894439
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.10593792172739538
+---epoch 859, loss 0.19720183312892914, hamming loss 0.08906882591093115, f1 score 0.826594323380502
+Hamming Distance: [[0.14102564]]
+correctly classified(hamming score): 67
+hamming loss val 0.10789473684210527
+---epoch 860, loss 0.20460955798625946, hamming loss 0.09426450742240215, f1 score 0.8226650834527074
+Hamming Distance: [[0.11538462]]
+correctly classified(hamming score): 69
+hamming loss val 0.10674763832658567
+---epoch 861, loss 0.20098194479942322, hamming loss 0.08940620782726043, f1 score 0.8280307192873494
+Hamming Distance: [[0.14102564]]
+correctly classified(hamming score): 67
+hamming loss val 0.11086369770580295
+---epoch 862, loss 0.22490081191062927, hamming loss 0.0983805668016194, f1 score 0.8167167739193487
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.10681511470985156
+---epoch 863, loss 0.19972367584705353, hamming loss 0.09170040485829958, f1 score 0.8249673766456821
+Hamming Distance: [[0.11538462]]
+correctly classified(hamming score): 69
+hamming loss val 0.10485829959514169
+---epoch 864, loss 0.21331273019313812, hamming loss 0.09946018893387315, f1 score 0.8138382896649426
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.1086369770580297
+---epoch 865, loss 0.21006794273853302, hamming loss 0.09534412955465583, f1 score 0.81833982130898
+Hamming Distance: [[0.1025641]]
+correctly classified(hamming score): 70
+hamming loss val 0.10398110661268553
+---epoch 866, loss 0.20029357075691223, hamming loss 0.08994601889338728, f1 score 0.8242968906344129
+Hamming Distance: [[0.11538462]]
+correctly classified(hamming score): 69
+hamming loss val 0.10863697705802966
+---epoch 867, loss 0.20470282435417175, hamming loss 0.09298245614035086, f1 score 0.8203352883896027
+Hamming Distance: [[0.14102564]]
+correctly classified(hamming score): 67
+hamming loss val 0.10654520917678811
+---epoch 868, loss 0.2138230949640274, hamming loss 0.09628879892037785, f1 score 0.8153944204634673
+Hamming Distance: [[0.14102564]]
+correctly classified(hamming score): 67
+hamming loss val 0.10445344129554654
+---epoch 869, loss 0.20099912583827972, hamming loss 0.09291497975708501, f1 score 0.8217272076733291
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.10607287449392712
+---epoch 870, loss 0.1999722123146057, hamming loss 0.09271255060728743, f1 score 0.8202578324858021
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.10641025641025639
+---epoch 871, loss 0.19625034928321838, hamming loss 0.09028340080971657, f1 score 0.824381666910375
+Hamming Distance: [[0.14102564]]
+correctly classified(hamming score): 67
+hamming loss val 0.10269905533063427
+---epoch 872, loss 0.1995174139738083, hamming loss 0.09041835357624829, f1 score 0.8227593733286389
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.10620782726045884
+---epoch 873, loss 0.19424571096897125, hamming loss 0.08967611336032387, f1 score 0.8255827464918015
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.10573549257759784
+---epoch 874, loss 0.19224070012569427, hamming loss 0.08771929824561402, f1 score 0.8281397753869953
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.10607287449392712
+---epoch 875, loss 0.22334109246730804, hamming loss 0.09946018893387312, f1 score 0.8138645620910208
+Hamming Distance: [[0.14102564]]
+correctly classified(hamming score): 67
+hamming loss val 0.10242914979757084
+---epoch 876, loss 0.20597384870052338, hamming loss 0.095748987854251, f1 score 0.8187378575700849
+Hamming Distance: [[0.14102564]]
+correctly classified(hamming score): 67
+hamming loss val 0.10155195681511471
+---epoch 877, loss 0.1956285834312439, hamming loss 0.08994601889338728, f1 score 0.8247244375335753
+Hamming Distance: [[0.14102564]]
+correctly classified(hamming score): 67
+hamming loss val 0.1031039136302294
+---epoch 878, loss 0.2014629989862442, hamming loss 0.09197031039136301, f1 score 0.822755831820232
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.10364372469635624
+---epoch 879, loss 0.19557514786720276, hamming loss 0.09001349527665317, f1 score 0.8253955079681726
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.10391363022941968
+---epoch 880, loss 0.20415137708187103, hamming loss 0.09520917678812417, f1 score 0.8221992182290493
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.10303643724696354
+---epoch 881, loss 0.20717500150203705, hamming loss 0.0937246963562753, f1 score 0.822306574906504
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.11086369770580295
+---epoch 882, loss 0.211382195353508, hamming loss 0.09588394062078272, f1 score 0.8171017346536444
+Hamming Distance: [[0.11538462]]
+correctly classified(hamming score): 69
+hamming loss val 0.10910931174089067
+---epoch 883, loss 0.20108090341091156, hamming loss 0.08994601889338733, f1 score 0.82531628380778
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.10782726045883938
+---epoch 884, loss 0.20151957869529724, hamming loss 0.09217273954116058, f1 score 0.8225110721463732
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.10735492577597841
+---epoch 885, loss 0.2088250368833542, hamming loss 0.09682860998650471, f1 score 0.8170665913810814
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.10506072874493927
+---epoch 886, loss 0.19719141721725464, hamming loss 0.09008097165991902, f1 score 0.8269694815004504
+Hamming Distance: [[0.08974359]]
+correctly classified(hamming score): 71
+hamming loss val 0.10398110661268556
+---epoch 887, loss 0.19966696202754974, hamming loss 0.09014844804318486, f1 score 0.8241448347816492
+Hamming Distance: [[0.1025641]]
+correctly classified(hamming score): 70
+hamming loss val 0.10553306342780025
+---epoch 888, loss 0.19524113833904266, hamming loss 0.09129554655870446, f1 score 0.823282270232174
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.1029689608636977
+---epoch 889, loss 0.19655263423919678, hamming loss 0.09176788124156544, f1 score 0.8222174505663332
+Hamming Distance: [[0.14102564]]
+correctly classified(hamming score): 67
+hamming loss val 0.10600539811066126
+---epoch 890, loss 0.20322060585021973, hamming loss 0.09291497975708501, f1 score 0.819714375401177
+Hamming Distance: [[0.14102564]]
+correctly classified(hamming score): 67
+hamming loss val 0.10708502024291497
+---epoch 891, loss 0.19767600297927856, hamming loss 0.0904183535762483, f1 score 0.8266540673435698
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.10708502024291497
+---epoch 892, loss 0.19232317805290222, hamming loss 0.0885290148448043, f1 score 0.8288970452981943
+Hamming Distance: [[0.14102564]]
+correctly classified(hamming score): 67
+hamming loss val 0.10492577597840755
+---epoch 893, loss 0.202752023935318, hamming loss 0.09406207827260457, f1 score 0.8188988799858442
+Hamming Distance: [[0.14102564]]
+correctly classified(hamming score): 67
+hamming loss val 0.10188933873144398
+---epoch 894, loss 0.1997181475162506, hamming loss 0.09095816464237516, f1 score 0.8237920187884005
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.10479082321187584
+---epoch 895, loss 0.19736503064632416, hamming loss 0.09062078272604589, f1 score 0.8263046599661368
+Hamming Distance: [[0.14102564]]
+correctly classified(hamming score): 67
+hamming loss val 0.10802968960863696
+---epoch 896, loss 0.1992845982313156, hamming loss 0.09109311740890688, f1 score 0.8258171374307178
+Hamming Distance: [[0.14102564]]
+correctly classified(hamming score): 67
+hamming loss val 0.10782726045883938
+---epoch 897, loss 0.19863533973693848, hamming loss 0.09399460188933871, f1 score 0.8199364649172839
+Hamming Distance: [[0.14102564]]
+correctly classified(hamming score): 67
+hamming loss val 0.10492577597840755
+---epoch 898, loss 0.19330215454101562, hamming loss 0.08839406207827256, f1 score 0.8275449059136334
+Hamming Distance: [[0.14102564]]
+correctly classified(hamming score): 67
+hamming loss val 0.10668016194331982
+---epoch 899, loss 0.20215192437171936, hamming loss 0.09338731443994602, f1 score 0.8191855711033341
+Hamming Distance: [[0.12820513]]
+correctly classified(hamming score): 68
+hamming loss val 0.10283400809716599
+finished training 
+
+accuracy per Object:
+Correct: 78 Percentage: 100.0 ObjectID: 0 Object: cabinet
+Correct: 78 Percentage: 100.0 ObjectID: 1 Object: objects
+Correct: 77 Percentage: 98.7179 ObjectID: 2 Object: towel
+Correct: 77 Percentage: 98.7179 ObjectID: 3 Object: shower
+Correct: 78 Percentage: 100.0 ObjectID: 4 Object: curtain
+Correct: 78 Percentage: 100.0 ObjectID: 5 Object: bathtub
+Correct: 78 Percentage: 100.0 ObjectID: 6 Object: wall
+Correct: 78 Percentage: 100.0 ObjectID: 7 Object: window
+Correct: 70 Percentage: 89.7436 ObjectID: 8 Object: counter
+Correct: 71 Percentage: 91.0256 ObjectID: 9 Object: lighting
+Correct: 76 Percentage: 97.4359 ObjectID: 10 Object: mirror
+Correct: 69 Percentage: 88.4615 ObjectID: 11 Object: sink
+Correct: 68 Percentage: 87.1795 ObjectID: 12 Object: ceiling
+Correct: 69 Percentage: 88.4615 ObjectID: 13 Object: door
+Correct: 57 Percentage: 73.0769 ObjectID: 14 Object: floor
+Correct: 58 Percentage: 74.359 ObjectID: 15 Object: picture
+Correct: 68 Percentage: 87.1795 ObjectID: 16 Object: toilet
+Correct: 71 Percentage: 91.0256 ObjectID: 17 Object: chair
+Correct: 72 Percentage: 92.3077 ObjectID: 18 Object: stool
+Correct: 65 Percentage: 83.3333 ObjectID: 19 Object: cushion
+Correct: 55 Percentage: 70.5128 ObjectID: 20 Object: void
+Correct: 72 Percentage: 92.3077 ObjectID: 21 Object: bed
+Correct: 71 Percentage: 91.0256 ObjectID: 22 Object: chest_of_drawers
+Correct: 67 Percentage: 85.8974 ObjectID: 23 Object: table
+Correct: 72 Percentage: 92.3077 ObjectID: 24 Object: tv_monitor
+Correct: 63 Percentage: 80.7692 ObjectID: 25 Object: plant
+Correct: 72 Percentage: 92.3077 ObjectID: 26 Object: shelving
+Correct: 67 Percentage: 85.8974 ObjectID: 27 Object: appliances
+Correct: 65 Percentage: 83.3333 ObjectID: 28 Object: misc
+Correct: 74 Percentage: 94.8718 ObjectID: 29 Object: fireplace
+Correct: 73 Percentage: 93.5897 ObjectID: 30 Object: sofa
+Correct: 73 Percentage: 93.5897 ObjectID: 31 Object: column
+Correct: 73 Percentage: 93.5897 ObjectID: 32 Object: beam
+Correct: 71 Percentage: 91.0256 ObjectID: 33 Object: railing
+Correct: 71 Percentage: 91.0256 ObjectID: 34 Object: stairs
+Correct: 72 Percentage: 92.3077 ObjectID: 35 Object: seating
+Correct: 74 Percentage: 94.8718 ObjectID: 36 Object: clothes
+Correct: 73 Percentage: 93.5897 ObjectID: 37 Object: furniture
+elapsed time (min): 13.439036456743876
